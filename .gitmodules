@@ -1,0 +1,3 @@
+[submodule "Lib/Vendor/EZMilk"]
+	path = Lib/Vendor/EZMilk
+	url = git://github.com/everzet/EZMilk.git
