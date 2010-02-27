@@ -15,7 +15,6 @@
 		633A7E9510267AFD0017C70D /* RTM.png in Resources */ = {isa = PBXBuildFile; fileRef = 633A7E9410267AFD0017C70D /* RTM.png */; };
 		6348C4731026F9CF0060EAA3 /* notification.png in Resources */ = {isa = PBXBuildFile; fileRef = 6348C4721026F9CF0060EAA3 /* notification.png */; };
 		6350BB561139CAE100236474 /* LTRtmApiKeys.m in Sources */ = {isa = PBXBuildFile; fileRef = 6350BB551139CAE100236474 /* LTRtmApiKeys.m */; };
-		6350BB831139DAB100236474 /* ActiveRecord.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6350BB821139DAB100236474 /* ActiveRecord.framework */; };
 		6395B003102260A900F1E641 /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 6395B002102260A900F1E641 /* libsqlite3.0.dylib */; };
 		6396D0CD1139C3E500255A29 /* ltListItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 6396D0C61139C3E500255A29 /* ltListItem.m */; };
 		6396D0CE1139C3E500255A29 /* ltListProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6396D0C81139C3E500255A29 /* ltListProxy.m */; };
@@ -52,6 +51,10 @@
 		63A2115B1021C96F0088B45A /* lattedb.sql in Resources */ = {isa = PBXBuildFile; fileRef = 63A2115A1021C96F0088B45A /* lattedb.sql */; };
 		63CD529A104AA881005BE106 /* entry-quick.png in Resources */ = {isa = PBXBuildFile; fileRef = 63CD5298104AA880005BE106 /* entry-quick.png */; };
 		63CD529B104AA881005BE106 /* entry-full.png in Resources */ = {isa = PBXBuildFile; fileRef = 63CD5299104AA881005BE106 /* entry-full.png */; };
+		63DDBC7F1139E16F002BB911 /* BGHUDAppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63DDBC7E1139E16F002BB911 /* BGHUDAppKit.framework */; };
+		63DDBCCB1139E303002BB911 /* BGHUDAppKit.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 63DDBC7E1139E16F002BB911 /* BGHUDAppKit.framework */; };
+		63DDBCE91139E606002BB911 /* ActiveRecord.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63DDBCE81139E606002BB911 /* ActiveRecord.framework */; };
+		63DDBD0C1139E625002BB911 /* ActiveRecord.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 63DDBCE81139E606002BB911 /* ActiveRecord.framework */; };
 		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
 		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
@@ -64,6 +67,8 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				63DDBCCB1139E303002BB911 /* BGHUDAppKit.framework in CopyFiles */,
+				63DDBD0C1139E625002BB911 /* ActiveRecord.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,7 +91,6 @@
 		6348C4721026F9CF0060EAA3 /* notification.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = notification.png; sourceTree = "<group>"; };
 		6350BB541139CAE100236474 /* LTRtmApiKeys.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTRtmApiKeys.h; sourceTree = "<group>"; };
 		6350BB551139CAE100236474 /* LTRtmApiKeys.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LTRtmApiKeys.m; sourceTree = "<group>"; };
-		6350BB821139DAB100236474 /* ActiveRecord.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ActiveRecord.framework; path = Lib/Vendor/ActiveRecord.framework; sourceTree = "<group>"; };
 		6395B002102260A900F1E641 /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
 		6396D0C51139C3E500255A29 /* ltListItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ltListItem.h; sourceTree = "<group>"; };
 		6396D0C61139C3E500255A29 /* ltListItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ltListItem.m; sourceTree = "<group>"; };
@@ -152,6 +156,8 @@
 		63A2115A1021C96F0088B45A /* lattedb.sql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = lattedb.sql; sourceTree = "<group>"; };
 		63CD5298104AA880005BE106 /* entry-quick.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "entry-quick.png"; sourceTree = "<group>"; };
 		63CD5299104AA881005BE106 /* entry-full.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "entry-full.png"; sourceTree = "<group>"; };
+		63DDBC7E1139E16F002BB911 /* BGHUDAppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BGHUDAppKit.framework; path = Lib/Vendor/BGHUDAppKit.framework; sourceTree = "<group>"; };
+		63DDBCE81139E606002BB911 /* ActiveRecord.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ActiveRecord.framework; path = Lib/Vendor/ActiveRecord.framework; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8D1107320486CEB800E47090 /* Latte.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Latte.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -163,7 +169,8 @@
 			files = (
 				8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */,
 				6395B003102260A900F1E641 /* libsqlite3.0.dylib in Frameworks */,
-				6350BB831139DAB100236474 /* ActiveRecord.framework in Frameworks */,
+				63DDBC7F1139E16F002BB911 /* BGHUDAppKit.framework in Frameworks */,
+				63DDBCE91139E606002BB911 /* ActiveRecord.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -194,11 +201,12 @@
 		1058C7A2FEA54F0111CA2CBB /* Other Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				63DDBC7E1139E16F002BB911 /* BGHUDAppKit.framework */,
+				63DDBCE81139E606002BB911 /* ActiveRecord.framework */,
 				6395B002102260A900F1E641 /* libsqlite3.0.dylib */,
 				29B97324FDCFA39411CA2CEA /* AppKit.framework */,
 				13E42FB307B3F0F600E4EEF1 /* CoreData.framework */,
 				29B97325FDCFA39411CA2CEA /* Foundation.framework */,
-				6350BB821139DAB100236474 /* ActiveRecord.framework */,
 			);
 			name = "Other Frameworks";
 			sourceTree = "<group>";
