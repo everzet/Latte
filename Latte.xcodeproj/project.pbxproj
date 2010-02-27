@@ -15,6 +15,7 @@
 		633A7E9510267AFD0017C70D /* RTM.png in Resources */ = {isa = PBXBuildFile; fileRef = 633A7E9410267AFD0017C70D /* RTM.png */; };
 		6348C4731026F9CF0060EAA3 /* notification.png in Resources */ = {isa = PBXBuildFile; fileRef = 6348C4721026F9CF0060EAA3 /* notification.png */; };
 		6350BB561139CAE100236474 /* LTRtmApiKeys.m in Sources */ = {isa = PBXBuildFile; fileRef = 6350BB551139CAE100236474 /* LTRtmApiKeys.m */; };
+		6350BB831139DAB100236474 /* ActiveRecord.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6350BB821139DAB100236474 /* ActiveRecord.framework */; };
 		6395B003102260A900F1E641 /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 6395B002102260A900F1E641 /* libsqlite3.0.dylib */; };
 		6396D0CD1139C3E500255A29 /* ltListItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 6396D0C61139C3E500255A29 /* ltListItem.m */; };
 		6396D0CE1139C3E500255A29 /* ltListProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6396D0C81139C3E500255A29 /* ltListProxy.m */; };
@@ -85,6 +86,7 @@
 		6348C4721026F9CF0060EAA3 /* notification.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = notification.png; sourceTree = "<group>"; };
 		6350BB541139CAE100236474 /* LTRtmApiKeys.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTRtmApiKeys.h; sourceTree = "<group>"; };
 		6350BB551139CAE100236474 /* LTRtmApiKeys.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LTRtmApiKeys.m; sourceTree = "<group>"; };
+		6350BB821139DAB100236474 /* ActiveRecord.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ActiveRecord.framework; path = Lib/Vendor/ActiveRecord.framework; sourceTree = "<group>"; };
 		6395B002102260A900F1E641 /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
 		6396D0C51139C3E500255A29 /* ltListItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ltListItem.h; sourceTree = "<group>"; };
 		6396D0C61139C3E500255A29 /* ltListItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ltListItem.m; sourceTree = "<group>"; };
@@ -161,6 +163,7 @@
 			files = (
 				8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */,
 				6395B003102260A900F1E641 /* libsqlite3.0.dylib in Frameworks */,
+				6350BB831139DAB100236474 /* ActiveRecord.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -195,6 +198,7 @@
 				29B97324FDCFA39411CA2CEA /* AppKit.framework */,
 				13E42FB307B3F0F600E4EEF1 /* CoreData.framework */,
 				29B97325FDCFA39411CA2CEA /* Foundation.framework */,
+				6350BB821139DAB100236474 /* ActiveRecord.framework */,
 			);
 			name = "Other Frameworks";
 			sourceTree = "<group>";
@@ -535,6 +539,7 @@
 					"$(inherited)",
 					"\"$(DEVELOPER_FRAMEWORKS_DIR)\"",
 					"\"$(SRCROOT)\"",
+					"\"$(SRCROOT)/Lib/Vendor\"",
 				);
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_FIX_AND_CONTINUE = YES;
@@ -563,6 +568,7 @@
 					"$(inherited)",
 					"\"$(DEVELOPER_FRAMEWORKS_DIR)\"",
 					"\"$(SRCROOT)\"",
+					"\"$(SRCROOT)/Lib/Vendor\"",
 				);
 				GCC_MODEL_TUNING = G5;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;

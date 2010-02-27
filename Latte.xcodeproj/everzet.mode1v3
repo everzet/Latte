@@ -274,26 +274,22 @@
 								<string>6396D14F1139C57800255A29</string>
 								<string>6396D16D1139C5C300255A29</string>
 								<string>6396D17A1139C5C300255A29</string>
-								<string>6396D17E1139C5C300255A29</string>
 								<string>6396D1811139C5C300255A29</string>
 								<string>29B97317FDCFA39411CA2CEA</string>
 								<string>29B97323FDCFA39411CA2CEA</string>
+								<string>1058C7A0FEA54F0111CA2CBB</string>
 								<string>1058C7A2FEA54F0111CA2CBB</string>
+								<string>6350BB821139DAB100236474</string>
 								<string>1C37FABC05509CD000000102</string>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>30</integer>
-									<integer>28</integer>
-									<integer>23</integer>
-									<integer>22</integer>
-									<integer>1</integer>
 									<integer>0</integer>
 								</array>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateVisibleRectKey</key>
-							<string>{{0, 253}, {246, 676}}</string>
+							<string>{{0, 493}, {246, 676}}</string>
 						</dict>
 						<key>PBXTopSmartGroupGIDs</key>
 						<array/>
@@ -369,7 +365,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>EZSQLite.m</string>
+								<string>ActiveRecord.h</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -377,11 +373,11 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>EZSQLite.m</string>
+										<string>ActiveRecord.h</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>6350BB5D1139CC0900236474</string>
+										<string>6350BBBB1139DACC00236474</string>
 										<key>history</key>
 										<array>
 											<string>631D083D101B060B00493839</string>
@@ -390,8 +386,10 @@
 											<string>6396D1F11139CA5F00255A29</string>
 											<string>6396D1F21139CA5F00255A29</string>
 											<string>6396D1F31139CA5F00255A29</string>
-											<string>6350BB5B1139CC0900236474</string>
-											<string>6350BB5C1139CC0900236474</string>
+											<string>6350BBA31139DAC000236474</string>
+											<string>6350BBA41139DAC000236474</string>
+											<string>6350BBA51139DAC000236474</string>
+											<string>6350BBA81139DAC000236474</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -502,9 +500,9 @@
 			</array>
 			<key>TableOfContents</key>
 			<array>
-				<string>6350BB461139CA7200236474</string>
+				<string>6350BBBC1139DACC00236474</string>
 				<string>1CE0B1FE06471DED0097A5F4</string>
-				<string>6350BB471139CA7200236474</string>
+				<string>6350BBBD1139DACC00236474</string>
 				<string>1CE0B20306471E060097A5F4</string>
 				<string>1CE0B20306471E060097A5F4</string>
 				<string>1CE0B20306471E060097A5F4</string>
@@ -662,11 +660,6 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
-		<string>6350BB5E1139CC0900236474</string>
-		<string>6350BB511139CA7200236474</string>
-		<string>6350BB521139CA7200236474</string>
-		<string>1C78EAAD065D492600B07095</string>
-		<string>1CD10A99069EF8BA00B06720</string>
 		<string>632D9674101BB4BA0055F5C2</string>
 		<string>/Users/everzet/Devel/desktop/mac/Latte/Latte.xcodeproj</string>
 	</array>
@@ -748,7 +741,7 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>632D9674101BB4BA0055F5C2</string>
-				<string>6350BB481139CA7200236474</string>
+				<string>6350BBBE1139DACC00236474</string>
 				<string>1CD0528F0623707200166675</string>
 				<string>XCMainBuildResultsModuleGUID</string>
 			</array>
@@ -1531,7 +1524,7 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>6370F6A6101F311E000BD869</string>
-				<string>6396D1BB1139C62500255A29</string>
+				<string>6350BB601139D11400236474</string>
 				<string>6370F6A5101F311E000BD869</string>
 			</array>
 			<key>WindowString</key>
