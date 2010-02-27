@@ -233,8 +233,6 @@
 			<key>Layout</key>
 			<array>
 				<dict>
-					<key>BecomeActive</key>
-					<true/>
 					<key>ContentConfiguration</key>
 					<dict>
 						<key>PBXBottomSmartGroupGIDs</key>
@@ -286,13 +284,16 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>55</integer>
-									<integer>53</integer>
+									<integer>30</integer>
+									<integer>28</integer>
+									<integer>23</integer>
+									<integer>22</integer>
+									<integer>1</integer>
 									<integer>0</integer>
 								</array>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateVisibleRectKey</key>
-							<string>{{0, 0}, {246, 676}}</string>
+							<string>{{0, 253}, {246, 676}}</string>
 						</dict>
 						<key>PBXTopSmartGroupGIDs</key>
 						<array/>
@@ -361,6 +362,8 @@
 							<string>0pt</string>
 						</dict>
 						<dict>
+							<key>BecomeActive</key>
+							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
@@ -378,18 +381,17 @@
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>6350BB451139CA7200236474</string>
+										<string>6350BB5D1139CC0900236474</string>
 										<key>history</key>
 										<array>
 											<string>631D083D101B060B00493839</string>
 											<string>6396D1B81139C62500255A29</string>
-											<string>6396D1EF1139CA5F00255A29</string>
 											<string>6396D1F01139CA5F00255A29</string>
 											<string>6396D1F11139CA5F00255A29</string>
 											<string>6396D1F21139CA5F00255A29</string>
 											<string>6396D1F31139CA5F00255A29</string>
-											<string>6396D1F41139CA5F00255A29</string>
-											<string>6396D1F61139CA5F00255A29</string>
+											<string>6350BB5B1139CC0900236474</string>
+											<string>6350BB5C1139CC0900236474</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -660,7 +662,7 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
-		<string>6350BB501139CA7200236474</string>
+		<string>6350BB5E1139CC0900236474</string>
 		<string>6350BB511139CA7200236474</string>
 		<string>6350BB521139CA7200236474</string>
 		<string>1C78EAAD065D492600B07095</string>
