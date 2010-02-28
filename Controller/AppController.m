@@ -33,7 +33,7 @@
 - (void)awakeFromNib
 {
   // Interface setup
-  [self initFilter];
+  [self initMGScope];
   [self initTable];
 
   // Setup EZMilk & AppPreferences lib
@@ -49,24 +49,18 @@
   [NSThread detachNewThreadSelector:@selector(runSyncLoop:) toTarget:self withObject:self];
 }
 
-- (void)initFilter
+- (void)initMGScope
 {
   self.groups = [NSMutableArray arrayWithCapacity:0];
 	scopeBar.delegate = self;
 
 	NSArray *items = [NSArray arrayWithObjects:
                     [NSDictionary dictionaryWithObjectsAndKeys:
-                     @"AllItem", @"Identifier", 
-                     @"All", @"Name", 
-                     nil], 
+                     @"AllItem", @"Identifier", @"All", @"Name", nil], 
                     [NSDictionary dictionaryWithObjectsAndKeys:
-                     @"PendingItem", @"Identifier", 
-                     @"Pending", @"Name", 
-                     nil],
+                     @"PendingItem", @"Identifier", @"Pending", @"Name", nil],
                     [NSDictionary dictionaryWithObjectsAndKeys:
-                     @"CompleteItem", @"Identifier", 
-                     @"Complete", @"Name", 
-                     nil],
+                     @"CompleteItem", @"Identifier", @"Complete", @"Name", nil],
                     nil];
 	
 	[self.groups addObject:[NSDictionary dictionaryWithObjectsAndKeys:
@@ -275,6 +269,8 @@ if (NSOrderedSame == [identifier compare:@"AllItem"])
   [[sender task] save];
   [self reloadTasksWithSelection:YES];
 }
+
+#pragma mark RTM sync methods
 
 - (void)runSyncLoop:(id)sender
 {

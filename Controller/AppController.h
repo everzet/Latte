@@ -69,7 +69,7 @@
 @property(retain)NSMutableArray* groups;
 
 // Interface & Data init
-- (void)initFilter;
+- (void)initMGScope;
 - (void)initTable;
 - (void)initDatabase;
 
