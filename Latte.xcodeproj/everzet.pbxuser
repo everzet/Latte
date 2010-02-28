@@ -143,6 +143,11 @@
 			63B61B4F113AAB1C0017D0F1 /* PBXTextBookmark */ = 63B61B4F113AAB1C0017D0F1 /* PBXTextBookmark */;
 			63B61B50113AAB1C0017D0F1 /* PBXTextBookmark */ = 63B61B50113AAB1C0017D0F1 /* PBXTextBookmark */;
 			63B61B51113AAB1C0017D0F1 /* PBXTextBookmark */ = 63B61B51113AAB1C0017D0F1 /* PBXTextBookmark */;
+			63B61B5A113AABC20017D0F1 /* XCBuildMessageTextBookmark */ = 63B61B5A113AABC20017D0F1 /* XCBuildMessageTextBookmark */;
+			63B61B5B113AABC20017D0F1 /* PBXTextBookmark */ = 63B61B5B113AABC20017D0F1 /* PBXTextBookmark */;
+			63B61B5C113AABC40017D0F1 /* PBXTextBookmark */ = 63B61B5C113AABC40017D0F1 /* PBXTextBookmark */;
+			63B61B5D113AABC40017D0F1 /* XCBuildMessageTextBookmark */ = 63B61B5D113AABC40017D0F1 /* XCBuildMessageTextBookmark */;
+			63B61B5E113AABC40017D0F1 /* PBXTextBookmark */ = 63B61B5E113AABC40017D0F1 /* PBXTextBookmark */;
 			63BEC6991049F86E007103A0 = 63BEC6991049F86E007103A0 /* PBXBookmark */;
 			63DDBD7E1139FB78002BB911 = 63DDBD7E1139FB78002BB911 /* PBXTextBookmark */;
 			63DDBDBD113A033F002BB911 = 63DDBDBD113A033F002BB911 /* PBXTextBookmark */;
@@ -419,7 +424,7 @@
 	6396D1511139C57800255A29 /* AppController.m */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {951, 2915}}";
-			sepNavSelRange = "{463, 0}";
+			sepNavSelRange = "{558, 0}";
 			sepNavVisRange = "{0, 1854}";
 			sepNavWindowFrame = "{{38, 170}, {1236, 582}}";
 		};
@@ -512,9 +517,9 @@
 	};
 	6396D1801139C5C300255A29 /* EZMilk.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {696, 3124}}";
-			sepNavSelRange = "{8749, 0}";
-			sepNavVisRange = "{4914, 538}";
+			sepNavIntBoundsRect = "{{0, 0}, {951, 3135}}";
+			sepNavSelRange = "{2718, 0}";
+			sepNavVisRange = "{2002, 1064}";
 			sepNavWindowFrame = "{{15, 191}, {1236, 582}}";
 		};
 	};
@@ -645,6 +650,54 @@
 		rType = 0;
 		vrLen = 1854;
 		vrLoc = 0;
+	};
+	63B61B5A113AABC20017D0F1 /* XCBuildMessageTextBookmark */ = {
+		isa = PBXTextBookmark;
+		comments = "'LTRtmApiInstance' undeclared (first use in this function)";
+		fRef = 6396D1801139C5C300255A29 /* EZMilk.m */;
+		fallbackIsa = XCBuildMessageTextBookmark;
+		rLen = 1;
+		rLoc = 91;
+		rType = 1;
+	};
+	63B61B5B113AABC20017D0F1 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 6396D1801139C5C300255A29 /* EZMilk.m */;
+		name = "EZMilk.m: 92";
+		rLen = 0;
+		rLoc = 2718;
+		rType = 0;
+		vrLen = 300;
+		vrLoc = 2463;
+	};
+	63B61B5C113AABC40017D0F1 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 6396D1511139C57800255A29 /* AppController.m */;
+		name = "AppController.m: 24";
+		rLen = 0;
+		rLoc = 558;
+		rType = 0;
+		vrLen = 1854;
+		vrLoc = 0;
+	};
+	63B61B5D113AABC40017D0F1 /* XCBuildMessageTextBookmark */ = {
+		isa = PBXTextBookmark;
+		comments = "'LTRtmApiInstance' undeclared (first use in this function)";
+		fRef = 6396D1801139C5C300255A29 /* EZMilk.m */;
+		fallbackIsa = XCBuildMessageTextBookmark;
+		rLen = 1;
+		rLoc = 91;
+		rType = 1;
+	};
+	63B61B5E113AABC40017D0F1 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 6396D1801139C5C300255A29 /* EZMilk.m */;
+		name = "EZMilk.m: 92";
+		rLen = 0;
+		rLoc = 2718;
+		rType = 0;
+		vrLen = 1064;
+		vrLoc = 2002;
 	};
 	63BEC6991049F86E007103A0 /* PBXBookmark */ = {
 		isa = PBXBookmark;
