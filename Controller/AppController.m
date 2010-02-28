@@ -93,18 +93,21 @@
   NSRect scrollRect = [tableView visibleRect];
 
   TaskList* list = nil;
-  NSNumber* completed = nil;
 
-  if ([listView indexOfSelectedItem] > 0)
-  {
-    list = [lists objectAtIndex:[listView indexOfSelectedItem]];
-  }
-  if ([filter getSelectedIndexInSegment:0] > 0)
-  {
-    completed = [NSNumber numberWithInt:[filter getSelectedIndexInSegment:0] - 1];
-  }
+  list = [lists objectAtIndex:[listView indexOfSelectedItem]];
   [[self mutableArrayValueForKey:@"tasks"] removeAllObjects];
-  [[self mutableArrayValueForKey:@"tasks"] addObjectsFromArray:[Task allObjects]];
+  if (1 == [filter getSelectedIndexInSegment:0])
+  {
+    [[self mutableArrayValueForKey:@"tasks"] addObjectsFromArray:[Task allCompleted:false inList:list]];
+  }
+  else if (2 == [filter getSelectedIndexInSegment:0])
+  {
+    [[self mutableArrayValueForKey:@"tasks"] addObjectsFromArray:[Task allCompleted:true inList:list]];
+  }
+  else
+  {
+    [[self mutableArrayValueForKey:@"tasks"] addObjectsFromArray:[Task allInList:list]];
+  }
 
   if (withSelection)
   {

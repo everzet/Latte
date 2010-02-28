@@ -25,9 +25,20 @@
   [super dealloc];
 }
 
-+ (NSArray*)allCompleted:(NSNumber*)isCompleted inList:(TaskList*)list
++ (NSArray*)allCompleted:(bool)isCompleted inList:(TaskList*)aList
 {
-  return [Task findByCriteria:[NSString stringWithFormat:@"WHERE list = %d AND is_completed = %d", list.pk, isCompleted]];
+  NSString* criteria = [NSString stringWithFormat:@"WHERE list = '%@-%d' AND is_completed = %d",
+                        [aList class], aList.pk, isCompleted];
+
+  return [Task findByCriteria:criteria];
+}
+
++ (NSArray*)allInList:(TaskList*)aList
+{
+  NSString* criteria = [NSString stringWithFormat:@"WHERE list = '%@-%d'",
+                        [aList class], aList.pk];
+
+  return [Task findByCriteria:criteria];
 }
 
 - (NSString*)displayableDue
@@ -36,6 +47,11 @@
   [dateFormatter setDateStyle: NSDateFormatterShortStyle];
 
   return [dateFormatter stringFromDate:dueAt];
+}
+
+- (id)copyWithZone:(NSZone *)zone
+{
+  return [self retain];
 }
 
 @end

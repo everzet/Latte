@@ -208,6 +208,8 @@
 		<dict>
 			<key>ChosenToolbarItems</key>
 			<array>
+				<string>XCToolbarPerspectiveControl</string>
+				<string>NSToolbarSeparatorItem</string>
 				<string>active-combo-popup</string>
 				<string>action</string>
 				<string>debugger-enable-breakpoints</string>
@@ -232,6 +234,8 @@
 			<key>Layout</key>
 			<array>
 				<dict>
+					<key>BecomeActive</key>
+					<true/>
 					<key>ContentConfiguration</key>
 					<dict>
 						<key>PBXBottomSmartGroupGIDs</key>
@@ -276,22 +280,19 @@
 								<string>29B97317FDCFA39411CA2CEA</string>
 								<string>29B97323FDCFA39411CA2CEA</string>
 								<string>1058C7A0FEA54F0111CA2CBB</string>
-								<string>1058C7A2FEA54F0111CA2CBB</string>
-								<string>1C37FBAC04509CD000000102</string>
-								<string>63DDBCC21139E2BF002BB911</string>
 								<string>1C37FABC05509CD000000102</string>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>21</integer>
-									<integer>19</integer>
+									<integer>7</integer>
+									<integer>2</integer>
 									<integer>1</integer>
 									<integer>0</integer>
 								</array>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateVisibleRectKey</key>
-							<string>{{0, 127}, {246, 676}}</string>
+							<string>{{0, 0}, {246, 676}}</string>
 						</dict>
 						<key>PBXTopSmartGroupGIDs</key>
 						<array/>
@@ -360,8 +361,6 @@
 							<string>0pt</string>
 						</dict>
 						<dict>
-							<key>BecomeActive</key>
-							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
@@ -376,10 +375,6 @@
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
 										<string>AppController.m</string>
-										<key>_historyCapacity</key>
-										<integer>0</integer>
-										<key>bookmark</key>
-										<string>63DDBEFF113A9767002BB911</string>
 										<key>history</key>
 										<array>
 											<string>631D083D101B060B00493839</string>
@@ -393,7 +388,6 @@
 											<string>63DDBDCF113A7F33002BB911</string>
 											<string>63DDBDD8113A7F86002BB911</string>
 											<string>63DDBE0D113A86FF002BB911</string>
-											<string>63DDBE19113A873F002BB911</string>
 											<string>63DDBE21113A877B002BB911</string>
 											<string>63DDBE22113A877B002BB911</string>
 											<string>63DDBE3C113A8C97002BB911</string>
@@ -406,13 +400,9 @@
 											<string>63DDBE95113A92EC002BB911</string>
 											<string>63DDBE96113A92EC002BB911</string>
 											<string>63DDBE9F113A939B002BB911</string>
-											<string>63DDBEB8113A9496002BB911</string>
 											<string>63DDBEE6113A96B4002BB911</string>
 											<string>63DDBEE7113A96B4002BB911</string>
 											<string>63DDBEF0113A9731002BB911</string>
-											<string>63DDBEF1113A9731002BB911</string>
-											<string>63DDBEFD113A9767002BB911</string>
-											<string>63DDBEFE113A9767002BB911</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -439,7 +429,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string></string>
+								<string>ltTaskItem.h</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -447,7 +437,11 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string></string>
+										<string>ltTaskItem.h</string>
+										<key>_historyCapacity</key>
+										<integer>0</integer>
+										<key>bookmark</key>
+										<string>63DDBF16113A9938002BB911</string>
 										<key>history</key>
 										<array>
 											<string>639ECAFD101CDA4900CD9EC7</string>
@@ -464,6 +458,10 @@
 											<string>6348C626102799370060EAA3</string>
 											<string>63BEC6991049F86E007103A0</string>
 											<string>63971824104DC7F5007CD0FD</string>
+											<string>63DDBF12113A9938002BB911</string>
+											<string>63DDBF13113A9938002BB911</string>
+											<string>63DDBF14113A9938002BB911</string>
+											<string>63DDBF15113A9938002BB911</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -523,9 +521,9 @@
 			</array>
 			<key>TableOfContents</key>
 			<array>
-				<string>63DDBCA71139E188002BB911</string>
+				<string>63DDBF17113A9938002BB911</string>
 				<string>1CE0B1FE06471DED0097A5F4</string>
-				<string>63DDBCA81139E188002BB911</string>
+				<string>63DDBF18113A9938002BB911</string>
 				<string>1CE0B20306471E060097A5F4</string>
 				<string>1CE0B20306471E060097A5F4</string>
 				<string>1CE0B20306471E060097A5F4</string>
@@ -683,12 +681,6 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
-		<string>63DDBF00113A9767002BB911</string>
-		<string>6370F6A6101F311E000BD869</string>
-		<string>63DDBCB61139E1A3002BB911</string>
-		<string>63DDBCB71139E1A3002BB911</string>
-		<string>1C78EAAD065D492600B07095</string>
-		<string>1CD10A99069EF8BA00B06720</string>
 		<string>632D9674101BB4BA0055F5C2</string>
 		<string>/Users/everzet/Devel/desktop/mac/Latte/Latte.xcodeproj</string>
 	</array>
@@ -714,7 +706,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CD0528F0623707200166675</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>QuickEntryController.m</string>
+								<string></string>
 								<key>StatusBarVisibility</key>
 								<true/>
 							</dict>
@@ -731,8 +723,6 @@
 							<string>218pt</string>
 						</dict>
 						<dict>
-							<key>BecomeActive</key>
-							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
@@ -772,7 +762,7 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>632D9674101BB4BA0055F5C2</string>
-				<string>63DDBCA91139E188002BB911</string>
+				<string>63DDBF19113A9938002BB911</string>
 				<string>1CD0528F0623707200166675</string>
 				<string>XCMainBuildResultsModuleGUID</string>
 			</array>
