@@ -1,23 +1,24 @@
 #import <Cocoa/Cocoa.h>
 
-#import "ltListProxy.h"
-#import "ltTaskProxy.h"
-
+// RTM library
 #import "LTRtmApiKeys.h"
 #import "EZMilk.h"
-#import "LTRtmListSync.h"
-#import "LTRtmTaskSync.h"
 
+// Interface libraries
 #import "LRFilterBar.h"
 #import "TaskCell.h"
 
+// Controllers
 #import "PreferencesController.h"
 #import "QuickEntryController.h"
 
-// SQLite objects
+// Models
 #import "SQLiteInstanceManager.h"
 #import "Task.h"
 
+// 2REMOVE
+#import "ltListProxy.h"
+#import "ltTaskProxy.h"
 
 @interface AppController : NSWindowController {
   IBOutlet LRFilterBar* filter;
