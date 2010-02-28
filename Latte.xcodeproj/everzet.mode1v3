@@ -274,15 +274,14 @@
 								<string>6396D0E61139C4B100255A29</string>
 								<string>6396D14F1139C57800255A29</string>
 								<string>6396D16D1139C5C300255A29</string>
-								<string>6396D17A1139C5C300255A29</string>
 								<string>63DDBF9A113AA1B8002BB911</string>
 								<string>1C37FABC05509CD000000102</string>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>13</integer>
-									<integer>11</integer>
+									<integer>25</integer>
+									<integer>18</integer>
 									<integer>1</integer>
 									<integer>0</integer>
 								</array>
@@ -415,7 +414,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>EZMilk.m</string>
+								<string>TaskTableCell.m</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -423,11 +422,11 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>EZMilk.m</string>
+										<string>TaskTableCell.m</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>63B61B61113AAC030017D0F1</string>
+										<string>63B61BB6113AAE7A0017D0F1</string>
 										<key>history</key>
 										<array>
 											<string>639ECAFD101CDA4900CD9EC7</string>
@@ -446,21 +445,23 @@
 											<string>63DDBF6F113A9F34002BB911</string>
 											<string>63DDBFC5113AA38C002BB911</string>
 											<string>63DDBFC6113AA38C002BB911</string>
-											<string>63DDBFCA113AA38C002BB911</string>
-											<string>63DDBFCC113AA38C002BB911</string>
-											<string>63DDBFDB113AA407002BB911</string>
-											<string>63DDBFEB113AA45C002BB911</string>
-											<string>63DDBFFE113AAAC2002BB911</string>
-											<string>63DDBFFF113AAAC2002BB911</string>
-											<string>63DDC000113AAAC2002BB911</string>
-											<string>63DDC001113AAAC2002BB911</string>
-											<string>63DDC002113AAAC2002BB911</string>
-											<string>63DDC003113AAAC2002BB911</string>
-											<string>63DDC009113AAAEC002BB911</string>
-											<string>63B61B4E113AAB1C0017D0F1</string>
-											<string>63B61B4F113AAB1C0017D0F1</string>
-											<string>63B61B5C113AABC40017D0F1</string>
-											<string>63B61B5D113AABC40017D0F1</string>
+											<string>63B61BA5113AAE7A0017D0F1</string>
+											<string>63B61BA6113AAE7A0017D0F1</string>
+											<string>63B61BA7113AAE7A0017D0F1</string>
+											<string>63B61BA8113AAE7A0017D0F1</string>
+											<string>63B61BA9113AAE7A0017D0F1</string>
+											<string>63B61BAA113AAE7A0017D0F1</string>
+											<string>63B61BAB113AAE7A0017D0F1</string>
+											<string>63B61BAC113AAE7A0017D0F1</string>
+											<string>63B61BAD113AAE7A0017D0F1</string>
+											<string>63B61BAE113AAE7A0017D0F1</string>
+											<string>63B61BAF113AAE7A0017D0F1</string>
+											<string>63B61BB0113AAE7A0017D0F1</string>
+											<string>63B61BB1113AAE7A0017D0F1</string>
+											<string>63B61BB2113AAE7A0017D0F1</string>
+											<string>63B61BB3113AAE7A0017D0F1</string>
+											<string>63B61BB4113AAE7A0017D0F1</string>
+											<string>63B61BB5113AAE7A0017D0F1</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -520,9 +521,9 @@
 			</array>
 			<key>TableOfContents</key>
 			<array>
-				<string>63B61B52113AAB1C0017D0F1</string>
+				<string>63B61B7F113AADA80017D0F1</string>
 				<string>1CE0B1FE06471DED0097A5F4</string>
-				<string>63B61B53113AAB1C0017D0F1</string>
+				<string>63B61B80113AADA80017D0F1</string>
 				<string>1CE0B20306471E060097A5F4</string>
 				<string>1CE0B20306471E060097A5F4</string>
 				<string>1CE0B20306471E060097A5F4</string>
@@ -680,9 +681,9 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
-		<string>63B61B69113AAC030017D0F1</string>
-		<string>63B61B6A113AAC030017D0F1</string>
-		<string>63B61B6B113AAC030017D0F1</string>
+		<string>6370F6A6101F311E000BD869</string>
+		<string>63B61B8A113AADA80017D0F1</string>
+		<string>63B61B8B113AADA80017D0F1</string>
 		<string>1C78EAAD065D492600B07095</string>
 		<string>1CD10A99069EF8BA00B06720</string>
 		<string>632D9674101BB4BA0055F5C2</string>
@@ -710,7 +711,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CD0528F0623707200166675</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>EZMilk.m</string>
+								<string></string>
 								<key>StatusBarVisibility</key>
 								<true/>
 							</dict>
@@ -727,8 +728,6 @@
 							<string>218pt</string>
 						</dict>
 						<dict>
-							<key>BecomeActive</key>
-							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
@@ -768,7 +767,7 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>632D9674101BB4BA0055F5C2</string>
-				<string>63B61B54113AAB1C0017D0F1</string>
+				<string>63B61B81113AADA80017D0F1</string>
 				<string>1CD0528F0623707200166675</string>
 				<string>XCMainBuildResultsModuleGUID</string>
 			</array>
@@ -888,13 +887,13 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>1CD10A99069EF8BA00B06720</string>
-				<string>63B61B62113AAC030017D0F1</string>
+				<string>63B61B82113AADA80017D0F1</string>
 				<string>1C162984064C10D400B95A72</string>
-				<string>63B61B63113AAC030017D0F1</string>
-				<string>63B61B64113AAC030017D0F1</string>
-				<string>63B61B65113AAC030017D0F1</string>
-				<string>63B61B66113AAC030017D0F1</string>
-				<string>63B61B67113AAC030017D0F1</string>
+				<string>63B61B83113AADA80017D0F1</string>
+				<string>63B61B84113AADA80017D0F1</string>
+				<string>63B61B85113AADA80017D0F1</string>
+				<string>63B61B86113AADA80017D0F1</string>
+				<string>63B61B87113AADA80017D0F1</string>
 			</array>
 			<key>ToolbarConfiguration</key>
 			<string>xcode.toolbar.config.debugV3</string>
@@ -1048,7 +1047,7 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>1C78EAAD065D492600B07095</string>
-				<string>63B61B68113AAC030017D0F1</string>
+				<string>63B61B88113AADA80017D0F1</string>
 				<string>1C78EAAC065D492600B07095</string>
 			</array>
 			<key>ToolbarConfiguration</key>
@@ -1551,7 +1550,7 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>6370F6A6101F311E000BD869</string>
-				<string>63DDBF7B113A9FC2002BB911</string>
+				<string>63B61B93113AADCF0017D0F1</string>
 				<string>6370F6A5101F311E000BD869</string>
 			</array>
 			<key>WindowString</key>
