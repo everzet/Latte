@@ -176,6 +176,8 @@
 			63DDBF72113A9F34002BB911 /* PBXTextBookmark */ = 63DDBF72113A9F34002BB911 /* PBXTextBookmark */;
 			63DDBF73113A9F34002BB911 /* PBXTextBookmark */ = 63DDBF73113A9F34002BB911 /* PBXTextBookmark */;
 			63DDBF74113A9F34002BB911 /* PBXTextBookmark */ = 63DDBF74113A9F34002BB911 /* PBXTextBookmark */;
+			63DDBF7A113A9FC2002BB911 /* PBXTextBookmark */ = 63DDBF7A113A9FC2002BB911 /* PBXTextBookmark */;
+			63DDBF83113A9FD8002BB911 /* PBXTextBookmark */ = 63DDBF83113A9FD8002BB911 /* PBXTextBookmark */;
 			63DEC2031024BD3700553EDC = 63DEC2031024BD3700553EDC /* PBXTextBookmark */;
 			63E5E9AD10A49DD9005C14A3 = 63E5E9AD10A49DD9005C14A3 /* PBXTextBookmark */;
 		};
@@ -469,9 +471,9 @@
 	};
 	6396D1501139C57800255A29 /* AppController.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {951, 693}}";
-			sepNavSelRange = "{297, 0}";
-			sepNavVisRange = "{0, 1277}";
+			sepNavIntBoundsRect = "{{0, 0}, {951, 715}}";
+			sepNavSelRange = "{831, 0}";
+			sepNavVisRange = "{0, 1356}";
 			sepNavWindowFrame = "{{15, 191}, {1236, 582}}";
 		};
 	};
@@ -960,7 +962,7 @@
 		fRef = 6396D1501139C57800255A29 /* AppController.h */;
 		name = "AppController.h: 35";
 		rLen = 0;
-		rLoc = 736;
+		rLoc = 886;
 		rType = 0;
 		vrLen = 0;
 		vrLoc = 0;
@@ -970,7 +972,7 @@
 		fRef = 6396D1511139C57800255A29 /* AppController.m */;
 		name = "AppController.m: 185";
 		rLen = 0;
-		rLoc = 4903;
+		rLoc = 247;
 		rType = 0;
 		vrLen = 0;
 		vrLoc = 0;
@@ -1078,7 +1080,7 @@
 		fRef = 6396D1511139C57800255A29 /* AppController.m */;
 		name = "AppController.m: 34";
 		rLen = 0;
-		rLoc = 912;
+		rLoc = 247;
 		rType = 0;
 		vrLen = 1852;
 		vrLoc = 0;
@@ -1101,6 +1103,26 @@
 		rLoc = 297;
 		rType = 0;
 		vrLen = 1277;
+		vrLoc = 0;
+	};
+	63DDBF7A113A9FC2002BB911 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 6396D1501139C57800255A29 /* AppController.h */;
+		name = "AppController.h: 35";
+		rLen = 3;
+		rLoc = 831;
+		rType = 0;
+		vrLen = 1392;
+		vrLoc = 0;
+	};
+	63DDBF83113A9FD8002BB911 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 6396D1501139C57800255A29 /* AppController.h */;
+		name = "AppController.h: 35";
+		rLen = 0;
+		rLoc = 831;
+		rType = 0;
+		vrLen = 1356;
 		vrLoc = 0;
 	};
 	63DEC2031024BD3700553EDC /* PBXTextBookmark */ = {

@@ -17,20 +17,23 @@
 #import "Task.h"
 
 @interface AppController : NSWindowController {
-  IBOutlet LRFilterBar* filter;
-  IBOutlet NSTableView* tableView;
-  IBOutlet NSPopUpButton* listView;
+  IBOutlet LRFilterBar*         filter;
+  IBOutlet NSTableView*         tableView;
+  IBOutlet NSPopUpButton*       listView;
   IBOutlet NSProgressIndicator* progress;
-  IBOutlet NSWindow* aboutWindow;
+  IBOutlet NSWindow*            aboutWindow;
 
-  IBOutlet NSMutableArray* lists;
-  IBOutlet NSMutableArray* tasks;
+  // Data arrays
+  IBOutlet NSMutableArray*      lists;
+  IBOutlet NSMutableArray*      tasks;
 
-  QuickEntryController* quickEntryController;
-  PreferencesController* preferencesController;
+  // Controllers
+  QuickEntryController*         quickEntryController;
+  PreferencesController*        preferencesController;
 
-  EZMilk* rtm;
-  Preferences* preferences;
+  // Singletons
+  EZMilk*                       rtmApi;
+  Preferences*                  preferences;
 }
 
 - (void)initFilter;

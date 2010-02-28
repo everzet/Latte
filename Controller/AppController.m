@@ -12,7 +12,7 @@
   preferences = [[Preferences alloc] init];
 
   // Setup RTM connector
-  rtm = [[EZMilk alloc] initWithApiKey:[LTRtmApiKeys apiKey]
+  rtmApi = [[EZMilk alloc] initWithApiKey:[LTRtmApiKeys apiKey]
                           andApiSecret:[LTRtmApiKeys apiSecret]];
 
   // Setup DB & retrieve data
@@ -63,7 +63,7 @@
   [preferencesController release];
 
   [preferences release];
-  [rtm release];
+  [rtmApi release];
 
   [super dealloc];
 }
@@ -236,12 +236,12 @@
   while (true)
   {
     NSAutoreleasePool* pool = [[NSAutoreleasePool alloc] init];
-    [rtm setToken:[preferences rtmToken]];
+    [rtmApi setToken:[preferences rtmToken]];
 
-    if ([rtm token])
+    if ([rtmApi token])
     {
       [self performSelectorOnMainThread:@selector(syncWillStart:) withObject:self waitUntilDone:NO];
-      [self syncWithRtm:rtm];
+      [self syncWithRtm:rtmApi];
       [self performSelectorOnMainThread:@selector(syncDidFinish:) withObject:self waitUntilDone:NO];
     }
 
