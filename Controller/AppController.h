@@ -1,20 +1,20 @@
 #import <Cocoa/Cocoa.h>
 
-// RTM library
-#import "LTRtmApiKeys.h"
-#import "EZMilk.h"
+// Controllers
+#import "PreferencesController.h"
+#import "TaskEntryController.h"
+
+// Models
+#import "SQLiteInstanceManager.h"
+#import "Task.h"
 
 // Interface libraries
 #import "LRFilterBar.h"
 #import "TaskTableCell.h"
 
-// Controllers
-#import "PreferencesController.h"
-#import "QuickEntryController.h"
-
-// Models
-#import "SQLiteInstanceManager.h"
-#import "Task.h"
+// RTM library
+#import "RTMKeys.h"
+#import "EZMilk.h"
 
 @interface AppController : NSWindowController {
   IBOutlet LRFilterBar*         filter;
@@ -28,12 +28,12 @@
   IBOutlet NSMutableArray*      tasks;
 
   // Controllers
-  QuickEntryController*         quickEntryController;
+  TaskEntryController*          quickEntryController;
   PreferencesController*        preferencesController;
 
   // Singletons
   EZMilk*                       rtmApi;
-  AppPreferences*                  preferences;
+  AppPreferences*               preferences;
 }
 
 - (void)initFilter;

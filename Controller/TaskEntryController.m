@@ -6,10 +6,10 @@
 //  Copyright 2009 __MyCompanyName__. All rights reserved.
 //
 
-#import "QuickEntryController.h"
+#import "TaskEntryController.h"
 
 
-@implementation QuickEntryController
+@implementation TaskEntryController
 
 @synthesize task;
 @synthesize saveTarget;
@@ -25,7 +25,7 @@
 
 - (id)initWithTask:(Task*)aTask
 {
-  if (!(self = [super initWithWindowNibName:@"QuickEntry"]))
+  if (!(self = [super initWithWindowNibName:@"TaskEntry"]))
   {
     return nil;
   }

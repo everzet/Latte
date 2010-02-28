@@ -7,28 +7,28 @@
 //
 
 #import <Cocoa/Cocoa.h>
+
+// Models
 #import "TaskList.h"
 #import "Task.h"
+
+// Interface libraries
 #import "MAAttachedWindow.h"
 
-@interface QuickEntryController : NSWindowController {
+@interface TaskEntryController : NSWindowController {
   IBOutlet NSArray*       lists;
-
   IBOutlet NSImageView*   background;
-
   IBOutlet NSTextField*   quick;
   IBOutlet NSBox*         fullBox;
   IBOutlet NSButton*      showFull;
-
-  MAAttachedWindow*       datePickerWindow;
   IBOutlet NSView*        datePickerView;
   IBOutlet NSDatePicker*  datePicker;
-
   IBOutlet NSButton*      completed;
   IBOutlet NSTextField*   name;
   IBOutlet NSPopUpButton* priority;
   IBOutlet NSTextField*   due;
   IBOutlet NSPopUpButton* list;
+  MAAttachedWindow*       datePickerWindow;
 
   Task*                   task;
   id                      saveTarget;

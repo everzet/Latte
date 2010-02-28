@@ -17,10 +17,10 @@
 		6395B003102260A900F1E641 /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 6395B002102260A900F1E641 /* libsqlite3.0.dylib */; };
 		6396D0F11139C4B100255A29 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6396D0EC1139C4B100255A29 /* MainMenu.xib */; };
 		6396D0F21139C4B100255A29 /* Preferences.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6396D0ED1139C4B100255A29 /* Preferences.xib */; };
-		6396D0F31139C4B100255A29 /* QuickEntry.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6396D0EE1139C4B100255A29 /* QuickEntry.xib */; };
+		6396D0F31139C4B100255A29 /* TaskEntry.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6396D0EE1139C4B100255A29 /* TaskEntry.xib */; };
 		6396D1561139C57800255A29 /* AppController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6396D1511139C57800255A29 /* AppController.m */; };
 		6396D1571139C57800255A29 /* PreferencesController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6396D1531139C57800255A29 /* PreferencesController.m */; };
-		6396D1581139C57800255A29 /* QuickEntryController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6396D1551139C57800255A29 /* QuickEntryController.m */; };
+		6396D1581139C57800255A29 /* TaskEntryController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6396D1551139C57800255A29 /* TaskEntryController.m */; };
 		6396D1A21139C5C300255A29 /* TaskTableCellGradient.m in Sources */ = {isa = PBXBuildFile; fileRef = 6396D16F1139C5C300255A29 /* TaskTableCellGradient.m */; };
 		6396D1A31139C5C300255A29 /* AppPreferences.m in Sources */ = {isa = PBXBuildFile; fileRef = 6396D1711139C5C300255A29 /* AppPreferences.m */; };
 		6396D1A71139C5C300255A29 /* TaskTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6396D1791139C5C300255A29 /* TaskTableCell.m */; };
@@ -61,7 +61,7 @@
 		63DDBDBC113A032D002BB911 /* UIImage-SQLitePersistence.m in Sources */ = {isa = PBXBuildFile; fileRef = 63DDBDAC113A032D002BB911 /* UIImage-SQLitePersistence.m */; };
 		63DDBDCD113A7CAE002BB911 /* TaskList.m in Sources */ = {isa = PBXBuildFile; fileRef = 63DDBDCC113A7CAE002BB911 /* TaskList.m */; };
 		63DDBDF7113A8436002BB911 /* Task.m in Sources */ = {isa = PBXBuildFile; fileRef = 63DDBDF6113A8436002BB911 /* Task.m */; };
-		63DDBF9D113AA1B8002BB911 /* LTRtmApiKeys.m in Sources */ = {isa = PBXBuildFile; fileRef = 63DDBF9C113AA1B8002BB911 /* LTRtmApiKeys.m */; };
+		63DDBF9D113AA1B8002BB911 /* RTMKeys.m in Sources */ = {isa = PBXBuildFile; fileRef = 63DDBF9C113AA1B8002BB911 /* RTMKeys.m */; };
 		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
 		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
@@ -98,13 +98,13 @@
 		6395B002102260A900F1E641 /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
 		6396D0EC1139C4B100255A29 /* MainMenu.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainMenu.xib; sourceTree = "<group>"; };
 		6396D0ED1139C4B100255A29 /* Preferences.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Preferences.xib; sourceTree = "<group>"; };
-		6396D0EE1139C4B100255A29 /* QuickEntry.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QuickEntry.xib; sourceTree = "<group>"; };
+		6396D0EE1139C4B100255A29 /* TaskEntry.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TaskEntry.xib; sourceTree = "<group>"; };
 		6396D1501139C57800255A29 /* AppController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppController.h; sourceTree = "<group>"; };
 		6396D1511139C57800255A29 /* AppController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppController.m; sourceTree = "<group>"; };
 		6396D1521139C57800255A29 /* PreferencesController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PreferencesController.h; sourceTree = "<group>"; };
 		6396D1531139C57800255A29 /* PreferencesController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PreferencesController.m; sourceTree = "<group>"; };
-		6396D1541139C57800255A29 /* QuickEntryController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuickEntryController.h; sourceTree = "<group>"; };
-		6396D1551139C57800255A29 /* QuickEntryController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuickEntryController.m; sourceTree = "<group>"; };
+		6396D1541139C57800255A29 /* TaskEntryController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TaskEntryController.h; sourceTree = "<group>"; };
+		6396D1551139C57800255A29 /* TaskEntryController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TaskEntryController.m; sourceTree = "<group>"; };
 		6396D16E1139C5C300255A29 /* TaskTableCellGradient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TaskTableCellGradient.h; sourceTree = "<group>"; };
 		6396D16F1139C5C300255A29 /* TaskTableCellGradient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TaskTableCellGradient.m; sourceTree = "<group>"; };
 		6396D1701139C5C300255A29 /* AppPreferences.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppPreferences.h; sourceTree = "<group>"; };
@@ -181,8 +181,8 @@
 		63DDBDCC113A7CAE002BB911 /* TaskList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TaskList.m; sourceTree = "<group>"; };
 		63DDBDF5113A8436002BB911 /* Task.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Task.h; sourceTree = "<group>"; };
 		63DDBDF6113A8436002BB911 /* Task.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Task.m; sourceTree = "<group>"; };
-		63DDBF9B113AA1B8002BB911 /* LTRtmApiKeys.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTRtmApiKeys.h; sourceTree = "<group>"; };
-		63DDBF9C113AA1B8002BB911 /* LTRtmApiKeys.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LTRtmApiKeys.m; sourceTree = "<group>"; };
+		63DDBF9B113AA1B8002BB911 /* RTMKeys.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RTMKeys.h; sourceTree = "<group>"; };
+		63DDBF9C113AA1B8002BB911 /* RTMKeys.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RTMKeys.m; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8D1107320486CEB800E47090 /* Latte.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Latte.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -313,7 +313,7 @@
 			children = (
 				6396D0EC1139C4B100255A29 /* MainMenu.xib */,
 				6396D0ED1139C4B100255A29 /* Preferences.xib */,
-				6396D0EE1139C4B100255A29 /* QuickEntry.xib */,
+				6396D0EE1139C4B100255A29 /* TaskEntry.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -325,8 +325,8 @@
 				6396D1511139C57800255A29 /* AppController.m */,
 				6396D1521139C57800255A29 /* PreferencesController.h */,
 				6396D1531139C57800255A29 /* PreferencesController.m */,
-				6396D1541139C57800255A29 /* QuickEntryController.h */,
-				6396D1551139C57800255A29 /* QuickEntryController.m */,
+				6396D1541139C57800255A29 /* TaskEntryController.h */,
+				6396D1551139C57800255A29 /* TaskEntryController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -467,8 +467,8 @@
 		63DDBF9A113AA1B8002BB911 /* Keys */ = {
 			isa = PBXGroup;
 			children = (
-				63DDBF9B113AA1B8002BB911 /* LTRtmApiKeys.h */,
-				63DDBF9C113AA1B8002BB911 /* LTRtmApiKeys.m */,
+				63DDBF9B113AA1B8002BB911 /* RTMKeys.h */,
+				63DDBF9C113AA1B8002BB911 /* RTMKeys.m */,
 			);
 			path = Keys;
 			sourceTree = "<group>";
@@ -529,7 +529,7 @@
 				63CD529B104AA881005BE106 /* entry-full.png in Resources */,
 				6396D0F11139C4B100255A29 /* MainMenu.xib in Resources */,
 				6396D0F21139C4B100255A29 /* Preferences.xib in Resources */,
-				6396D0F31139C4B100255A29 /* QuickEntry.xib in Resources */,
+				6396D0F31139C4B100255A29 /* TaskEntry.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -543,7 +543,7 @@
 				8D11072D0486CEB800E47090 /* main.m in Sources */,
 				6396D1561139C57800255A29 /* AppController.m in Sources */,
 				6396D1571139C57800255A29 /* PreferencesController.m in Sources */,
-				6396D1581139C57800255A29 /* QuickEntryController.m in Sources */,
+				6396D1581139C57800255A29 /* TaskEntryController.m in Sources */,
 				6396D1A21139C5C300255A29 /* TaskTableCellGradient.m in Sources */,
 				6396D1A31139C5C300255A29 /* AppPreferences.m in Sources */,
 				6396D1A71139C5C300255A29 /* TaskTableCell.m in Sources */,
@@ -580,7 +580,7 @@
 				63DDBDBC113A032D002BB911 /* UIImage-SQLitePersistence.m in Sources */,
 				63DDBDCD113A7CAE002BB911 /* TaskList.m in Sources */,
 				63DDBDF7113A8436002BB911 /* Task.m in Sources */,
-				63DDBF9D113AA1B8002BB911 /* LTRtmApiKeys.m in Sources */,
+				63DDBF9D113AA1B8002BB911 /* RTMKeys.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

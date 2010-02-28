@@ -8,9 +8,10 @@
 
 #import <Cocoa/Cocoa.h>
 #import "AppPreferences.h"
-#import "LTRtmApiKeys.h"
-#import "EZMilk.h"
 
+// RTM library
+#import "RTMKeys.h"
+#import "EZMilk.h"
 
 @interface PreferencesController : NSWindowController {
   IBOutlet NSTabView*   tabView;

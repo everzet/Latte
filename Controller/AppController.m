@@ -201,7 +201,7 @@
   {
     [quickEntryController release];
   }
-  quickEntryController = [[QuickEntryController alloc] initWithTask:aTask];
+  quickEntryController = [[TaskEntryController alloc] initWithTask:aTask];
   [quickEntryController setSaveTarget:self];
   [quickEntryController setSaveAction:@selector(saveTaskFromEntry:)];
   [quickEntryController showWindow: self];
