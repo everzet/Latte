@@ -550,6 +550,13 @@
 			sepNavVisRange = "{0, 448}";
 		};
 	};
+	6396D0C91139C3E500255A29 /* ltTaskItem.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {951, 647}}";
+			sepNavSelRange = "{486, 0}";
+			sepNavVisRange = "{0, 1105}";
+		};
+	};
 	6396D0CC1139C3E500255A29 /* ltTaskProxy.m */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {951, 1254}}";
@@ -560,8 +567,8 @@
 	6396D1501139C57800255A29 /* LTAppController.h */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {951, 649}}";
-			sepNavSelRange = "{590, 0}";
-			sepNavVisRange = "{0, 1347}";
+			sepNavSelRange = "{757, 0}";
+			sepNavVisRange = "{0, 1352}";
 		};
 	};
 	6396D1511139C57800255A29 /* LTAppController.m */ = {

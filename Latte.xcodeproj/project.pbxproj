@@ -53,8 +53,6 @@
 		63CD529B104AA881005BE106 /* entry-full.png in Resources */ = {isa = PBXBuildFile; fileRef = 63CD5299104AA881005BE106 /* entry-full.png */; };
 		63DDBC7F1139E16F002BB911 /* BGHUDAppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63DDBC7E1139E16F002BB911 /* BGHUDAppKit.framework */; };
 		63DDBCCB1139E303002BB911 /* BGHUDAppKit.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 63DDBC7E1139E16F002BB911 /* BGHUDAppKit.framework */; };
-		63DDBCE91139E606002BB911 /* ActiveRecord.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63DDBCE81139E606002BB911 /* ActiveRecord.framework */; };
-		63DDBD0C1139E625002BB911 /* ActiveRecord.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 63DDBCE81139E606002BB911 /* ActiveRecord.framework */; };
 		63DDBDAD113A032D002BB911 /* NSData-SQLitePersistence.m in Sources */ = {isa = PBXBuildFile; fileRef = 63DDBD8E113A032D002BB911 /* NSData-SQLitePersistence.m */; };
 		63DDBDAE113A032D002BB911 /* NSDate-SQLitePersistence.m in Sources */ = {isa = PBXBuildFile; fileRef = 63DDBD90113A032D002BB911 /* NSDate-SQLitePersistence.m */; };
 		63DDBDAF113A032D002BB911 /* NSMutableArray-MultipleSort.m in Sources */ = {isa = PBXBuildFile; fileRef = 63DDBD92113A032D002BB911 /* NSMutableArray-MultipleSort.m */; };
@@ -84,7 +82,6 @@
 			dstSubfolderSpec = 10;
 			files = (
 				63DDBCCB1139E303002BB911 /* BGHUDAppKit.framework in CopyFiles */,
-				63DDBD0C1139E625002BB911 /* ActiveRecord.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -173,7 +170,6 @@
 		63CD5298104AA880005BE106 /* entry-quick.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "entry-quick.png"; sourceTree = "<group>"; };
 		63CD5299104AA881005BE106 /* entry-full.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "entry-full.png"; sourceTree = "<group>"; };
 		63DDBC7E1139E16F002BB911 /* BGHUDAppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BGHUDAppKit.framework; path = Lib/Vendor/BGHUDAppKit.framework; sourceTree = "<group>"; };
-		63DDBCE81139E606002BB911 /* ActiveRecord.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ActiveRecord.framework; path = Lib/Vendor/ActiveRecord.framework; sourceTree = "<group>"; };
 		63DDBD8D113A032D002BB911 /* NSData-SQLitePersistence.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData-SQLitePersistence.h"; sourceTree = "<group>"; };
 		63DDBD8E113A032D002BB911 /* NSData-SQLitePersistence.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData-SQLitePersistence.m"; sourceTree = "<group>"; };
 		63DDBD8F113A032D002BB911 /* NSDate-SQLitePersistence.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate-SQLitePersistence.h"; sourceTree = "<group>"; };
@@ -218,7 +214,6 @@
 				8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */,
 				6395B003102260A900F1E641 /* libsqlite3.0.dylib in Frameworks */,
 				63DDBC7F1139E16F002BB911 /* BGHUDAppKit.framework in Frameworks */,
-				63DDBCE91139E606002BB911 /* ActiveRecord.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -250,7 +245,6 @@
 			isa = PBXGroup;
 			children = (
 				63DDBC7E1139E16F002BB911 /* BGHUDAppKit.framework */,
-				63DDBCE81139E606002BB911 /* ActiveRecord.framework */,
 				6395B002102260A900F1E641 /* libsqlite3.0.dylib */,
 				29B97324FDCFA39411CA2CEA /* AppKit.framework */,
 				13E42FB307B3F0F600E4EEF1 /* CoreData.framework */,
