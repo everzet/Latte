@@ -16,10 +16,6 @@
 #import "SQLiteInstanceManager.h"
 #import "Task.h"
 
-// 2REMOVE
-#import "ltListProxy.h"
-#import "ltTaskProxy.h"
-
 @interface AppController : NSWindowController {
   IBOutlet LRFilterBar* filter;
   IBOutlet NSTableView* tableView;
@@ -33,10 +29,13 @@
   QuickEntryController* quickEntryController;
   PreferencesController* preferencesController;
 
-  EZSQLite* sqlite;
   EZMilk* rtm;
   Preferences* preferences;
 }
+
+- (void)initFilter;
+- (void)initTable;
+- (void)initDatabase;
 
 - (void)reloadTasks;
 - (void)reloadTasksWithSelection:(BOOL)withSelection;
@@ -47,7 +46,7 @@
 
 - (IBAction)quickEntryAdd:(id)sender;
 - (IBAction)quickEntryEdit:(id)sender;
-- (void)quickEntryEditTask:(ltTaskItem*)aTask;
+- (void)quickEntryEditTask:(Task*)aTask;
 
 - (IBAction)selectList:(id)sender;
 - (void)selectFilter:(id)sender;

@@ -4,52 +4,57 @@
 
 - (void)awakeFromNib
 {
-  // Configuring filter buttons
+  // Interface setup
+  [self initFilter];
+  [self initTable];
+
+  // Preferences controller
+  preferences = [[Preferences alloc] init];
+
+  // Setup RTM connector
+  rtm = [[EZMilk alloc] initWithApiKey:[LTRtmApiKeys apiKey]
+                          andApiSecret:[LTRtmApiKeys apiSecret]];
+
+  // Setup DB & retrieve data
+  [self initDatabase];
+  [self reloadLists];
+  [self reloadTasks];
+
+  [NSThread detachNewThreadSelector:@selector(runSyncLoop:) toTarget:self withObject:self];
+}
+
+- (void)initFilter
+{
   NSArray *filterButtons = [[NSArray alloc] initWithObjects: @"All", @"Pending", @"Complete", nil];
   [filter setGrayBackground];
   [filter setRegularFontWeight];
   [filter addItemsWithTitles:filterButtons withSelector:@selector(selectFilter:) withTarget:self];
   [filter selectIndex:0 inSegment:0];
   [filterButtons release];
+}
 
+- (void)initTable
+{
   // Setting self as tableView target & sets the reciever of double click action to quickEntryEdit: action
   [tableView setTarget:self];
   [tableView setDoubleAction:@selector(quickEntryEdit:)];
-
+  
   // Inserting self in NSResponder chain right after the tableView & before the tableView's responder
   [self setNextResponder:[tableView nextResponder]];
   [tableView setNextResponder:self];
+}
 
-  // Preferences controller
-  preferences = [[Preferences alloc] init];
+- (void)initDatabase
+{
+  NSArray   *appSupportPath = NSSearchPathForDirectoriesInDomains(NSApplicationSupportDirectory, NSUserDomainMask, YES);
+  NSString  *databasePath = [[[appSupportPath objectAtIndex: 0] 
+                              stringByAppendingPathComponent: @"Latte"]
+                             stringByAppendingPathComponent: @"tasks.db"];
+  [[SQLiteInstanceManager sharedManager] setDatabaseFilepath:databasePath];
 
-  // Registering/creating database file
-  NSArray   *appSupportPath       = NSSearchPathForDirectoriesInDomains(NSApplicationSupportDirectory, NSUserDomainMask, YES);
-
-
-  // DATABASE
-  [[SQLiteInstanceManager sharedManager] setDatabaseFilepath:[[[appSupportPath objectAtIndex: 0] 
-                                                               stringByAppendingPathComponent: @"Latte"]
-                                                              stringByAppendingPathComponent: @"latte.sqlite"]];
-
-  
-  NSString  *databasePath         = [[[appSupportPath objectAtIndex: 0] 
-                                     stringByAppendingPathComponent: @"Latte"]
-                                     stringByAppendingPathComponent: @"lattedb.sqlite"];
-  NSString  *databasePathFromApp  = [[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent:@"lattedb.sqlite"];
-  NSFileManager *fileManager = [NSFileManager defaultManager];
-  if (![fileManager fileExistsAtPath:databasePath])
-  {
-    [fileManager createDirectoryAtPath:[databasePath stringByDeletingLastPathComponent] withIntermediateDirectories:true attributes:nil error:nil];
-    [fileManager copyItemAtPath:databasePathFromApp toPath:databasePath error:nil];
-  }
-  sqlite = [[EZSQLite alloc] initWithDatabase:databasePath];
-  rtm = [[EZMilk alloc] initWithApiKey:[LTRtmApiKeys apiKey] andApiSecret:[LTRtmApiKeys apiSecret]];
-
-  [self reloadLists];
-  [self reloadTasks];
-
-  [NSThread detachNewThreadSelector:@selector(runSyncLoop:) toTarget:self withObject:self];
+  //TaskList* list = [[TaskList alloc] init];
+  //list.name = @"Inbox";
+  //[list save];
 }
 
 - (void)dealloc
@@ -59,7 +64,6 @@
 
   [preferences release];
   [rtm release];
-  [sqlite release];
 
   [super dealloc];
 }
@@ -68,14 +72,9 @@
 {
   int selectedList = [listView indexOfSelectedItem];
   NSMutableArray* listArray = [self mutableArrayValueForKey:@"lists"];
+
   [listArray removeAllObjects];
-
-  ltListItem* list = [[ltListItem alloc] init];
-  [list setName:@"all tasks"];
-  [listArray addObject:list];
-  [list release];
-
-  [listArray addObjectsFromArray:[ltListProxy lists]];
+  [listArray addObjectsFromArray:[TaskList allObjects]];
 
   if (selectedList >= 0)
   {
@@ -93,7 +92,7 @@
   NSIndexSet* selectedTasks = [tableView selectedRowIndexes];
   NSRect scrollRect = [tableView visibleRect];
 
-  ltListItem* list = nil;
+  TaskList* list = nil;
   NSNumber* completed = nil;
 
   if ([listView indexOfSelectedItem] > 0)
@@ -105,7 +104,7 @@
     completed = [NSNumber numberWithInt:[filter getSelectedIndexInSegment:0] - 1];
   }
   [[self mutableArrayValueForKey:@"tasks"] removeAllObjects];
-  [[self mutableArrayValueForKey:@"tasks"] addObjectsFromArray:[ltTaskProxy tasksWithList:list completed:completed]];
+  [[self mutableArrayValueForKey:@"tasks"] addObjectsFromArray:[Task allObjects]];
 
   if (withSelection)
   {
@@ -124,7 +123,7 @@
 
 - (void)keyDown:(NSEvent*)anEvent
 {
-  ltTaskItem* task = nil;
+  Task* task = nil;
   if ([[tableView selectedRowIndexes] count])
   {
     task = [tasks objectAtIndex:[[tableView selectedRowIndexes] firstIndex]];
@@ -136,7 +135,7 @@
     case NSDeleteCharacter:
       if (task)
       {
-        [task delete];
+        [task deleteObject];
         [self reloadTasksWithSelection:YES];
       }
       break;
@@ -179,8 +178,8 @@
 
 - (IBAction)quickEntryAdd:(id)sender
 {
-  ltTaskItem* task = [[ltTaskItem alloc] init];
-  [task setList:[[lists objectAtIndex:[listView indexOfSelectedItem]] dbId]];
+  Task* task = [[Task alloc] init];
+  task.list = [lists objectAtIndex:[listView indexOfSelectedItem]];
   [self quickEntryEditTask:task];
   [task release];
 }
@@ -193,7 +192,7 @@
   }
 }
 
-- (void)quickEntryEditTask:(ltTaskItem*)aTask
+- (void)quickEntryEditTask:(Task*)aTask
 {
   if (quickEntryController)
   {
@@ -217,8 +216,8 @@
 
 - (void)changeTaskCompletionStatus:(id)sender
 {
-  ltTaskItem* task = [tasks objectAtIndex:[[tableView selectedRowIndexes] firstIndex]];
-  [task setCompleted:([task isCompleted] ? nil : [NSDate date])];
+  Task* task = [tasks objectAtIndex:[[tableView selectedRowIndexes] firstIndex]];
+  task.isCompleted = task.isCompleted ? false : true;
   [task save];
   [self reloadTasksWithSelection:YES];
 }

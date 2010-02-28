@@ -7,41 +7,41 @@
 //
 
 #import <Cocoa/Cocoa.h>
-#import "ltListProxy.h"
-#import "ltTaskItem.h"
+#import "TaskList.h"
+#import "Task.h"
 #import "MAAttachedWindow.h"
 
 @interface QuickEntryController : NSWindowController {
-  IBOutlet NSArray* lists;
+  IBOutlet NSArray*       lists;
 
-  IBOutlet NSImageView* background;
+  IBOutlet NSImageView*   background;
 
-  IBOutlet NSTextField* quick;
-  IBOutlet NSBox* fullBox;
-  IBOutlet NSButton* showFull;
+  IBOutlet NSTextField*   quick;
+  IBOutlet NSBox*         fullBox;
+  IBOutlet NSButton*      showFull;
 
-  MAAttachedWindow* datePickerWindow;
-  IBOutlet NSView* datePickerView;
-  IBOutlet NSDatePicker* datePicker;
+  MAAttachedWindow*       datePickerWindow;
+  IBOutlet NSView*        datePickerView;
+  IBOutlet NSDatePicker*  datePicker;
 
-  IBOutlet NSButton *completed;
-  IBOutlet NSTextField* name;
+  IBOutlet NSButton*      completed;
+  IBOutlet NSTextField*   name;
   IBOutlet NSPopUpButton* priority;
-  IBOutlet NSTextField* due;
+  IBOutlet NSTextField*   due;
   IBOutlet NSPopUpButton* list;
 
-  ltTaskItem* task;
+  Task* task;
   id saveTarget;
   SEL saveAction;
 }
 
-@property (retain) ltTaskItem* task;
-@property (retain) id saveTarget;
+@property (retain)Task* task;
+@property (retain)id saveTarget;
 @property SEL saveAction;
 
-- (id)initWithTask:(ltTaskItem*)aTask;
+- (id)initWithTask:(Task*)aTask;
 
-- (void)selectListWithDbId:(NSNumber*)anId;
+- (void)selectListWithPk:(int)pk;
 
 - (IBAction)redrawWindow:(id)sender;
 - (IBAction)datePickerChoose:(id)sender;

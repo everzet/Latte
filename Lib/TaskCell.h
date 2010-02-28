@@ -8,7 +8,7 @@
 
 #import <Cocoa/Cocoa.h>
 #import "TaskGradient.h"
-#import "ltTaskItem.h"
+#import "Task.h"
 
 
 @interface TaskCell : NSTextFieldCell {

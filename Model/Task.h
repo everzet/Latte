@@ -35,4 +35,7 @@
 @property (nonatomic,readwrite)         bool        isCompleted;
 @property (nonatomic,readwrite)         bool        isDeleted;
 
++ (NSArray*)allCompleted:(NSNumber*)isCompleted inList:(TaskList*)list;
+- (NSString*)displayableDue;
+
 @end

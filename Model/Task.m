@@ -25,4 +25,17 @@
   [super dealloc];
 }
 
++ (NSArray*)allCompleted:(NSNumber*)isCompleted inList:(TaskList*)list
+{
+  return [Task findByCriteria:[NSString stringWithFormat:@"WHERE list = %d AND is_completed = %d", list.pk, isCompleted]];
+}
+
+- (NSString*)displayableDue
+{
+  NSDateFormatter* dateFormatter = [[[NSDateFormatter alloc] init] autorelease];
+  [dateFormatter setDateStyle: NSDateFormatterShortStyle];
+
+  return [dateFormatter stringFromDate:dueAt];
+}
+
 @end
