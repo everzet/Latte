@@ -35,7 +35,7 @@
   [self initTable];
 
   // Setup EZMilk & AppPreferences lib
-  rtmApi = [[EZMilk alloc] initWithApiKey:[RTMKeys apiKey]
+  rtmService = [[EZMilk alloc] initWithApiKey:[RTMKeys apiKey]
                              andApiSecret:[RTMKeys apiSecret]];
   prefHolder = [[AppPreferences alloc] init];
 
@@ -87,7 +87,7 @@
   [preferencesController release];
 
   [prefHolder release];
-  [rtmApi release];
+  [rtmService release];
 
   [super dealloc];
 }
@@ -200,7 +200,7 @@
     [preferencesController release];
   }
   preferencesController = [[PreferencesController alloc] initWithPreferences: prefHolder
-                                                             andRtmConnector: rtmApi];
+                                                             andRtmConnector: rtmService];
   [preferencesController showWindow:self];
 }
 
@@ -261,12 +261,12 @@
   while (true)
   {
     NSAutoreleasePool* pool = [[NSAutoreleasePool alloc] init];
-    [rtmApi setToken:[prefHolder rtmToken]];
+    [rtmService setToken:[prefHolder rtmToken]];
 
-    if ([rtmApi token])
+    if ([rtmService token])
     {
       [self performSelectorOnMainThread:@selector(syncWillStart:) withObject:self waitUntilDone:NO];
-      [self syncWithRtm:rtmApi];
+      [self syncWithRtm:rtmService];
       [self performSelectorOnMainThread:@selector(syncDidFinish:) withObject:self waitUntilDone:NO];
     }
 

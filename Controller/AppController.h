@@ -58,7 +58,7 @@
   PreferencesController*        preferencesController;
 
   // Libs
-  EZMilk*                       rtmApi;
+  EZMilk*                       rtmService;
   AppPreferences*               prefHolder;
 }
 

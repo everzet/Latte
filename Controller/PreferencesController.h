@@ -42,7 +42,7 @@
 
   // AppPreferences & EZMilk libs
   AppPreferences*       prefHolder;
-  EZMilk*               rtmApi;
+  EZMilk*               rtmService;
 
   // RTM FROB string
   NSString*             frob;

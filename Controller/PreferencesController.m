@@ -34,7 +34,7 @@
 - (id)initWithPreferences:(AppPreferences*)aPref andRtmConnector:(EZMilk*)anRtmApi
 {
   prefHolder = aPref;
-  rtmApi = anRtmApi;
+  rtmService = anRtmApi;
 
   return [self init];
 }
@@ -105,11 +105,11 @@
 
 - (IBAction)connectToRtmStepOne:(id)sender
 {
-  NSString* aFrob = [rtmApi frob];
+  NSString* aFrob = [rtmService frob];
   if (aFrob)
   {
     [self setFrob:aFrob];
-    system([[NSString stringWithFormat:@"open '%@'", [rtmApi authUrlForPerms:@"delete" withFrob:frob]] UTF8String]);
+    system([[NSString stringWithFormat:@"open '%@'", [rtmService authUrlForPerms:@"delete" withFrob:frob]] UTF8String]);
   }
 
   [self rtmShow:self];
@@ -119,7 +119,7 @@
 {
   if (frob)
   {
-    NSString* token = [rtmApi tokenWithFrob:frob];
+    NSString* token = [rtmService tokenWithFrob:frob];
     if (token)
     {
       [prefHolder setRtmToken:token];
