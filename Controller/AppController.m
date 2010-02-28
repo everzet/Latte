@@ -25,8 +25,8 @@
 
   // Registering/creating database file
   NSArray   *appSupportPath       = NSSearchPathForDirectoriesInDomains(NSApplicationSupportDirectory, NSUserDomainMask, YES);
-  
-  
+
+
   // DATABASE
   [[SQLiteInstanceManager sharedManager] setDatabaseFilepath:[[[appSupportPath objectAtIndex: 0] 
                                                                stringByAppendingPathComponent: @"Latte"]
