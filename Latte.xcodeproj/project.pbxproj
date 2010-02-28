@@ -24,8 +24,6 @@
 		6396D1581139C57800255A29 /* QuickEntryController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6396D1551139C57800255A29 /* QuickEntryController.m */; };
 		6396D1A21139C5C300255A29 /* TaskGradient.m in Sources */ = {isa = PBXBuildFile; fileRef = 6396D16F1139C5C300255A29 /* TaskGradient.m */; };
 		6396D1A31139C5C300255A29 /* Preferences.m in Sources */ = {isa = PBXBuildFile; fileRef = 6396D1711139C5C300255A29 /* Preferences.m */; };
-		6396D1A51139C5C300255A29 /* LTRtmListSync.m in Sources */ = {isa = PBXBuildFile; fileRef = 6396D1751139C5C300255A29 /* LTRtmListSync.m */; };
-		6396D1A61139C5C300255A29 /* LTRtmTaskSync.m in Sources */ = {isa = PBXBuildFile; fileRef = 6396D1771139C5C300255A29 /* LTRtmTaskSync.m */; };
 		6396D1A71139C5C300255A29 /* TaskCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6396D1791139C5C300255A29 /* TaskCell.m */; };
 		6396D1A81139C5C300255A29 /* CTGradient.m in Sources */ = {isa = PBXBuildFile; fileRef = 6396D17D1139C5C300255A29 /* CTGradient.m */; };
 		6396D1A91139C5C300255A29 /* EZMilk.m in Sources */ = {isa = PBXBuildFile; fileRef = 6396D1801139C5C300255A29 /* EZMilk.m */; };
@@ -42,8 +40,6 @@
 		6396D1B51139C5C300255A29 /* LRFilterButtonTigerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6396D19C1139C5C300255A29 /* LRFilterButtonTigerCell.m */; };
 		6396D1B61139C5C300255A29 /* LROverflowButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 6396D19E1139C5C300255A29 /* LROverflowButton.m */; };
 		6396D1B71139C5C300255A29 /* MAAttachedWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 6396D1A11139C5C300255A29 /* MAAttachedWindow.m */; };
-		63A20EF41021A2110088B45A /* lattedb.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 63A20EF31021A2110088B45A /* lattedb.sqlite */; };
-		63A2115B1021C96F0088B45A /* lattedb.sql in Resources */ = {isa = PBXBuildFile; fileRef = 63A2115A1021C96F0088B45A /* lattedb.sql */; };
 		63CD529A104AA881005BE106 /* entry-quick.png in Resources */ = {isa = PBXBuildFile; fileRef = 63CD5298104AA880005BE106 /* entry-quick.png */; };
 		63CD529B104AA881005BE106 /* entry-full.png in Resources */ = {isa = PBXBuildFile; fileRef = 63CD5299104AA881005BE106 /* entry-full.png */; };
 		63DDBC7F1139E16F002BB911 /* BGHUDAppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63DDBC7E1139E16F002BB911 /* BGHUDAppKit.framework */; };
@@ -115,10 +111,6 @@
 		6396D16F1139C5C300255A29 /* TaskGradient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TaskGradient.m; sourceTree = "<group>"; };
 		6396D1701139C5C300255A29 /* Preferences.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Preferences.h; sourceTree = "<group>"; };
 		6396D1711139C5C300255A29 /* Preferences.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Preferences.m; sourceTree = "<group>"; };
-		6396D1741139C5C300255A29 /* LTRtmListSync.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTRtmListSync.h; sourceTree = "<group>"; };
-		6396D1751139C5C300255A29 /* LTRtmListSync.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LTRtmListSync.m; sourceTree = "<group>"; };
-		6396D1761139C5C300255A29 /* LTRtmTaskSync.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTRtmTaskSync.h; sourceTree = "<group>"; };
-		6396D1771139C5C300255A29 /* LTRtmTaskSync.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LTRtmTaskSync.m; sourceTree = "<group>"; };
 		6396D1781139C5C300255A29 /* TaskCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TaskCell.h; sourceTree = "<group>"; };
 		6396D1791139C5C300255A29 /* TaskCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TaskCell.m; sourceTree = "<group>"; };
 		6396D17C1139C5C300255A29 /* CTGradient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTGradient.h; sourceTree = "<group>"; };
@@ -152,8 +144,6 @@
 		6396D19E1139C5C300255A29 /* LROverflowButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LROverflowButton.m; sourceTree = "<group>"; };
 		6396D1A01139C5C300255A29 /* MAAttachedWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MAAttachedWindow.h; sourceTree = "<group>"; };
 		6396D1A11139C5C300255A29 /* MAAttachedWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MAAttachedWindow.m; sourceTree = "<group>"; };
-		63A20EF31021A2110088B45A /* lattedb.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = lattedb.sqlite; sourceTree = "<group>"; };
-		63A2115A1021C96F0088B45A /* lattedb.sql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = lattedb.sql; sourceTree = "<group>"; };
 		63CD5298104AA880005BE106 /* entry-quick.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "entry-quick.png"; sourceTree = "<group>"; };
 		63CD5299104AA881005BE106 /* entry-full.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "entry-full.png"; sourceTree = "<group>"; };
 		63DDBC7E1139E16F002BB911 /* BGHUDAppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BGHUDAppKit.framework; path = Lib/Vendor/BGHUDAppKit.framework; sourceTree = "<group>"; };
@@ -277,8 +267,6 @@
 			isa = PBXGroup;
 			children = (
 				632937611020995500C92BF4 /* images */,
-				63A2115A1021C96F0088B45A /* lattedb.sql */,
-				63A20EF31021A2110088B45A /* lattedb.sqlite */,
 				8D1107310486CEB800E47090 /* Info.plist */,
 				089C165CFE840E0CC02AAC07 /* InfoPlist.strings */,
 			);
@@ -352,10 +340,6 @@
 				6396D16F1139C5C300255A29 /* TaskGradient.m */,
 				6396D1701139C5C300255A29 /* Preferences.h */,
 				6396D1711139C5C300255A29 /* Preferences.m */,
-				6396D1741139C5C300255A29 /* LTRtmListSync.h */,
-				6396D1751139C5C300255A29 /* LTRtmListSync.m */,
-				6396D1761139C5C300255A29 /* LTRtmTaskSync.h */,
-				6396D1771139C5C300255A29 /* LTRtmTaskSync.m */,
 				6396D1781139C5C300255A29 /* TaskCell.h */,
 				6396D1791139C5C300255A29 /* TaskCell.m */,
 			);
@@ -531,8 +515,6 @@
 				632937671020995500C92BF4 /* OverflowButton.tif in Resources */,
 				632937681020995500C92BF4 /* OverflowButtonPressed.tif in Resources */,
 				632937691020995500C92BF4 /* OverflowDivider.png in Resources */,
-				63A20EF41021A2110088B45A /* lattedb.sqlite in Resources */,
-				63A2115B1021C96F0088B45A /* lattedb.sql in Resources */,
 				633A7E9510267AFD0017C70D /* RTM.png in Resources */,
 				6348C4731026F9CF0060EAA3 /* notification.png in Resources */,
 				63CD529A104AA881005BE106 /* entry-quick.png in Resources */,
@@ -556,8 +538,6 @@
 				6396D1581139C57800255A29 /* QuickEntryController.m in Sources */,
 				6396D1A21139C5C300255A29 /* TaskGradient.m in Sources */,
 				6396D1A31139C5C300255A29 /* Preferences.m in Sources */,
-				6396D1A51139C5C300255A29 /* LTRtmListSync.m in Sources */,
-				6396D1A61139C5C300255A29 /* LTRtmTaskSync.m in Sources */,
 				6396D1A71139C5C300255A29 /* TaskCell.m in Sources */,
 				6396D1A81139C5C300255A29 /* CTGradient.m in Sources */,
 				6396D1A91139C5C300255A29 /* EZMilk.m in Sources */,
