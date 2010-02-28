@@ -44,7 +44,7 @@
 
   [where release];
   [order release];
-  NSLog(sql);
+  NSLog(@"SQL: %@", sql);
 
   return [self tasksWithSqlQuery:[sql autorelease] usingParameters:[NSArray array]];
 }

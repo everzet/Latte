@@ -32,7 +32,7 @@
   NSFileManager *fileManager = [NSFileManager defaultManager];
   if (![fileManager fileExistsAtPath:databasePath])
   {
-    [fileManager createDirectoryAtPath:[databasePath stringByDeletingLastPathComponent] attributes:nil];
+    [fileManager createDirectoryAtPath:[databasePath stringByDeletingLastPathComponent] withIntermediateDirectories:true attributes:nil error:nil];
     [fileManager copyItemAtPath:databasePathFromApp toPath:databasePath error:nil];
   }
   sqlite = [[EZSQLite alloc] initWithDatabase:databasePath];
@@ -82,7 +82,7 @@
 
 - (void)reloadTasksWithSelection:(BOOL)withSelection
 {
-  int selectedTask = [[tableView selectedRowIndexes] firstIndex];
+  NSIndexSet* selectedTasks = [tableView selectedRowIndexes];
   NSRect scrollRect = [tableView visibleRect];
 
   ltListItem* list = nil;
@@ -101,7 +101,7 @@
 
   if (withSelection)
   {
-    [tableView selectRow:selectedTask byExtendingSelection:NO];
+    [tableView selectRowIndexes:selectedTasks byExtendingSelection:NO];
     [tableView scrollRectToVisible:scrollRect];
   }
 }

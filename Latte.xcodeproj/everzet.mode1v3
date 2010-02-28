@@ -287,14 +287,14 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>67</integer>
-									<integer>65</integer>
-									<integer>61</integer>
-									<integer>60</integer>
+									<integer>14</integer>
+									<integer>11</integer>
+									<integer>1</integer>
+									<integer>0</integer>
 								</array>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateVisibleRectKey</key>
-							<string>{{0, 582}, {246, 676}}</string>
+							<string>{{0, 0}, {246, 676}}</string>
 						</dict>
 						<key>PBXTopSmartGroupGIDs</key>
 						<array/>
@@ -368,7 +368,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>LTGradient.h</string>
+								<string>EZMilk.m</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -376,23 +376,29 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>LTGradient.h</string>
+										<string>EZMilk.m</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>63DDBD0F1139E628002BB911</string>
+										<string>63DDBD721139FA30002BB911</string>
 										<key>history</key>
 										<array>
 											<string>631D083D101B060B00493839</string>
 											<string>6396D1B81139C62500255A29</string>
 											<string>6396D1F01139CA5F00255A29</string>
 											<string>6396D1F11139CA5F00255A29</string>
-											<string>6396D1F21139CA5F00255A29</string>
 											<string>6396D1F31139CA5F00255A29</string>
 											<string>6350BBA31139DAC000236474</string>
 											<string>6350BBA41139DAC000236474</string>
 											<string>6350BBA51139DAC000236474</string>
-											<string>6350BC9E1139DF7F00236474</string>
+											<string>63DDBD1B1139F5B4002BB911</string>
+											<string>63DDBD1C1139F5B4002BB911</string>
+											<string>63DDBD1D1139F5B4002BB911</string>
+											<string>63DDBD1E1139F5B4002BB911</string>
+											<string>63DDBD1F1139F5B4002BB911</string>
+											<string>63DDBD361139F6EF002BB911</string>
+											<string>63DDBD471139F738002BB911</string>
+											<string>63DDBD501139F7CD002BB911</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -663,7 +669,7 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
-		<string>63DDBD101139E628002BB911</string>
+		<string>63DDBD731139FA30002BB911</string>
 		<string>63DDBCB61139E1A3002BB911</string>
 		<string>63DDBCB71139E1A3002BB911</string>
 		<string>1C78EAAD065D492600B07095</string>
@@ -693,7 +699,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CD0528F0623707200166675</string>
 								<key>PBXProjectModuleLabel</key>
-								<string></string>
+								<string>EZMilk.m</string>
 								<key>StatusBarVisibility</key>
 								<true/>
 							</dict>
@@ -710,6 +716,8 @@
 							<string>218pt</string>
 						</dict>
 						<dict>
+							<key>BecomeActive</key>
+							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
