@@ -7,7 +7,7 @@
 //
 
 #import <Cocoa/Cocoa.h>
-#import "Preferences.h"
+#import "AppPreferences.h"
 #import "LTRtmApiKeys.h"
 #import "EZMilk.h"
 

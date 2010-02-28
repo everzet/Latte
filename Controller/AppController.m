@@ -9,11 +9,11 @@
   [self initTable];
 
   // Preferences controller
-  preferences = [[Preferences alloc] init];
+  preferences = [[AppPreferences alloc] init];
 
   // Setup RTM connector
-  rtmApi = [[EZMilk alloc] initWithApiKey:[LTRtmApiKeys apiKey]
-                          andApiSecret:[LTRtmApiKeys apiSecret]];
+  rtmApi = [[EZMilk alloc] initWithApiKey:[RTMKeys apiKey]
+                             andApiSecret:[RTMKeys apiSecret]];
 
   // Setup DB & retrieve data
   [self initDatabase];

@@ -14,7 +14,6 @@
 		63303C2C101F4E7E00B516AB /* latte.icns in Resources */ = {isa = PBXBuildFile; fileRef = 63303C2B101F4E7E00B516AB /* latte.icns */; };
 		633A7E9510267AFD0017C70D /* RTM.png in Resources */ = {isa = PBXBuildFile; fileRef = 633A7E9410267AFD0017C70D /* RTM.png */; };
 		6348C4731026F9CF0060EAA3 /* notification.png in Resources */ = {isa = PBXBuildFile; fileRef = 6348C4721026F9CF0060EAA3 /* notification.png */; };
-		6350BB561139CAE100236474 /* LTRtmApiKeys.m in Sources */ = {isa = PBXBuildFile; fileRef = 6350BB551139CAE100236474 /* LTRtmApiKeys.m */; };
 		6395B003102260A900F1E641 /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 6395B002102260A900F1E641 /* libsqlite3.0.dylib */; };
 		6396D0F11139C4B100255A29 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6396D0EC1139C4B100255A29 /* MainMenu.xib */; };
 		6396D0F21139C4B100255A29 /* Preferences.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6396D0ED1139C4B100255A29 /* Preferences.xib */; };
@@ -23,7 +22,7 @@
 		6396D1571139C57800255A29 /* PreferencesController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6396D1531139C57800255A29 /* PreferencesController.m */; };
 		6396D1581139C57800255A29 /* QuickEntryController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6396D1551139C57800255A29 /* QuickEntryController.m */; };
 		6396D1A21139C5C300255A29 /* TaskTableCellGradient.m in Sources */ = {isa = PBXBuildFile; fileRef = 6396D16F1139C5C300255A29 /* TaskTableCellGradient.m */; };
-		6396D1A31139C5C300255A29 /* Preferences.m in Sources */ = {isa = PBXBuildFile; fileRef = 6396D1711139C5C300255A29 /* Preferences.m */; };
+		6396D1A31139C5C300255A29 /* AppPreferences.m in Sources */ = {isa = PBXBuildFile; fileRef = 6396D1711139C5C300255A29 /* AppPreferences.m */; };
 		6396D1A71139C5C300255A29 /* TaskTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6396D1791139C5C300255A29 /* TaskTableCell.m */; };
 		6396D1A81139C5C300255A29 /* CTGradient.m in Sources */ = {isa = PBXBuildFile; fileRef = 6396D17D1139C5C300255A29 /* CTGradient.m */; };
 		6396D1A91139C5C300255A29 /* EZMilk.m in Sources */ = {isa = PBXBuildFile; fileRef = 6396D1801139C5C300255A29 /* EZMilk.m */; };
@@ -62,6 +61,7 @@
 		63DDBDBC113A032D002BB911 /* UIImage-SQLitePersistence.m in Sources */ = {isa = PBXBuildFile; fileRef = 63DDBDAC113A032D002BB911 /* UIImage-SQLitePersistence.m */; };
 		63DDBDCD113A7CAE002BB911 /* TaskList.m in Sources */ = {isa = PBXBuildFile; fileRef = 63DDBDCC113A7CAE002BB911 /* TaskList.m */; };
 		63DDBDF7113A8436002BB911 /* Task.m in Sources */ = {isa = PBXBuildFile; fileRef = 63DDBDF6113A8436002BB911 /* Task.m */; };
+		63DDBF9D113AA1B8002BB911 /* LTRtmApiKeys.m in Sources */ = {isa = PBXBuildFile; fileRef = 63DDBF9C113AA1B8002BB911 /* LTRtmApiKeys.m */; };
 		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
 		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
@@ -95,8 +95,6 @@
 		63303C2B101F4E7E00B516AB /* latte.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; name = latte.icns; path = ../latte.icns; sourceTree = "<group>"; };
 		633A7E9410267AFD0017C70D /* RTM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = RTM.png; sourceTree = "<group>"; };
 		6348C4721026F9CF0060EAA3 /* notification.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = notification.png; sourceTree = "<group>"; };
-		6350BB541139CAE100236474 /* LTRtmApiKeys.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTRtmApiKeys.h; sourceTree = "<group>"; };
-		6350BB551139CAE100236474 /* LTRtmApiKeys.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LTRtmApiKeys.m; sourceTree = "<group>"; };
 		6395B002102260A900F1E641 /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
 		6396D0EC1139C4B100255A29 /* MainMenu.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainMenu.xib; sourceTree = "<group>"; };
 		6396D0ED1139C4B100255A29 /* Preferences.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Preferences.xib; sourceTree = "<group>"; };
@@ -109,8 +107,8 @@
 		6396D1551139C57800255A29 /* QuickEntryController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuickEntryController.m; sourceTree = "<group>"; };
 		6396D16E1139C5C300255A29 /* TaskTableCellGradient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TaskTableCellGradient.h; sourceTree = "<group>"; };
 		6396D16F1139C5C300255A29 /* TaskTableCellGradient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TaskTableCellGradient.m; sourceTree = "<group>"; };
-		6396D1701139C5C300255A29 /* Preferences.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Preferences.h; sourceTree = "<group>"; };
-		6396D1711139C5C300255A29 /* Preferences.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Preferences.m; sourceTree = "<group>"; };
+		6396D1701139C5C300255A29 /* AppPreferences.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppPreferences.h; sourceTree = "<group>"; };
+		6396D1711139C5C300255A29 /* AppPreferences.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppPreferences.m; sourceTree = "<group>"; };
 		6396D1781139C5C300255A29 /* TaskTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TaskTableCell.h; sourceTree = "<group>"; };
 		6396D1791139C5C300255A29 /* TaskTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TaskTableCell.m; sourceTree = "<group>"; };
 		6396D17C1139C5C300255A29 /* CTGradient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTGradient.h; sourceTree = "<group>"; };
@@ -183,6 +181,8 @@
 		63DDBDCC113A7CAE002BB911 /* TaskList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TaskList.m; sourceTree = "<group>"; };
 		63DDBDF5113A8436002BB911 /* Task.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Task.h; sourceTree = "<group>"; };
 		63DDBDF6113A8436002BB911 /* Task.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Task.m; sourceTree = "<group>"; };
+		63DDBF9B113AA1B8002BB911 /* LTRtmApiKeys.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTRtmApiKeys.h; sourceTree = "<group>"; };
+		63DDBF9C113AA1B8002BB911 /* LTRtmApiKeys.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LTRtmApiKeys.m; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8D1107320486CEB800E47090 /* Latte.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Latte.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -208,8 +208,7 @@
 				6396D0E61139C4B100255A29 /* View */,
 				6396D14F1139C57800255A29 /* Controller */,
 				6396D16D1139C5C300255A29 /* Lib */,
-				6350BB541139CAE100236474 /* LTRtmApiKeys.h */,
-				6350BB551139CAE100236474 /* LTRtmApiKeys.m */,
+				63DDBF9A113AA1B8002BB911 /* Keys */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -338,8 +337,8 @@
 				6396D17A1139C5C300255A29 /* Vendor */,
 				6396D16E1139C5C300255A29 /* TaskTableCellGradient.h */,
 				6396D16F1139C5C300255A29 /* TaskTableCellGradient.m */,
-				6396D1701139C5C300255A29 /* Preferences.h */,
-				6396D1711139C5C300255A29 /* Preferences.m */,
+				6396D1701139C5C300255A29 /* AppPreferences.h */,
+				6396D1711139C5C300255A29 /* AppPreferences.m */,
 				6396D1781139C5C300255A29 /* TaskTableCell.h */,
 				6396D1791139C5C300255A29 /* TaskTableCell.m */,
 			);
@@ -465,6 +464,15 @@
 			path = SQLitePersistentObjects/src;
 			sourceTree = "<group>";
 		};
+		63DDBF9A113AA1B8002BB911 /* Keys */ = {
+			isa = PBXGroup;
+			children = (
+				63DDBF9B113AA1B8002BB911 /* LTRtmApiKeys.h */,
+				63DDBF9C113AA1B8002BB911 /* LTRtmApiKeys.m */,
+			);
+			path = Keys;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -537,7 +545,7 @@
 				6396D1571139C57800255A29 /* PreferencesController.m in Sources */,
 				6396D1581139C57800255A29 /* QuickEntryController.m in Sources */,
 				6396D1A21139C5C300255A29 /* TaskTableCellGradient.m in Sources */,
-				6396D1A31139C5C300255A29 /* Preferences.m in Sources */,
+				6396D1A31139C5C300255A29 /* AppPreferences.m in Sources */,
 				6396D1A71139C5C300255A29 /* TaskTableCell.m in Sources */,
 				6396D1A81139C5C300255A29 /* CTGradient.m in Sources */,
 				6396D1A91139C5C300255A29 /* EZMilk.m in Sources */,
@@ -554,7 +562,6 @@
 				6396D1B51139C5C300255A29 /* LRFilterButtonTigerCell.m in Sources */,
 				6396D1B61139C5C300255A29 /* LROverflowButton.m in Sources */,
 				6396D1B71139C5C300255A29 /* MAAttachedWindow.m in Sources */,
-				6350BB561139CAE100236474 /* LTRtmApiKeys.m in Sources */,
 				63DDBDAD113A032D002BB911 /* NSData-SQLitePersistence.m in Sources */,
 				63DDBDAE113A032D002BB911 /* NSDate-SQLitePersistence.m in Sources */,
 				63DDBDAF113A032D002BB911 /* NSMutableArray-MultipleSort.m in Sources */,
@@ -573,6 +580,7 @@
 				63DDBDBC113A032D002BB911 /* UIImage-SQLitePersistence.m in Sources */,
 				63DDBDCD113A7CAE002BB911 /* TaskList.m in Sources */,
 				63DDBDF7113A8436002BB911 /* Task.m in Sources */,
+				63DDBF9D113AA1B8002BB911 /* LTRtmApiKeys.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

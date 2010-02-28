@@ -63,7 +63,7 @@
 
 - (IBAction)rtmShow:(id)sender
 {
-  if ([[Preferences instance] rtmToken])
+  if ([[AppPreferences instance] rtmToken])
   {
     [tabView selectTabViewItemWithIdentifier:@"rtm"];
   }
@@ -100,7 +100,7 @@
     NSString* token = [rtm tokenWithFrob:frob];
     if (token)
     {
-      [[Preferences instance] setRtmToken:token];
+      [[AppPreferences instance] setRtmToken:token];
     }
     [self setFrob:nil];
   }
@@ -110,7 +110,7 @@
 
 - (IBAction)resetRtmAuth:(id)sender
 {
-  [[Preferences instance] setRtmToken:nil];
+  [[AppPreferences instance] setRtmToken:nil];
   [self rtmShow:self];
 }
 

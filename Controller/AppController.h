@@ -33,7 +33,7 @@
 
   // Singletons
   EZMilk*                       rtmApi;
-  Preferences*                  preferences;
+  AppPreferences*                  preferences;
 }
 
 - (void)initFilter;
