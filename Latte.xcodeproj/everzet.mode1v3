@@ -274,13 +274,14 @@
 								<string>6396D0E61139C4B100255A29</string>
 								<string>6396D14F1139C57800255A29</string>
 								<string>6396D16D1139C5C300255A29</string>
+								<string>6396D17A1139C5C300255A29</string>
 								<string>63DDBF9A113AA1B8002BB911</string>
 								<string>1C37FABC05509CD000000102</string>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>14</integer>
+									<integer>12</integer>
 									<integer>11</integer>
 									<integer>1</integer>
 									<integer>0</integer>
@@ -414,7 +415,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>PreferencesController.h</string>
+								<string>AppController.h</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -422,11 +423,11 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>PreferencesController.h</string>
+										<string>AppController.h</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>63B61BC3113AAEDD0017D0F1</string>
+										<string>63D96F3E113AB1470007F92D</string>
 										<key>history</key>
 										<array>
 											<string>639ECAFD101CDA4900CD9EC7</string>
@@ -450,7 +451,6 @@
 											<string>63B61BA7113AAE7A0017D0F1</string>
 											<string>63B61BA8113AAE7A0017D0F1</string>
 											<string>63B61BA9113AAE7A0017D0F1</string>
-											<string>63B61BAB113AAE7A0017D0F1</string>
 											<string>63B61BAD113AAE7A0017D0F1</string>
 											<string>63B61BAE113AAE7A0017D0F1</string>
 											<string>63B61BAF113AAE7A0017D0F1</string>
@@ -458,10 +458,11 @@
 											<string>63B61BB1113AAE7A0017D0F1</string>
 											<string>63B61BB4113AAE7A0017D0F1</string>
 											<string>63B61BB9113AAEBD0017D0F1</string>
-											<string>63B61BBF113AAEDD0017D0F1</string>
 											<string>63B61BC0113AAEDD0017D0F1</string>
 											<string>63B61BC1113AAEDD0017D0F1</string>
-											<string>63B61BC2113AAEDD0017D0F1</string>
+											<string>63B61BC5113AAFD20017D0F1</string>
+											<string>63D96F36113AB1340007F92D</string>
+											<string>63D96F37113AB1340007F92D</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -521,9 +522,9 @@
 			</array>
 			<key>TableOfContents</key>
 			<array>
-				<string>63B61B7F113AADA80017D0F1</string>
+				<string>63D96F2F113AB1270007F92D</string>
 				<string>1CE0B1FE06471DED0097A5F4</string>
-				<string>63B61B80113AADA80017D0F1</string>
+				<string>63D96F30113AB1270007F92D</string>
 				<string>1CE0B20306471E060097A5F4</string>
 				<string>1CE0B20306471E060097A5F4</string>
 				<string>1CE0B20306471E060097A5F4</string>
@@ -681,10 +682,9 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
-		<string>63B61BC4113AAEDD0017D0F1</string>
-		<string>6370F6A6101F311E000BD869</string>
-		<string>63B61B8A113AADA80017D0F1</string>
-		<string>63B61B8B113AADA80017D0F1</string>
+		<string>63D96F3F113AB1470007F92D</string>
+		<string>63D96F32113AB1270007F92D</string>
+		<string>63D96F33113AB1270007F92D</string>
 		<string>1C78EAAD065D492600B07095</string>
 		<string>1CD10A99069EF8BA00B06720</string>
 		<string>632D9674101BB4BA0055F5C2</string>
@@ -712,7 +712,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CD0528F0623707200166675</string>
 								<key>PBXProjectModuleLabel</key>
-								<string></string>
+								<string>AppController.m</string>
 								<key>StatusBarVisibility</key>
 								<true/>
 							</dict>
@@ -729,6 +729,8 @@
 							<string>218pt</string>
 						</dict>
 						<dict>
+							<key>BecomeActive</key>
+							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
@@ -768,7 +770,7 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>632D9674101BB4BA0055F5C2</string>
-				<string>63B61B81113AADA80017D0F1</string>
+				<string>63D96F20113AB1160007F92D</string>
 				<string>1CD0528F0623707200166675</string>
 				<string>XCMainBuildResultsModuleGUID</string>
 			</array>
@@ -888,13 +890,13 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>1CD10A99069EF8BA00B06720</string>
-				<string>63B61B82113AADA80017D0F1</string>
+				<string>63D96F21113AB1160007F92D</string>
 				<string>1C162984064C10D400B95A72</string>
-				<string>63B61B83113AADA80017D0F1</string>
-				<string>63B61B84113AADA80017D0F1</string>
-				<string>63B61B85113AADA80017D0F1</string>
-				<string>63B61B86113AADA80017D0F1</string>
-				<string>63B61B87113AADA80017D0F1</string>
+				<string>63D96F22113AB1160007F92D</string>
+				<string>63D96F23113AB1160007F92D</string>
+				<string>63D96F24113AB1160007F92D</string>
+				<string>63D96F25113AB1160007F92D</string>
+				<string>63D96F26113AB1160007F92D</string>
 			</array>
 			<key>ToolbarConfiguration</key>
 			<string>xcode.toolbar.config.debugV3</string>
@@ -926,7 +928,7 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CDD528C0622207200134675</string>
 										<key>PBXProjectModuleLabel</key>
-										<string></string>
+										<string>AppController.m</string>
 										<key>StatusBarVisibility</key>
 										<true/>
 									</dict>
@@ -984,8 +986,8 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>1C530D57069F1CE1000CFCEE</string>
-				<string>634E83901029C6F2004F21A4</string>
-				<string>634E83911029C6F2004F21A4</string>
+				<string>63B61BE1113AB0370017D0F1</string>
+				<string>63B61BE2113AB0370017D0F1</string>
 				<string>1CDD528C0622207200134675</string>
 				<string>1CD0528E0623707200166675</string>
 			</array>
@@ -1048,7 +1050,7 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>1C78EAAD065D492600B07095</string>
-				<string>63B61B88113AADA80017D0F1</string>
+				<string>63D96F27113AB1160007F92D</string>
 				<string>1C78EAAC065D492600B07095</string>
 			</array>
 			<key>ToolbarConfiguration</key>

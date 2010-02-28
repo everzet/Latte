@@ -2324,14 +2324,6 @@
 					<int key="connectionID">868</int>
 				</object>
 				<object class="IBConnectionRecord">
-					<object class="IBActionConnection" key="connection">
-						<string key="label">quickEntryAdd:</string>
-						<reference key="source" ref="433981082"/>
-						<reference key="destination" ref="923294507"/>
-					</object>
-					<int key="connectionID">872</int>
-				</object>
-				<object class="IBConnectionRecord">
 					<object class="IBOutletConnection" key="connection">
 						<string key="label">tableView</string>
 						<reference key="source" ref="433981082"/>
@@ -2410,6 +2402,14 @@
 						<reference key="destination" ref="593985202"/>
 					</object>
 					<int key="connectionID">918</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBActionConnection" key="connection">
+						<string key="label">taskEntryAdd:</string>
+						<reference key="source" ref="433981082"/>
+						<reference key="destination" ref="923294507"/>
+					</object>
+					<int key="connectionID">920</int>
 				</object>
 			</object>
 			<object class="IBMutableOrderedSet" key="objectRecords">
@@ -4215,7 +4215,7 @@
 				</object>
 			</object>
 			<nil key="sourceID"/>
-			<int key="maxID">919</int>
+			<int key="maxID">920</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<object class="NSMutableArray" key="referencedPartialClassDescriptions">
@@ -4230,14 +4230,14 @@
 							<string>aboutShow:</string>
 							<string>changeTaskCompletionStatus:</string>
 							<string>preferencesShow:</string>
-							<string>quickEntryAdd:</string>
-							<string>quickEntryEdit:</string>
 							<string>runSyncLoop:</string>
 							<string>saveTaskFromEntry:</string>
 							<string>selectFilter:</string>
 							<string>selectList:</string>
 							<string>syncDidFinish:</string>
 							<string>syncWillStart:</string>
+							<string>taskEntryAdd:</string>
+							<string>taskEntryEdit:</string>
 						</object>
 						<object class="NSMutableArray" key="dict.values">
 							<bool key="EncodedWithXMLCoder">YES</bool>

@@ -42,7 +42,7 @@
   // Setup DB & retrieve data
   [self initDatabase];
   [self reloadLists];
-  [self reloadTasks];
+  [self reloadTasksWithSelection:NO];
 
   [NSThread detachNewThreadSelector:@selector(runSyncLoop:) toTarget:self withObject:self];
 }
@@ -61,7 +61,7 @@
 {
   // Setting self as tableView target & sets the reciever of double click action to quickEntryEdit: action
   [tableView setTarget:self];
-  [tableView setDoubleAction:@selector(quickEntryEdit:)];
+  [tableView setDoubleAction:@selector(taskEntryEdit:)];
   
   // Inserting self in NSResponder chain right after the tableView & before the tableView's responder
   [self setNextResponder:[tableView nextResponder]];
@@ -83,7 +83,7 @@
 
 - (void)dealloc
 {
-  [quickEntryController release];
+  [taskEntryController release];
   [preferencesController release];
 
   [prefHolder release];
@@ -104,11 +104,6 @@
   {
     [listView selectItemAtIndex:selectedList];
   }
-}
-
-- (void)reloadTasks
-{
-  [self reloadTasksWithSelection:NO];
 }
 
 - (void)reloadTasksWithSelection:(BOOL)withSelection
@@ -169,11 +164,11 @@
     case NSCarriageReturnCharacter:
       if (task)
       {
-        [self quickEntryEditTask:task];
+        [self taskEntryEditTask:task];
       }
       else
       {
-        [self quickEntryAdd:tableView];
+        [self taskEntryAdd:tableView];
       }
       break;
     case 32:
@@ -204,42 +199,42 @@
   [preferencesController showWindow:self];
 }
 
-- (IBAction)quickEntryAdd:(id)sender
+- (IBAction)taskEntryAdd:(id)sender
 {
   Task* task = [[Task alloc] init];
   task.list = [lists objectAtIndex:[listView indexOfSelectedItem]];
-  [self quickEntryEditTask:task];
+  [self taskEntryEditTask:task];
   [task release];
 }
 
-- (IBAction)quickEntryEdit:(id)sender
+- (IBAction)taskEntryEdit:(id)sender
 {
   if ([[sender selectedRowIndexes] count] > 0)
   {
-    [self quickEntryEditTask:[tasks objectAtIndex:[[tableView selectedRowIndexes] firstIndex]]];
+    [self taskEntryEditTask:[tasks objectAtIndex:[[tableView selectedRowIndexes] firstIndex]]];
   }
 }
 
-- (void)quickEntryEditTask:(Task*)aTask
+- (void)taskEntryEditTask:(Task*)aTask
 {
-  if (quickEntryController)
+  if (taskEntryController)
   {
-    [quickEntryController release];
+    [taskEntryController release];
   }
-  quickEntryController = [[TaskEntryController alloc] initWithTask:aTask];
-  [quickEntryController setSaveTarget:self];
-  [quickEntryController setSaveAction:@selector(saveTaskFromEntry:)];
-  [quickEntryController showWindow: self];
+  taskEntryController = [[TaskEntryController alloc] initWithTask:aTask];
+  [taskEntryController setSaveTarget:self];
+  [taskEntryController setSaveAction:@selector(saveTaskFromEntry:)];
+  [taskEntryController showWindow: self];
 }
 
 - (IBAction)selectList:(id)sender
 {
-  [self reloadTasks];
+  [self reloadTasksWithSelection:NO];
 }
 
 - (void)selectFilter:(id)sender
 {
-  [self reloadTasks];
+  [self reloadTasksWithSelection:NO];
 }
 
 - (void)changeTaskCompletionStatus:(id)sender

@@ -54,7 +54,7 @@
   IBOutlet NSMutableArray*      tasks;
 
   // Controllers
-  TaskEntryController*          quickEntryController;
+  TaskEntryController*          taskEntryController;
   PreferencesController*        preferencesController;
 
   // Libs
@@ -62,20 +62,23 @@
   AppPreferences*               prefHolder;
 }
 
+// Interface & Data init
 - (void)initFilter;
 - (void)initTable;
 - (void)initDatabase;
 
-- (void)reloadTasks;
+// Data reloaders
 - (void)reloadTasksWithSelection:(BOOL)withSelection;
 - (void)reloadLists;
 
+// Run other controllers
 - (IBAction)aboutShow:(id)sender;
 - (IBAction)preferencesShow:(id)sender;
 
-- (IBAction)quickEntryAdd:(id)sender;
-- (IBAction)quickEntryEdit:(id)sender;
-- (void)quickEntryEditTask:(Task*)aTask;
+// TaskEntry controllers
+- (IBAction)taskEntryAdd:(id)sender;
+- (IBAction)taskEntryEdit:(id)sender;
+- (void)taskEntryEditTask:(Task*)aTask;
 
 - (IBAction)selectList:(id)sender;
 - (void)selectFilter:(id)sender;
