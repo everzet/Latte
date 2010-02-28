@@ -427,7 +427,7 @@
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>63B61B5E113AABC40017D0F1</string>
+										<string>63B61B61113AAC030017D0F1</string>
 										<key>history</key>
 										<array>
 											<string>639ECAFD101CDA4900CD9EC7</string>
@@ -680,6 +680,11 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
+		<string>63B61B69113AAC030017D0F1</string>
+		<string>63B61B6A113AAC030017D0F1</string>
+		<string>63B61B6B113AAC030017D0F1</string>
+		<string>1C78EAAD065D492600B07095</string>
+		<string>1CD10A99069EF8BA00B06720</string>
 		<string>632D9674101BB4BA0055F5C2</string>
 		<string>/Users/everzet/Devel/desktop/mac/Latte/Latte.xcodeproj</string>
 	</array>
@@ -883,13 +888,13 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>1CD10A99069EF8BA00B06720</string>
-				<string>63DDBF4B113A9C5C002BB911</string>
+				<string>63B61B62113AAC030017D0F1</string>
 				<string>1C162984064C10D400B95A72</string>
-				<string>63DDBF4C113A9C5C002BB911</string>
-				<string>63DDBF4D113A9C5C002BB911</string>
-				<string>63DDBF4E113A9C5C002BB911</string>
-				<string>63DDBF4F113A9C5C002BB911</string>
-				<string>63DDBF50113A9C5C002BB911</string>
+				<string>63B61B63113AAC030017D0F1</string>
+				<string>63B61B64113AAC030017D0F1</string>
+				<string>63B61B65113AAC030017D0F1</string>
+				<string>63B61B66113AAC030017D0F1</string>
+				<string>63B61B67113AAC030017D0F1</string>
 			</array>
 			<key>ToolbarConfiguration</key>
 			<string>xcode.toolbar.config.debugV3</string>
@@ -1008,8 +1013,6 @@
 					<key>Dock</key>
 					<array>
 						<dict>
-							<key>BecomeActive</key>
-							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
@@ -1045,7 +1048,7 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>1C78EAAD065D492600B07095</string>
-				<string>63DDBF51113A9C5C002BB911</string>
+				<string>63B61B68113AAC030017D0F1</string>
 				<string>1C78EAAC065D492600B07095</string>
 			</array>
 			<key>ToolbarConfiguration</key>
