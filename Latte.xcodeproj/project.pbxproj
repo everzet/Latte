@@ -16,10 +16,6 @@
 		6348C4731026F9CF0060EAA3 /* notification.png in Resources */ = {isa = PBXBuildFile; fileRef = 6348C4721026F9CF0060EAA3 /* notification.png */; };
 		6350BB561139CAE100236474 /* LTRtmApiKeys.m in Sources */ = {isa = PBXBuildFile; fileRef = 6350BB551139CAE100236474 /* LTRtmApiKeys.m */; };
 		6395B003102260A900F1E641 /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 6395B002102260A900F1E641 /* libsqlite3.0.dylib */; };
-		6396D0CD1139C3E500255A29 /* ltListItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 6396D0C61139C3E500255A29 /* ltListItem.m */; };
-		6396D0CE1139C3E500255A29 /* ltListProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6396D0C81139C3E500255A29 /* ltListProxy.m */; };
-		6396D0CF1139C3E500255A29 /* ltTaskItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 6396D0CA1139C3E500255A29 /* ltTaskItem.m */; };
-		6396D0D01139C3E500255A29 /* ltTaskProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6396D0CC1139C3E500255A29 /* ltTaskProxy.m */; };
 		6396D0F11139C4B100255A29 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6396D0EC1139C4B100255A29 /* MainMenu.xib */; };
 		6396D0F21139C4B100255A29 /* Preferences.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6396D0ED1139C4B100255A29 /* Preferences.xib */; };
 		6396D0F31139C4B100255A29 /* QuickEntry.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6396D0EE1139C4B100255A29 /* QuickEntry.xib */; };
@@ -33,7 +29,6 @@
 		6396D1A71139C5C300255A29 /* TaskCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6396D1791139C5C300255A29 /* TaskCell.m */; };
 		6396D1A81139C5C300255A29 /* CTGradient.m in Sources */ = {isa = PBXBuildFile; fileRef = 6396D17D1139C5C300255A29 /* CTGradient.m */; };
 		6396D1A91139C5C300255A29 /* EZMilk.m in Sources */ = {isa = PBXBuildFile; fileRef = 6396D1801139C5C300255A29 /* EZMilk.m */; };
-		6396D1AA1139C5C300255A29 /* EZSQLite.m in Sources */ = {isa = PBXBuildFile; fileRef = 6396D1831139C5C300255A29 /* EZSQLite.m */; };
 		6396D1AB1139C5C300255A29 /* NSObject+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 6396D1871139C5C300255A29 /* NSObject+SBJSON.m */; };
 		6396D1AC1139C5C300255A29 /* NSString+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 6396D1891139C5C300255A29 /* NSString+SBJSON.m */; };
 		6396D1AD1139C5C300255A29 /* SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 6396D18B1139C5C300255A29 /* SBJSON.m */; };
@@ -107,14 +102,6 @@
 		6350BB541139CAE100236474 /* LTRtmApiKeys.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTRtmApiKeys.h; sourceTree = "<group>"; };
 		6350BB551139CAE100236474 /* LTRtmApiKeys.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LTRtmApiKeys.m; sourceTree = "<group>"; };
 		6395B002102260A900F1E641 /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
-		6396D0C51139C3E500255A29 /* ltListItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ltListItem.h; sourceTree = "<group>"; };
-		6396D0C61139C3E500255A29 /* ltListItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ltListItem.m; sourceTree = "<group>"; };
-		6396D0C71139C3E500255A29 /* ltListProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ltListProxy.h; sourceTree = "<group>"; };
-		6396D0C81139C3E500255A29 /* ltListProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ltListProxy.m; sourceTree = "<group>"; };
-		6396D0C91139C3E500255A29 /* ltTaskItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ltTaskItem.h; sourceTree = "<group>"; };
-		6396D0CA1139C3E500255A29 /* ltTaskItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ltTaskItem.m; sourceTree = "<group>"; };
-		6396D0CB1139C3E500255A29 /* ltTaskProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ltTaskProxy.h; sourceTree = "<group>"; };
-		6396D0CC1139C3E500255A29 /* ltTaskProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ltTaskProxy.m; sourceTree = "<group>"; };
 		6396D0EC1139C4B100255A29 /* MainMenu.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainMenu.xib; sourceTree = "<group>"; };
 		6396D0ED1139C4B100255A29 /* Preferences.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Preferences.xib; sourceTree = "<group>"; };
 		6396D0EE1139C4B100255A29 /* QuickEntry.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QuickEntry.xib; sourceTree = "<group>"; };
@@ -138,8 +125,6 @@
 		6396D17D1139C5C300255A29 /* CTGradient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTGradient.m; sourceTree = "<group>"; };
 		6396D17F1139C5C300255A29 /* EZMilk.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EZMilk.h; sourceTree = "<group>"; };
 		6396D1801139C5C300255A29 /* EZMilk.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EZMilk.m; sourceTree = "<group>"; };
-		6396D1821139C5C300255A29 /* EZSQLite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EZSQLite.h; sourceTree = "<group>"; };
-		6396D1831139C5C300255A29 /* EZSQLite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EZSQLite.m; sourceTree = "<group>"; };
 		6396D1851139C5C300255A29 /* JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSON.h; sourceTree = "<group>"; };
 		6396D1861139C5C300255A29 /* NSObject+SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+SBJSON.h"; sourceTree = "<group>"; };
 		6396D1871139C5C300255A29 /* NSObject+SBJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+SBJSON.m"; sourceTree = "<group>"; };
@@ -328,14 +313,6 @@
 		6396D0C41139C3E500255A29 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				6396D0C51139C3E500255A29 /* ltListItem.h */,
-				6396D0C61139C3E500255A29 /* ltListItem.m */,
-				6396D0C71139C3E500255A29 /* ltListProxy.h */,
-				6396D0C81139C3E500255A29 /* ltListProxy.m */,
-				6396D0C91139C3E500255A29 /* ltTaskItem.h */,
-				6396D0CA1139C3E500255A29 /* ltTaskItem.m */,
-				6396D0CB1139C3E500255A29 /* ltTaskProxy.h */,
-				6396D0CC1139C3E500255A29 /* ltTaskProxy.m */,
 				63DDBDCB113A7CAE002BB911 /* TaskList.h */,
 				63DDBDCC113A7CAE002BB911 /* TaskList.m */,
 				63DDBDF5113A8436002BB911 /* Task.h */,
@@ -390,7 +367,6 @@
 			children = (
 				6396D17B1139C5C300255A29 /* CTGradient */,
 				6396D17E1139C5C300255A29 /* EZMilk */,
-				6396D1811139C5C300255A29 /* EZSQLite */,
 				63DDBD8C113A032D002BB911 /* SQLitePersistentObjects */,
 				6396D1841139C5C300255A29 /* JSON */,
 				6396D1921139C5C300255A29 /* LRFilterBar */,
@@ -415,15 +391,6 @@
 				6396D1801139C5C300255A29 /* EZMilk.m */,
 			);
 			path = EZMilk;
-			sourceTree = "<group>";
-		};
-		6396D1811139C5C300255A29 /* EZSQLite */ = {
-			isa = PBXGroup;
-			children = (
-				6396D1821139C5C300255A29 /* EZSQLite.h */,
-				6396D1831139C5C300255A29 /* EZSQLite.m */,
-			);
-			path = EZSQLite;
 			sourceTree = "<group>";
 		};
 		6396D1841139C5C300255A29 /* JSON */ = {
@@ -584,10 +551,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				8D11072D0486CEB800E47090 /* main.m in Sources */,
-				6396D0CD1139C3E500255A29 /* ltListItem.m in Sources */,
-				6396D0CE1139C3E500255A29 /* ltListProxy.m in Sources */,
-				6396D0CF1139C3E500255A29 /* ltTaskItem.m in Sources */,
-				6396D0D01139C3E500255A29 /* ltTaskProxy.m in Sources */,
 				6396D1561139C57800255A29 /* AppController.m in Sources */,
 				6396D1571139C57800255A29 /* PreferencesController.m in Sources */,
 				6396D1581139C57800255A29 /* QuickEntryController.m in Sources */,
@@ -598,7 +561,6 @@
 				6396D1A71139C5C300255A29 /* TaskCell.m in Sources */,
 				6396D1A81139C5C300255A29 /* CTGradient.m in Sources */,
 				6396D1A91139C5C300255A29 /* EZMilk.m in Sources */,
-				6396D1AA1139C5C300255A29 /* EZSQLite.m in Sources */,
 				6396D1AB1139C5C300255A29 /* NSObject+SBJSON.m in Sources */,
 				6396D1AC1139C5C300255A29 /* NSString+SBJSON.m in Sources */,
 				6396D1AD1139C5C300255A29 /* SBJSON.m in Sources */,

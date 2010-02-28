@@ -380,6 +380,12 @@
 		vrLoc = 0;
 	};
 	6396D0C51139C3E500255A29 /* ltListItem.h */ = {
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = sourcecode.c.h;
+		name = ltListItem.h;
+		path = /Users/everzet/Devel/desktop/mac/Latte/Model/ltListItem.h;
+		sourceTree = "<absolute>";
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {951, 647}}";
 			sepNavSelRange = "{737, 44}";
@@ -387,21 +393,25 @@
 		};
 	};
 	6396D0C71139C3E500255A29 /* ltListProxy.h */ = {
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = sourcecode.c.h;
+		name = ltListProxy.h;
+		path = /Users/everzet/Devel/desktop/mac/Latte/Model/ltListProxy.h;
+		sourceTree = "<absolute>";
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {951, 647}}";
 			sepNavSelRange = "{248, 0}";
 			sepNavVisRange = "{0, 448}";
 		};
 	};
-	6396D0C81139C3E500255A29 /* ltListProxy.m */ = {
-		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {951, 770}}";
-			sepNavSelRange = "{0, 0}";
-			sepNavVisRange = "{0, 1401}";
-			sepNavWindowFrame = "{{15, 191}, {1236, 582}}";
-		};
-	};
 	6396D0C91139C3E500255A29 /* ltTaskItem.h */ = {
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = sourcecode.c.h;
+		name = ltTaskItem.h;
+		path = /Users/everzet/Devel/desktop/mac/Latte/Model/ltTaskItem.h;
+		sourceTree = "<absolute>";
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {951, 647}}";
 			sepNavSelRange = "{1026, 0}";
@@ -409,6 +419,12 @@
 		};
 	};
 	6396D0CA1139C3E500255A29 /* ltTaskItem.m */ = {
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = sourcecode.c.objc;
+		name = ltTaskItem.m;
+		path = /Users/everzet/Devel/desktop/mac/Latte/Model/ltTaskItem.m;
+		sourceTree = "<absolute>";
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {951, 1771}}";
 			sepNavSelRange = "{2012, 61}";
@@ -416,6 +432,12 @@
 		};
 	};
 	6396D0CB1139C3E500255A29 /* ltTaskProxy.h */ = {
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = sourcecode.c.h;
+		name = ltTaskProxy.h;
+		path = /Users/everzet/Devel/desktop/mac/Latte/Model/ltTaskProxy.h;
+		sourceTree = "<absolute>";
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {951, 647}}";
 			sepNavSelRange = "{447, 86}";
@@ -423,6 +445,12 @@
 		};
 	};
 	6396D0CC1139C3E500255A29 /* ltTaskProxy.m */ = {
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = sourcecode.c.objc;
+		name = ltTaskProxy.m;
+		path = /Users/everzet/Devel/desktop/mac/Latte/Model/ltTaskProxy.m;
+		sourceTree = "<absolute>";
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {951, 1265}}";
 			sepNavSelRange = "{2458, 0}";
@@ -431,17 +459,17 @@
 	};
 	6396D1501139C57800255A29 /* AppController.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {951, 682}}";
+			sepNavIntBoundsRect = "{{0, 0}, {951, 693}}";
 			sepNavSelRange = "{736, 0}";
-			sepNavVisRange = "{0, 0}";
+			sepNavVisRange = "{0, 1345}";
 			sepNavWindowFrame = "{{15, 191}, {1236, 582}}";
 		};
 	};
 	6396D1511139C57800255A29 /* AppController.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {951, 3069}}";
-			sepNavSelRange = "{4774, 0}";
-			sepNavVisRange = "{0, 0}";
+			sepNavIntBoundsRect = "{{0, 0}, {951, 2904}}";
+			sepNavSelRange = "{3284, 0}";
+			sepNavVisRange = "{1904, 1562}";
 			sepNavWindowFrame = "{{38, 170}, {1236, 582}}";
 		};
 	};
@@ -539,6 +567,12 @@
 		};
 	};
 	6396D1821139C5C300255A29 /* EZSQLite.h */ = {
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = sourcecode.c.h;
+		name = EZSQLite.h;
+		path = /Users/everzet/Devel/desktop/mac/Latte/Lib/Vendor/EZSQLite/EZSQLite.h;
+		sourceTree = "<absolute>";
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {951, 647}}";
 			sepNavSelRange = "{1262, 0}";
@@ -546,6 +580,12 @@
 		};
 	};
 	6396D1831139C5C300255A29 /* EZSQLite.m */ = {
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = sourcecode.c.objc;
+		name = EZSQLite.m;
+		path = /Users/everzet/Devel/desktop/mac/Latte/Lib/Vendor/EZSQLite/EZSQLite.m;
+		sourceTree = "<absolute>";
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {951, 2981}}";
 			sepNavSelRange = "{1855, 0}";
@@ -649,9 +689,9 @@
 	};
 	63DDBDA7113A032D002BB911 /* SQLitePersistentObject.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {5034, 2530}}";
-			sepNavSelRange = "{4819, 0}";
-			sepNavVisRange = "{2705, 2666}";
+			sepNavIntBoundsRect = "{{0, 0}, {5034, 2409}}";
+			sepNavSelRange = "{4680, 0}";
+			sepNavVisRange = "{0, 2703}";
 		};
 	};
 	63DDBDBD113A033F002BB911 /* PBXTextBookmark */ = {
@@ -701,15 +741,15 @@
 	63DDBDF5113A8436002BB911 /* Task.h */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {951, 647}}";
-			sepNavSelRange = "{1180, 0}";
-			sepNavVisRange = "{0, 1187}";
+			sepNavSelRange = "{1148, 39}";
+			sepNavVisRange = "{0, 1223}";
 		};
 	};
 	63DDBDF6113A8436002BB911 /* Task.m */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {951, 647}}";
-			sepNavSelRange = "{855, 0}";
-			sepNavVisRange = "{0, 862}";
+			sepNavSelRange = "{666, 0}";
+			sepNavVisRange = "{0, 1211}";
 		};
 	};
 	63DDBE0D113A86FF002BB911 /* PBXTextBookmark */ = {
@@ -807,7 +847,7 @@
 		fRef = 63DDBDF5113A8436002BB911 /* Task.h */;
 		name = "Task.h: 39";
 		rLen = 0;
-		rLoc = 1180;
+		rLoc = 1216;
 		rType = 0;
 		vrLen = 1187;
 		vrLoc = 0;
@@ -837,7 +877,7 @@
 		fRef = 63DDBDF6113A8436002BB911 /* Task.m */;
 		name = "Task.m: 39";
 		rLen = 0;
-		rLoc = 855;
+		rLoc = 1204;
 		rType = 0;
 		vrLen = 862;
 		vrLoc = 0;
@@ -887,7 +927,7 @@
 		fRef = 6396D1511139C57800255A29 /* AppController.m */;
 		name = "AppController.m: 185";
 		rLen = 0;
-		rLoc = 4774;
+		rLoc = 4903;
 		rType = 0;
 		vrLen = 0;
 		vrLoc = 0;
