@@ -1,9 +1,6 @@
 [submodule "Lib/Vendor/EZMilk"]
 	path = Lib/Vendor/EZMilk
 	url = git://github.com/everzet/EZMilk.git
-[submodule "Lib/Vendor/EZSQLite"]
-	path = Lib/Vendor/EZSQLite
-	url = git://github.com/everzet/EZSQLite.git
 [submodule "Lib/Vendor/SQLitePersistentObjects"]
 	path = Lib/Vendor/SQLitePersistentObjects
 	url = git://github.com/siannopollo/sqlitepersistentobjects.git

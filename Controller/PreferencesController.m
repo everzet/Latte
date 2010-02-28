@@ -13,6 +13,14 @@
 
 @synthesize frob;
 
+- (id)initWithPreferences:(AppPreferences*)aPref andRtmConnector:(EZMilk*)anRtmApi
+{
+  preferences = aPref;
+  rtmApi = anRtmApi;
+
+  return [self init];
+}
+
 - (id)init
 {
   if (!(self = [super initWithWindowNibName:@"Preferences"]))
@@ -63,7 +71,7 @@
 
 - (IBAction)rtmShow:(id)sender
 {
-  if ([[Preferences instance] rtmToken])
+  if ([preferences rtmToken])
   {
     [tabView selectTabViewItemWithIdentifier:@"rtm"];
   }
@@ -79,13 +87,11 @@
 
 - (IBAction)connectToRtmStepOne:(id)sender
 {
-  EZMilk* rtm = [EZMilk instance];
-
-  NSString* aFrob = [rtm frob];
+  NSString* aFrob = [rtmApi frob];
   if (aFrob)
   {
     [self setFrob:aFrob];
-    system([[NSString stringWithFormat:@"open '%@'", [rtm authUrlForPerms:@"delete" withFrob:frob]] UTF8String]);
+    system([[NSString stringWithFormat:@"open '%@'", [rtmApi authUrlForPerms:@"delete" withFrob:frob]] UTF8String]);
   }
 
   [self rtmShow:self];
@@ -93,14 +99,12 @@
 
 - (IBAction)connectToRtmStepTwo:(id)sender
 {
-  EZMilk* rtm = [EZMilk instance];
-
   if (frob)
   {
-    NSString* token = [rtm tokenWithFrob:frob];
+    NSString* token = [rtmApi tokenWithFrob:frob];
     if (token)
     {
-      [[Preferences instance] setRtmToken:token];
+      [preferences setRtmToken:token];
     }
     [self setFrob:nil];
   }
@@ -110,7 +114,7 @@
 
 - (IBAction)resetRtmAuth:(id)sender
 {
-  [[Preferences instance] setRtmToken:nil];
+  [preferences setRtmToken:nil];
   [self rtmShow:self];
 }
 

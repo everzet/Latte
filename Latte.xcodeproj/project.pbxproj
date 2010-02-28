@@ -14,26 +14,18 @@
 		63303C2C101F4E7E00B516AB /* latte.icns in Resources */ = {isa = PBXBuildFile; fileRef = 63303C2B101F4E7E00B516AB /* latte.icns */; };
 		633A7E9510267AFD0017C70D /* RTM.png in Resources */ = {isa = PBXBuildFile; fileRef = 633A7E9410267AFD0017C70D /* RTM.png */; };
 		6348C4731026F9CF0060EAA3 /* notification.png in Resources */ = {isa = PBXBuildFile; fileRef = 6348C4721026F9CF0060EAA3 /* notification.png */; };
-		6350BB561139CAE100236474 /* LTRtmApiKeys.m in Sources */ = {isa = PBXBuildFile; fileRef = 6350BB551139CAE100236474 /* LTRtmApiKeys.m */; };
 		6395B003102260A900F1E641 /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 6395B002102260A900F1E641 /* libsqlite3.0.dylib */; };
-		6396D0CD1139C3E500255A29 /* ltListItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 6396D0C61139C3E500255A29 /* ltListItem.m */; };
-		6396D0CE1139C3E500255A29 /* ltListProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6396D0C81139C3E500255A29 /* ltListProxy.m */; };
-		6396D0CF1139C3E500255A29 /* ltTaskItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 6396D0CA1139C3E500255A29 /* ltTaskItem.m */; };
-		6396D0D01139C3E500255A29 /* ltTaskProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6396D0CC1139C3E500255A29 /* ltTaskProxy.m */; };
 		6396D0F11139C4B100255A29 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6396D0EC1139C4B100255A29 /* MainMenu.xib */; };
 		6396D0F21139C4B100255A29 /* Preferences.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6396D0ED1139C4B100255A29 /* Preferences.xib */; };
-		6396D0F31139C4B100255A29 /* QuickEntry.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6396D0EE1139C4B100255A29 /* QuickEntry.xib */; };
+		6396D0F31139C4B100255A29 /* TaskEntry.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6396D0EE1139C4B100255A29 /* TaskEntry.xib */; };
 		6396D1561139C57800255A29 /* AppController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6396D1511139C57800255A29 /* AppController.m */; };
 		6396D1571139C57800255A29 /* PreferencesController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6396D1531139C57800255A29 /* PreferencesController.m */; };
-		6396D1581139C57800255A29 /* QuickEntryController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6396D1551139C57800255A29 /* QuickEntryController.m */; };
-		6396D1A21139C5C300255A29 /* TaskGradient.m in Sources */ = {isa = PBXBuildFile; fileRef = 6396D16F1139C5C300255A29 /* TaskGradient.m */; };
-		6396D1A31139C5C300255A29 /* Preferences.m in Sources */ = {isa = PBXBuildFile; fileRef = 6396D1711139C5C300255A29 /* Preferences.m */; };
-		6396D1A51139C5C300255A29 /* LTRtmListSync.m in Sources */ = {isa = PBXBuildFile; fileRef = 6396D1751139C5C300255A29 /* LTRtmListSync.m */; };
-		6396D1A61139C5C300255A29 /* LTRtmTaskSync.m in Sources */ = {isa = PBXBuildFile; fileRef = 6396D1771139C5C300255A29 /* LTRtmTaskSync.m */; };
-		6396D1A71139C5C300255A29 /* TaskCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6396D1791139C5C300255A29 /* TaskCell.m */; };
+		6396D1581139C57800255A29 /* TaskEntryController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6396D1551139C57800255A29 /* TaskEntryController.m */; };
+		6396D1A21139C5C300255A29 /* TaskTableCellGradient.m in Sources */ = {isa = PBXBuildFile; fileRef = 6396D16F1139C5C300255A29 /* TaskTableCellGradient.m */; };
+		6396D1A31139C5C300255A29 /* AppPreferences.m in Sources */ = {isa = PBXBuildFile; fileRef = 6396D1711139C5C300255A29 /* AppPreferences.m */; };
+		6396D1A71139C5C300255A29 /* TaskTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6396D1791139C5C300255A29 /* TaskTableCell.m */; };
 		6396D1A81139C5C300255A29 /* CTGradient.m in Sources */ = {isa = PBXBuildFile; fileRef = 6396D17D1139C5C300255A29 /* CTGradient.m */; };
 		6396D1A91139C5C300255A29 /* EZMilk.m in Sources */ = {isa = PBXBuildFile; fileRef = 6396D1801139C5C300255A29 /* EZMilk.m */; };
-		6396D1AA1139C5C300255A29 /* EZSQLite.m in Sources */ = {isa = PBXBuildFile; fileRef = 6396D1831139C5C300255A29 /* EZSQLite.m */; };
 		6396D1AB1139C5C300255A29 /* NSObject+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 6396D1871139C5C300255A29 /* NSObject+SBJSON.m */; };
 		6396D1AC1139C5C300255A29 /* NSString+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 6396D1891139C5C300255A29 /* NSString+SBJSON.m */; };
 		6396D1AD1139C5C300255A29 /* SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 6396D18B1139C5C300255A29 /* SBJSON.m */; };
@@ -47,8 +39,6 @@
 		6396D1B51139C5C300255A29 /* LRFilterButtonTigerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6396D19C1139C5C300255A29 /* LRFilterButtonTigerCell.m */; };
 		6396D1B61139C5C300255A29 /* LROverflowButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 6396D19E1139C5C300255A29 /* LROverflowButton.m */; };
 		6396D1B71139C5C300255A29 /* MAAttachedWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 6396D1A11139C5C300255A29 /* MAAttachedWindow.m */; };
-		63A20EF41021A2110088B45A /* lattedb.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 63A20EF31021A2110088B45A /* lattedb.sqlite */; };
-		63A2115B1021C96F0088B45A /* lattedb.sql in Resources */ = {isa = PBXBuildFile; fileRef = 63A2115A1021C96F0088B45A /* lattedb.sql */; };
 		63CD529A104AA881005BE106 /* entry-quick.png in Resources */ = {isa = PBXBuildFile; fileRef = 63CD5298104AA880005BE106 /* entry-quick.png */; };
 		63CD529B104AA881005BE106 /* entry-full.png in Resources */ = {isa = PBXBuildFile; fileRef = 63CD5299104AA881005BE106 /* entry-full.png */; };
 		63DDBC7F1139E16F002BB911 /* BGHUDAppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63DDBC7E1139E16F002BB911 /* BGHUDAppKit.framework */; };
@@ -71,6 +61,7 @@
 		63DDBDBC113A032D002BB911 /* UIImage-SQLitePersistence.m in Sources */ = {isa = PBXBuildFile; fileRef = 63DDBDAC113A032D002BB911 /* UIImage-SQLitePersistence.m */; };
 		63DDBDCD113A7CAE002BB911 /* TaskList.m in Sources */ = {isa = PBXBuildFile; fileRef = 63DDBDCC113A7CAE002BB911 /* TaskList.m */; };
 		63DDBDF7113A8436002BB911 /* Task.m in Sources */ = {isa = PBXBuildFile; fileRef = 63DDBDF6113A8436002BB911 /* Task.m */; };
+		63DDBF9D113AA1B8002BB911 /* RTMKeys.m in Sources */ = {isa = PBXBuildFile; fileRef = 63DDBF9C113AA1B8002BB911 /* RTMKeys.m */; };
 		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
 		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
@@ -104,42 +95,26 @@
 		63303C2B101F4E7E00B516AB /* latte.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; name = latte.icns; path = ../latte.icns; sourceTree = "<group>"; };
 		633A7E9410267AFD0017C70D /* RTM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = RTM.png; sourceTree = "<group>"; };
 		6348C4721026F9CF0060EAA3 /* notification.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = notification.png; sourceTree = "<group>"; };
-		6350BB541139CAE100236474 /* LTRtmApiKeys.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTRtmApiKeys.h; sourceTree = "<group>"; };
-		6350BB551139CAE100236474 /* LTRtmApiKeys.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LTRtmApiKeys.m; sourceTree = "<group>"; };
 		6395B002102260A900F1E641 /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
-		6396D0C51139C3E500255A29 /* ltListItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ltListItem.h; sourceTree = "<group>"; };
-		6396D0C61139C3E500255A29 /* ltListItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ltListItem.m; sourceTree = "<group>"; };
-		6396D0C71139C3E500255A29 /* ltListProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ltListProxy.h; sourceTree = "<group>"; };
-		6396D0C81139C3E500255A29 /* ltListProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ltListProxy.m; sourceTree = "<group>"; };
-		6396D0C91139C3E500255A29 /* ltTaskItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ltTaskItem.h; sourceTree = "<group>"; };
-		6396D0CA1139C3E500255A29 /* ltTaskItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ltTaskItem.m; sourceTree = "<group>"; };
-		6396D0CB1139C3E500255A29 /* ltTaskProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ltTaskProxy.h; sourceTree = "<group>"; };
-		6396D0CC1139C3E500255A29 /* ltTaskProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ltTaskProxy.m; sourceTree = "<group>"; };
 		6396D0EC1139C4B100255A29 /* MainMenu.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainMenu.xib; sourceTree = "<group>"; };
 		6396D0ED1139C4B100255A29 /* Preferences.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Preferences.xib; sourceTree = "<group>"; };
-		6396D0EE1139C4B100255A29 /* QuickEntry.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QuickEntry.xib; sourceTree = "<group>"; };
+		6396D0EE1139C4B100255A29 /* TaskEntry.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TaskEntry.xib; sourceTree = "<group>"; };
 		6396D1501139C57800255A29 /* AppController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppController.h; sourceTree = "<group>"; };
 		6396D1511139C57800255A29 /* AppController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppController.m; sourceTree = "<group>"; };
 		6396D1521139C57800255A29 /* PreferencesController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PreferencesController.h; sourceTree = "<group>"; };
 		6396D1531139C57800255A29 /* PreferencesController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PreferencesController.m; sourceTree = "<group>"; };
-		6396D1541139C57800255A29 /* QuickEntryController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuickEntryController.h; sourceTree = "<group>"; };
-		6396D1551139C57800255A29 /* QuickEntryController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuickEntryController.m; sourceTree = "<group>"; };
-		6396D16E1139C5C300255A29 /* TaskGradient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TaskGradient.h; sourceTree = "<group>"; };
-		6396D16F1139C5C300255A29 /* TaskGradient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TaskGradient.m; sourceTree = "<group>"; };
-		6396D1701139C5C300255A29 /* Preferences.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Preferences.h; sourceTree = "<group>"; };
-		6396D1711139C5C300255A29 /* Preferences.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Preferences.m; sourceTree = "<group>"; };
-		6396D1741139C5C300255A29 /* LTRtmListSync.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTRtmListSync.h; sourceTree = "<group>"; };
-		6396D1751139C5C300255A29 /* LTRtmListSync.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LTRtmListSync.m; sourceTree = "<group>"; };
-		6396D1761139C5C300255A29 /* LTRtmTaskSync.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTRtmTaskSync.h; sourceTree = "<group>"; };
-		6396D1771139C5C300255A29 /* LTRtmTaskSync.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LTRtmTaskSync.m; sourceTree = "<group>"; };
-		6396D1781139C5C300255A29 /* TaskCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TaskCell.h; sourceTree = "<group>"; };
-		6396D1791139C5C300255A29 /* TaskCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TaskCell.m; sourceTree = "<group>"; };
+		6396D1541139C57800255A29 /* TaskEntryController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TaskEntryController.h; sourceTree = "<group>"; };
+		6396D1551139C57800255A29 /* TaskEntryController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TaskEntryController.m; sourceTree = "<group>"; };
+		6396D16E1139C5C300255A29 /* TaskTableCellGradient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TaskTableCellGradient.h; sourceTree = "<group>"; };
+		6396D16F1139C5C300255A29 /* TaskTableCellGradient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TaskTableCellGradient.m; sourceTree = "<group>"; };
+		6396D1701139C5C300255A29 /* AppPreferences.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppPreferences.h; sourceTree = "<group>"; };
+		6396D1711139C5C300255A29 /* AppPreferences.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppPreferences.m; sourceTree = "<group>"; };
+		6396D1781139C5C300255A29 /* TaskTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TaskTableCell.h; sourceTree = "<group>"; };
+		6396D1791139C5C300255A29 /* TaskTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TaskTableCell.m; sourceTree = "<group>"; };
 		6396D17C1139C5C300255A29 /* CTGradient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTGradient.h; sourceTree = "<group>"; };
 		6396D17D1139C5C300255A29 /* CTGradient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTGradient.m; sourceTree = "<group>"; };
 		6396D17F1139C5C300255A29 /* EZMilk.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EZMilk.h; sourceTree = "<group>"; };
 		6396D1801139C5C300255A29 /* EZMilk.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EZMilk.m; sourceTree = "<group>"; };
-		6396D1821139C5C300255A29 /* EZSQLite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EZSQLite.h; sourceTree = "<group>"; };
-		6396D1831139C5C300255A29 /* EZSQLite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EZSQLite.m; sourceTree = "<group>"; };
 		6396D1851139C5C300255A29 /* JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSON.h; sourceTree = "<group>"; };
 		6396D1861139C5C300255A29 /* NSObject+SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+SBJSON.h"; sourceTree = "<group>"; };
 		6396D1871139C5C300255A29 /* NSObject+SBJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+SBJSON.m"; sourceTree = "<group>"; };
@@ -167,8 +142,6 @@
 		6396D19E1139C5C300255A29 /* LROverflowButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LROverflowButton.m; sourceTree = "<group>"; };
 		6396D1A01139C5C300255A29 /* MAAttachedWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MAAttachedWindow.h; sourceTree = "<group>"; };
 		6396D1A11139C5C300255A29 /* MAAttachedWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MAAttachedWindow.m; sourceTree = "<group>"; };
-		63A20EF31021A2110088B45A /* lattedb.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = lattedb.sqlite; sourceTree = "<group>"; };
-		63A2115A1021C96F0088B45A /* lattedb.sql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = lattedb.sql; sourceTree = "<group>"; };
 		63CD5298104AA880005BE106 /* entry-quick.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "entry-quick.png"; sourceTree = "<group>"; };
 		63CD5299104AA881005BE106 /* entry-full.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "entry-full.png"; sourceTree = "<group>"; };
 		63DDBC7E1139E16F002BB911 /* BGHUDAppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BGHUDAppKit.framework; path = Lib/Vendor/BGHUDAppKit.framework; sourceTree = "<group>"; };
@@ -208,6 +181,8 @@
 		63DDBDCC113A7CAE002BB911 /* TaskList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TaskList.m; sourceTree = "<group>"; };
 		63DDBDF5113A8436002BB911 /* Task.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Task.h; sourceTree = "<group>"; };
 		63DDBDF6113A8436002BB911 /* Task.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Task.m; sourceTree = "<group>"; };
+		63DDBF9B113AA1B8002BB911 /* RTMKeys.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RTMKeys.h; sourceTree = "<group>"; };
+		63DDBF9C113AA1B8002BB911 /* RTMKeys.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RTMKeys.m; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8D1107320486CEB800E47090 /* Latte.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Latte.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -233,8 +208,7 @@
 				6396D0E61139C4B100255A29 /* View */,
 				6396D14F1139C57800255A29 /* Controller */,
 				6396D16D1139C5C300255A29 /* Lib */,
-				6350BB541139CAE100236474 /* LTRtmApiKeys.h */,
-				6350BB551139CAE100236474 /* LTRtmApiKeys.m */,
+				63DDBF9A113AA1B8002BB911 /* Keys */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -292,8 +266,6 @@
 			isa = PBXGroup;
 			children = (
 				632937611020995500C92BF4 /* images */,
-				63A2115A1021C96F0088B45A /* lattedb.sql */,
-				63A20EF31021A2110088B45A /* lattedb.sqlite */,
 				8D1107310486CEB800E47090 /* Info.plist */,
 				089C165CFE840E0CC02AAC07 /* InfoPlist.strings */,
 			);
@@ -328,14 +300,6 @@
 		6396D0C41139C3E500255A29 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				6396D0C51139C3E500255A29 /* ltListItem.h */,
-				6396D0C61139C3E500255A29 /* ltListItem.m */,
-				6396D0C71139C3E500255A29 /* ltListProxy.h */,
-				6396D0C81139C3E500255A29 /* ltListProxy.m */,
-				6396D0C91139C3E500255A29 /* ltTaskItem.h */,
-				6396D0CA1139C3E500255A29 /* ltTaskItem.m */,
-				6396D0CB1139C3E500255A29 /* ltTaskProxy.h */,
-				6396D0CC1139C3E500255A29 /* ltTaskProxy.m */,
 				63DDBDCB113A7CAE002BB911 /* TaskList.h */,
 				63DDBDCC113A7CAE002BB911 /* TaskList.m */,
 				63DDBDF5113A8436002BB911 /* Task.h */,
@@ -349,7 +313,7 @@
 			children = (
 				6396D0EC1139C4B100255A29 /* MainMenu.xib */,
 				6396D0ED1139C4B100255A29 /* Preferences.xib */,
-				6396D0EE1139C4B100255A29 /* QuickEntry.xib */,
+				6396D0EE1139C4B100255A29 /* TaskEntry.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -361,8 +325,8 @@
 				6396D1511139C57800255A29 /* AppController.m */,
 				6396D1521139C57800255A29 /* PreferencesController.h */,
 				6396D1531139C57800255A29 /* PreferencesController.m */,
-				6396D1541139C57800255A29 /* QuickEntryController.h */,
-				6396D1551139C57800255A29 /* QuickEntryController.m */,
+				6396D1541139C57800255A29 /* TaskEntryController.h */,
+				6396D1551139C57800255A29 /* TaskEntryController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -371,16 +335,12 @@
 			isa = PBXGroup;
 			children = (
 				6396D17A1139C5C300255A29 /* Vendor */,
-				6396D16E1139C5C300255A29 /* TaskGradient.h */,
-				6396D16F1139C5C300255A29 /* TaskGradient.m */,
-				6396D1701139C5C300255A29 /* Preferences.h */,
-				6396D1711139C5C300255A29 /* Preferences.m */,
-				6396D1741139C5C300255A29 /* LTRtmListSync.h */,
-				6396D1751139C5C300255A29 /* LTRtmListSync.m */,
-				6396D1761139C5C300255A29 /* LTRtmTaskSync.h */,
-				6396D1771139C5C300255A29 /* LTRtmTaskSync.m */,
-				6396D1781139C5C300255A29 /* TaskCell.h */,
-				6396D1791139C5C300255A29 /* TaskCell.m */,
+				6396D16E1139C5C300255A29 /* TaskTableCellGradient.h */,
+				6396D16F1139C5C300255A29 /* TaskTableCellGradient.m */,
+				6396D1701139C5C300255A29 /* AppPreferences.h */,
+				6396D1711139C5C300255A29 /* AppPreferences.m */,
+				6396D1781139C5C300255A29 /* TaskTableCell.h */,
+				6396D1791139C5C300255A29 /* TaskTableCell.m */,
 			);
 			path = Lib;
 			sourceTree = "<group>";
@@ -390,7 +350,6 @@
 			children = (
 				6396D17B1139C5C300255A29 /* CTGradient */,
 				6396D17E1139C5C300255A29 /* EZMilk */,
-				6396D1811139C5C300255A29 /* EZSQLite */,
 				63DDBD8C113A032D002BB911 /* SQLitePersistentObjects */,
 				6396D1841139C5C300255A29 /* JSON */,
 				6396D1921139C5C300255A29 /* LRFilterBar */,
@@ -415,15 +374,6 @@
 				6396D1801139C5C300255A29 /* EZMilk.m */,
 			);
 			path = EZMilk;
-			sourceTree = "<group>";
-		};
-		6396D1811139C5C300255A29 /* EZSQLite */ = {
-			isa = PBXGroup;
-			children = (
-				6396D1821139C5C300255A29 /* EZSQLite.h */,
-				6396D1831139C5C300255A29 /* EZSQLite.m */,
-			);
-			path = EZSQLite;
 			sourceTree = "<group>";
 		};
 		6396D1841139C5C300255A29 /* JSON */ = {
@@ -514,6 +464,15 @@
 			path = SQLitePersistentObjects/src;
 			sourceTree = "<group>";
 		};
+		63DDBF9A113AA1B8002BB911 /* Keys */ = {
+			isa = PBXGroup;
+			children = (
+				63DDBF9B113AA1B8002BB911 /* RTMKeys.h */,
+				63DDBF9C113AA1B8002BB911 /* RTMKeys.m */,
+			);
+			path = Keys;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -564,15 +523,13 @@
 				632937671020995500C92BF4 /* OverflowButton.tif in Resources */,
 				632937681020995500C92BF4 /* OverflowButtonPressed.tif in Resources */,
 				632937691020995500C92BF4 /* OverflowDivider.png in Resources */,
-				63A20EF41021A2110088B45A /* lattedb.sqlite in Resources */,
-				63A2115B1021C96F0088B45A /* lattedb.sql in Resources */,
 				633A7E9510267AFD0017C70D /* RTM.png in Resources */,
 				6348C4731026F9CF0060EAA3 /* notification.png in Resources */,
 				63CD529A104AA881005BE106 /* entry-quick.png in Resources */,
 				63CD529B104AA881005BE106 /* entry-full.png in Resources */,
 				6396D0F11139C4B100255A29 /* MainMenu.xib in Resources */,
 				6396D0F21139C4B100255A29 /* Preferences.xib in Resources */,
-				6396D0F31139C4B100255A29 /* QuickEntry.xib in Resources */,
+				6396D0F31139C4B100255A29 /* TaskEntry.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -584,21 +541,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				8D11072D0486CEB800E47090 /* main.m in Sources */,
-				6396D0CD1139C3E500255A29 /* ltListItem.m in Sources */,
-				6396D0CE1139C3E500255A29 /* ltListProxy.m in Sources */,
-				6396D0CF1139C3E500255A29 /* ltTaskItem.m in Sources */,
-				6396D0D01139C3E500255A29 /* ltTaskProxy.m in Sources */,
 				6396D1561139C57800255A29 /* AppController.m in Sources */,
 				6396D1571139C57800255A29 /* PreferencesController.m in Sources */,
-				6396D1581139C57800255A29 /* QuickEntryController.m in Sources */,
-				6396D1A21139C5C300255A29 /* TaskGradient.m in Sources */,
-				6396D1A31139C5C300255A29 /* Preferences.m in Sources */,
-				6396D1A51139C5C300255A29 /* LTRtmListSync.m in Sources */,
-				6396D1A61139C5C300255A29 /* LTRtmTaskSync.m in Sources */,
-				6396D1A71139C5C300255A29 /* TaskCell.m in Sources */,
+				6396D1581139C57800255A29 /* TaskEntryController.m in Sources */,
+				6396D1A21139C5C300255A29 /* TaskTableCellGradient.m in Sources */,
+				6396D1A31139C5C300255A29 /* AppPreferences.m in Sources */,
+				6396D1A71139C5C300255A29 /* TaskTableCell.m in Sources */,
 				6396D1A81139C5C300255A29 /* CTGradient.m in Sources */,
 				6396D1A91139C5C300255A29 /* EZMilk.m in Sources */,
-				6396D1AA1139C5C300255A29 /* EZSQLite.m in Sources */,
 				6396D1AB1139C5C300255A29 /* NSObject+SBJSON.m in Sources */,
 				6396D1AC1139C5C300255A29 /* NSString+SBJSON.m in Sources */,
 				6396D1AD1139C5C300255A29 /* SBJSON.m in Sources */,
@@ -612,7 +562,6 @@
 				6396D1B51139C5C300255A29 /* LRFilterButtonTigerCell.m in Sources */,
 				6396D1B61139C5C300255A29 /* LROverflowButton.m in Sources */,
 				6396D1B71139C5C300255A29 /* MAAttachedWindow.m in Sources */,
-				6350BB561139CAE100236474 /* LTRtmApiKeys.m in Sources */,
 				63DDBDAD113A032D002BB911 /* NSData-SQLitePersistence.m in Sources */,
 				63DDBDAE113A032D002BB911 /* NSDate-SQLitePersistence.m in Sources */,
 				63DDBDAF113A032D002BB911 /* NSMutableArray-MultipleSort.m in Sources */,
@@ -631,6 +580,7 @@
 				63DDBDBC113A032D002BB911 /* UIImage-SQLitePersistence.m in Sources */,
 				63DDBDCD113A7CAE002BB911 /* TaskList.m in Sources */,
 				63DDBDF7113A8436002BB911 /* Task.m in Sources */,
+				63DDBF9D113AA1B8002BB911 /* RTMKeys.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

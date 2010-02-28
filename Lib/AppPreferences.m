@@ -6,15 +6,13 @@
 //  Copyright 2009 __MyCompanyName__. All rights reserved.
 //
 
-#import "Preferences.h"
+#import "AppPreferences.h"
 
 
 #define UD_RTM_TOKEN_KEY @"rtm.token"
 #define UD_RTM_SYNC_KEY @"rtm.sync.interval"
 
-static Preferences* LTPreferencesInstance;
-
-@implementation Preferences
+@implementation AppPreferences
 
 - (id)init
 {
@@ -30,14 +28,7 @@ static Preferences* LTPreferencesInstance;
   userDefaults = [[NSUserDefaults standardUserDefaults] retain];
   [userDefaults registerDefaults:defaultValues];
 
-  LTPreferencesInstance = self;
-
   return self;
-}
-
-+ (Preferences*)instance
-{
-  return LTPreferencesInstance;
 }
 
 - (NSString*)rtmToken

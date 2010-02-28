@@ -6,24 +6,24 @@
 //  Copyright 2009 __MyCompanyName__. All rights reserved.
 //
 
-#import "TaskGradient.h"
+#import "TaskTableCellGradient.h"
 
 
-@implementation TaskGradient
+@implementation TaskTableCellGradient
 
 + (id)taskGradientIsHighlighted:(BOOL)isHighlighted isChecked:(BOOL)isChecked
 {
   if (isHighlighted)
   {
-    return [TaskGradient selectedTaskGradient];
+    return [TaskTableCellGradient selectedTaskGradient];
   }
   else if (isChecked)
   {
-    return [TaskGradient checkedTaskGradient];
+    return [TaskTableCellGradient checkedTaskGradient];
   }
   else
   {
-    return [TaskGradient taskGradient];
+    return [TaskTableCellGradient taskGradient];
   }
 }
 
@@ -47,19 +47,19 @@
 
 + (id)priorityGradient:(NSInteger)priority
 {
-  TaskGradient* priorityRect;
+  TaskTableCellGradient* priorityRect;
   switch (priority) {
     case 3:
-      priorityRect = [TaskGradient lowPriorityGradient];
+      priorityRect = [TaskTableCellGradient lowPriorityGradient];
       break;
     case 2:
-      priorityRect = [TaskGradient normalPriorityGradient];
+      priorityRect = [TaskTableCellGradient normalPriorityGradient];
       break;
     case 1:
-      priorityRect = [TaskGradient highPriorityGradient];
+      priorityRect = [TaskTableCellGradient highPriorityGradient];
       break;
     default:
-      priorityRect = [TaskGradient noPriorityGradient];
+      priorityRect = [TaskTableCellGradient noPriorityGradient];
       break;
   }
   return [[priorityRect autorelease] retain];

@@ -1,42 +1,44 @@
 #import <Cocoa/Cocoa.h>
 
-// RTM library
-#import "LTRtmApiKeys.h"
-#import "EZMilk.h"
-
-// Interface libraries
-#import "LRFilterBar.h"
-#import "TaskCell.h"
-
 // Controllers
 #import "PreferencesController.h"
-#import "QuickEntryController.h"
+#import "TaskEntryController.h"
 
 // Models
 #import "SQLiteInstanceManager.h"
 #import "Task.h"
 
-// 2REMOVE
-#import "ltListProxy.h"
-#import "ltTaskProxy.h"
+// Interface libraries
+#import "LRFilterBar.h"
+#import "TaskTableCell.h"
+
+// RTM library
+#import "RTMKeys.h"
+#import "EZMilk.h"
 
 @interface AppController : NSWindowController {
-  IBOutlet LRFilterBar* filter;
-  IBOutlet NSTableView* tableView;
-  IBOutlet NSPopUpButton* listView;
+  IBOutlet LRFilterBar*         filter;
+  IBOutlet NSTableView*         tableView;
+  IBOutlet NSPopUpButton*       listView;
   IBOutlet NSProgressIndicator* progress;
-  IBOutlet NSWindow* aboutWindow;
+  IBOutlet NSWindow*            aboutWindow;
 
-  IBOutlet NSMutableArray* lists;
-  IBOutlet NSMutableArray* tasks;
+  // Data arrays
+  IBOutlet NSMutableArray*      lists;
+  IBOutlet NSMutableArray*      tasks;
 
-  QuickEntryController* quickEntryController;
-  PreferencesController* preferencesController;
+  // Controllers
+  TaskEntryController*          quickEntryController;
+  PreferencesController*        preferencesController;
 
-  EZSQLite* sqlite;
-  EZMilk* rtm;
-  Preferences* preferences;
+  // Singletons
+  EZMilk*                       rtmApi;
+  AppPreferences*               preferences;
 }
+
+- (void)initFilter;
+- (void)initTable;
+- (void)initDatabase;
 
 - (void)reloadTasks;
 - (void)reloadTasksWithSelection:(BOOL)withSelection;
@@ -47,7 +49,7 @@
 
 - (IBAction)quickEntryAdd:(id)sender;
 - (IBAction)quickEntryEdit:(id)sender;
-- (void)quickEntryEditTask:(ltTaskItem*)aTask;
+- (void)quickEntryEditTask:(Task*)aTask;
 
 - (IBAction)selectList:(id)sender;
 - (void)selectFilter:(id)sender;

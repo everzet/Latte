@@ -4,52 +4,55 @@
 
 - (void)awakeFromNib
 {
-  // Configuring filter buttons
+  // Interface setup
+  [self initFilter];
+  [self initTable];
+
+  // Setup EZMilk & AppPreferences lib
+  rtmApi = [[EZMilk alloc] initWithApiKey:[RTMKeys apiKey]
+                             andApiSecret:[RTMKeys apiSecret]];
+  preferences = [[AppPreferences alloc] init];
+
+  // Setup DB & retrieve data
+  [self initDatabase];
+  [self reloadLists];
+  [self reloadTasks];
+
+  [NSThread detachNewThreadSelector:@selector(runSyncLoop:) toTarget:self withObject:self];
+}
+
+- (void)initFilter
+{
   NSArray *filterButtons = [[NSArray alloc] initWithObjects: @"All", @"Pending", @"Complete", nil];
   [filter setGrayBackground];
   [filter setRegularFontWeight];
   [filter addItemsWithTitles:filterButtons withSelector:@selector(selectFilter:) withTarget:self];
   [filter selectIndex:0 inSegment:0];
   [filterButtons release];
+}
 
+- (void)initTable
+{
   // Setting self as tableView target & sets the reciever of double click action to quickEntryEdit: action
   [tableView setTarget:self];
   [tableView setDoubleAction:@selector(quickEntryEdit:)];
-
+  
   // Inserting self in NSResponder chain right after the tableView & before the tableView's responder
   [self setNextResponder:[tableView nextResponder]];
   [tableView setNextResponder:self];
+}
 
-  // Preferences controller
-  preferences = [[Preferences alloc] init];
+- (void)initDatabase
+{
+  NSArray   *appSupportPath = NSSearchPathForDirectoriesInDomains(NSApplicationSupportDirectory, NSUserDomainMask, YES);
+  NSString  *databasePath = [[[appSupportPath objectAtIndex: 0] 
+                              stringByAppendingPathComponent: @"Latte"]
+                             stringByAppendingPathComponent: @"tasks.db"];
+  [[SQLiteInstanceManager sharedManager] setDatabaseFilepath:databasePath];
 
-  // Registering/creating database file
-  NSArray   *appSupportPath       = NSSearchPathForDirectoriesInDomains(NSApplicationSupportDirectory, NSUserDomainMask, YES);
-
-
-  // DATABASE
-  [[SQLiteInstanceManager sharedManager] setDatabaseFilepath:[[[appSupportPath objectAtIndex: 0] 
-                                                               stringByAppendingPathComponent: @"Latte"]
-                                                              stringByAppendingPathComponent: @"latte.sqlite"]];
-
-  
-  NSString  *databasePath         = [[[appSupportPath objectAtIndex: 0] 
-                                     stringByAppendingPathComponent: @"Latte"]
-                                     stringByAppendingPathComponent: @"lattedb.sqlite"];
-  NSString  *databasePathFromApp  = [[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent:@"lattedb.sqlite"];
-  NSFileManager *fileManager = [NSFileManager defaultManager];
-  if (![fileManager fileExistsAtPath:databasePath])
-  {
-    [fileManager createDirectoryAtPath:[databasePath stringByDeletingLastPathComponent] withIntermediateDirectories:true attributes:nil error:nil];
-    [fileManager copyItemAtPath:databasePathFromApp toPath:databasePath error:nil];
-  }
-  sqlite = [[EZSQLite alloc] initWithDatabase:databasePath];
-  rtm = [[EZMilk alloc] initWithApiKey:[LTRtmApiKeys apiKey] andApiSecret:[LTRtmApiKeys apiSecret]];
-
-  [self reloadLists];
-  [self reloadTasks];
-
-  [NSThread detachNewThreadSelector:@selector(runSyncLoop:) toTarget:self withObject:self];
+  //TaskList* list = [[TaskList alloc] init];
+  //list.name = @"Inbox";
+  //[list save];
 }
 
 - (void)dealloc
@@ -58,8 +61,7 @@
   [preferencesController release];
 
   [preferences release];
-  [rtm release];
-  [sqlite release];
+  [rtmApi release];
 
   [super dealloc];
 }
@@ -68,14 +70,9 @@
 {
   int selectedList = [listView indexOfSelectedItem];
   NSMutableArray* listArray = [self mutableArrayValueForKey:@"lists"];
+
   [listArray removeAllObjects];
-
-  ltListItem* list = [[ltListItem alloc] init];
-  [list setName:@"all tasks"];
-  [listArray addObject:list];
-  [list release];
-
-  [listArray addObjectsFromArray:[ltListProxy lists]];
+  [listArray addObjectsFromArray:[TaskList allObjects]];
 
   if (selectedList >= 0)
   {
@@ -93,19 +90,22 @@
   NSIndexSet* selectedTasks = [tableView selectedRowIndexes];
   NSRect scrollRect = [tableView visibleRect];
 
-  ltListItem* list = nil;
-  NSNumber* completed = nil;
+  TaskList* list = nil;
 
-  if ([listView indexOfSelectedItem] > 0)
-  {
-    list = [lists objectAtIndex:[listView indexOfSelectedItem]];
-  }
-  if ([filter getSelectedIndexInSegment:0] > 0)
-  {
-    completed = [NSNumber numberWithInt:[filter getSelectedIndexInSegment:0] - 1];
-  }
+  list = [lists objectAtIndex:[listView indexOfSelectedItem]];
   [[self mutableArrayValueForKey:@"tasks"] removeAllObjects];
-  [[self mutableArrayValueForKey:@"tasks"] addObjectsFromArray:[ltTaskProxy tasksWithList:list completed:completed]];
+  if (1 == [filter getSelectedIndexInSegment:0])
+  {
+    [[self mutableArrayValueForKey:@"tasks"] addObjectsFromArray:[Task allCompleted:false inList:list]];
+  }
+  else if (2 == [filter getSelectedIndexInSegment:0])
+  {
+    [[self mutableArrayValueForKey:@"tasks"] addObjectsFromArray:[Task allCompleted:true inList:list]];
+  }
+  else
+  {
+    [[self mutableArrayValueForKey:@"tasks"] addObjectsFromArray:[Task allInList:list]];
+  }
 
   if (withSelection)
   {
@@ -116,7 +116,7 @@
 
 - (void)tableView:(NSTableView *)aTableView willDisplayCell:(id)aCell forTableColumn:(NSTableColumn *)aTableColumn row:(NSInteger)rowIndex
 {
-  TaskCell* cell = (TaskCell*)aCell;
+  TaskTableCell* cell = (TaskTableCell*)aCell;
 
   [cell setTarget:self];
   [cell setCheckboxClickedAction:@selector(changeTaskCompletionStatus:)];
@@ -124,7 +124,7 @@
 
 - (void)keyDown:(NSEvent*)anEvent
 {
-  ltTaskItem* task = nil;
+  Task* task = nil;
   if ([[tableView selectedRowIndexes] count])
   {
     task = [tasks objectAtIndex:[[tableView selectedRowIndexes] firstIndex]];
@@ -136,7 +136,7 @@
     case NSDeleteCharacter:
       if (task)
       {
-        [task delete];
+        [task deleteObject];
         [self reloadTasksWithSelection:YES];
       }
       break;
@@ -173,14 +173,15 @@
   {
     [preferencesController release];
   }
-  preferencesController = [[PreferencesController alloc] init];
+  preferencesController = [[PreferencesController alloc] initWithPreferences: preferences
+                                                             andRtmConnector: rtmApi];
   [preferencesController showWindow:self];
 }
 
 - (IBAction)quickEntryAdd:(id)sender
 {
-  ltTaskItem* task = [[ltTaskItem alloc] init];
-  [task setList:[[lists objectAtIndex:[listView indexOfSelectedItem]] dbId]];
+  Task* task = [[Task alloc] init];
+  task.list = [lists objectAtIndex:[listView indexOfSelectedItem]];
   [self quickEntryEditTask:task];
   [task release];
 }
@@ -193,13 +194,13 @@
   }
 }
 
-- (void)quickEntryEditTask:(ltTaskItem*)aTask
+- (void)quickEntryEditTask:(Task*)aTask
 {
   if (quickEntryController)
   {
     [quickEntryController release];
   }
-  quickEntryController = [[QuickEntryController alloc] initWithTask:aTask];
+  quickEntryController = [[TaskEntryController alloc] initWithTask:aTask];
   [quickEntryController setSaveTarget:self];
   [quickEntryController setSaveAction:@selector(saveTaskFromEntry:)];
   [quickEntryController showWindow: self];
@@ -217,8 +218,8 @@
 
 - (void)changeTaskCompletionStatus:(id)sender
 {
-  ltTaskItem* task = [tasks objectAtIndex:[[tableView selectedRowIndexes] firstIndex]];
-  [task setCompleted:([task isCompleted] ? nil : [NSDate date])];
+  Task* task = [tasks objectAtIndex:[[tableView selectedRowIndexes] firstIndex]];
+  task.isCompleted = task.isCompleted ? false : true;
   [task save];
   [self reloadTasksWithSelection:YES];
 }
@@ -234,12 +235,12 @@
   while (true)
   {
     NSAutoreleasePool* pool = [[NSAutoreleasePool alloc] init];
-    [rtm setToken:[preferences rtmToken]];
+    [rtmApi setToken:[preferences rtmToken]];
 
-    if ([rtm token])
+    if ([rtmApi token])
     {
       [self performSelectorOnMainThread:@selector(syncWillStart:) withObject:self waitUntilDone:NO];
-      [self syncWithRtm:rtm];
+      [self syncWithRtm:rtmApi];
       [self performSelectorOnMainThread:@selector(syncDidFinish:) withObject:self waitUntilDone:NO];
     }
 

@@ -7,21 +7,32 @@
 //
 
 #import <Cocoa/Cocoa.h>
-#import "Preferences.h"
-#import "LTRtmApiKeys.h"
+
+// Preferences library
+#import "AppPreferences.h"
+
+// RTM library
+#import "RTMKeys.h"
 #import "EZMilk.h"
 
-
 @interface PreferencesController : NSWindowController {
-  IBOutlet NSTabView* tabView;
-  IBOutlet NSToolbar* toolbar;
+  IBOutlet NSTabView*   tabView;
+  IBOutlet NSToolbar*   toolbar;
 
   IBOutlet NSTextField* rtmText;
-  IBOutlet NSButton* rtmButton;
-  NSString* frob;
+  IBOutlet NSButton*    rtmButton;
+
+  // AppPreferences & EZMilk libs
+  AppPreferences*       preferences;
+  EZMilk*               rtmApi;
+
+  // RTM FROB string
+  NSString*             frob;
 }
 
 @property (retain) NSString* frob;
+
+- (id)initWithPreferences:(AppPreferences*)aPref andRtmConnector:(EZMilk*)anRtmApi;
 
 - (IBAction)generalShow:(id)sender;
 - (IBAction)notificationsShow:(id)sender;

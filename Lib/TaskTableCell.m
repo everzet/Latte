@@ -6,7 +6,7 @@
 //  Copyright 2009 __MyCompanyName__. All rights reserved.
 //
 
-#import "TaskCell.h"
+#import "TaskTableCell.h"
 
 @implementation NSColor (BLColor)
 
@@ -20,7 +20,7 @@
 
 @end
 
-@implementation TaskCell
+@implementation TaskTableCell
 
 @synthesize checkboxClickedAction;
 
@@ -57,7 +57,7 @@
 
   if (isChecked)
   {
-    [[TaskGradient checkboxCheckedGradient] fillRect:checkboxRect angle:90];
+    [[TaskTableCellGradient checkboxCheckedGradient] fillRect:checkboxRect angle:90];
 
     path = [[NSBezierPath alloc] init];
     [path moveToPoint: NSMakePoint(cellFrame.origin.x + 11, cellFrame.origin.y + 11)];
@@ -70,7 +70,7 @@
   }
   else
   {
-    [[TaskGradient checkboxGradient] fillRect:checkboxRect angle:90];
+    [[TaskTableCellGradient checkboxGradient] fillRect:checkboxRect angle:90];
   }
 }
 
@@ -90,20 +90,20 @@
 - (void)drawWithFrame:(NSRect)cellFrame inView:(NSView *)controlView
 {
   // Getting associated task
-  ltTaskItem *task = (ltTaskItem*)[self objectValue];
+  Task *task = (Task*)[self objectValue];
 
   // Task background
-  [[TaskGradient taskGradientIsHighlighted:[self isHighlighted] isChecked:[task isCompleted]]
+  [[TaskTableCellGradient taskGradientIsHighlighted:[self isHighlighted] isChecked:task.isCompleted]
    fillRect: NSMakeRect(cellFrame.origin.x - 1, cellFrame.origin.y - 1, cellFrame.size.width + 3, cellFrame.size.height + 2)
       angle: 90];
 
   // Task priority colored gradient
-  [[TaskGradient priorityGradient: [[task priority] integerValue]]
+  [[TaskTableCellGradient priorityGradient: task.priority]
                       fillRect: NSMakeRect(cellFrame.origin.x, cellFrame.origin.y, 5, cellFrame.size.height)
                          angle: 90];
 
   // Task checker
-  [self drawCheckboxWithFrame:cellFrame isChecked:[task isCompleted]];
+  [self drawCheckboxWithFrame:cellFrame isChecked:task.isCompleted];
 
   // Texts shadow
   NSShadow *textShadow = [self textShadow];
@@ -112,7 +112,7 @@
   NSInteger dueStringWidth = 50;
 
   // Task title
-  [[task name] drawInRect: NSMakeRect(cellFrame.origin.x + 26,
+  [task.name drawInRect: NSMakeRect(cellFrame.origin.x + 26,
                                       cellFrame.origin.y + 3,
                                       cellFrame.size.width - 26,
                                       cellFrame.size.height - 18) 
@@ -133,7 +133,7 @@
                     [NSFont systemFontOfSize:9], NSFontAttributeName, nil]];
 
   // Task list title
-  [[task listName] drawInRect: NSMakeRect(cellFrame.origin.x + 26,
+  [task.list.name drawInRect: NSMakeRect(cellFrame.origin.x + 26,
                                           cellFrame.origin.y + 45,
                                           cellFrame.size.width - 26,
                                           15) 

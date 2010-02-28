@@ -6,10 +6,10 @@
 //  Copyright 2009 __MyCompanyName__. All rights reserved.
 //
 
-#import "QuickEntryController.h"
+#import "TaskEntryController.h"
 
 
-@implementation QuickEntryController
+@implementation TaskEntryController
 
 @synthesize task;
 @synthesize saveTarget;
@@ -17,30 +17,31 @@
 
 - (id)init
 {
-  ltTaskItem* newTask = [[[ltTaskItem alloc] init] autorelease];
+  Task* newTask = [[Task alloc] init];
+  newTask.createdAt = [NSDate date];
   return [self initWithTask:newTask];
   [newTask release];
 }
 
-- (id)initWithTask:(ltTaskItem*)aTask
+- (id)initWithTask:(Task*)aTask
 {
-  if (!(self = [super initWithWindowNibName:@"QuickEntry"]))
+  if (!(self = [super initWithWindowNibName:@"TaskEntry"]))
   {
     return nil;
   }
 
   [self setTask:aTask];
 
-  [[self mutableArrayValueForKey:@"lists"] addObjectsFromArray:[ltListProxy lists]];
+  [[self mutableArrayValueForKey:@"lists"] addObjectsFromArray:[TaskList allObjects]];
 
   return self;
 }
 
-- (void)selectListWithDbId:(NSNumber*)anId
+- (void)selectListWithPk:(int)pk
 {
   for (int lNum = 0, lCount = [lists count]; lNum < lCount; lNum++)
   {
-    if ([[[lists objectAtIndex:lNum] dbId] isEqualToNumber:anId])
+    if ([[lists objectAtIndex:lNum] pk] == pk)
     {
       [list selectItemAtIndex:lNum];
       break;
@@ -56,8 +57,8 @@
     {
       [name setStringValue:[task name]];
     }
-    [priority selectItemAtIndex:([[task priority] boolValue] ? 4 - [[task priority] integerValue] : 0)];
-    if ([task isCompleted])
+    [priority selectItemAtIndex:(task.priority ? 4 - [task priority] : 0)];
+    if (task.isCompleted)
     {
       [completed setState:1];
     }
@@ -65,16 +66,16 @@
     {
       [completed setState:0];
     }
-    if ([task due])
+    if (task.dueAt)
     {
       NSDateFormatter* dateFormatter = [[NSDateFormatter alloc] init];
       [dateFormatter setDateStyle: NSDateFormatterMediumStyle];
-      [due setStringValue:[dateFormatter stringFromDate:[task due]]];
+      [due setStringValue:[dateFormatter stringFromDate:task.dueAt]];
       [dateFormatter release];
     }
-    if ([task list])
+    if (task.list.pk)
     {
-      [self selectListWithDbId:[task list]];
+      [self selectListWithPk:task.list.pk];
     }
   }
 
@@ -155,22 +156,17 @@
 {
   if ([[name stringValue] compare:@""] != NSOrderedSame)
   {
-    [task setName:[name stringValue]];
-    [task setPriority:[NSNumber numberWithInt:4 - [priority indexOfSelectedItem]]];
-    if ([completed integerValue])
-    {
-      [task setCompleted:[NSDate date]];
-    }
-    else
-    {
-      [task setCompleted:nil];
-    }
+    task.name = [name stringValue];
+    task.priority = 4 - [priority indexOfSelectedItem];
+    task.isCompleted = [completed integerValue];
+
     NSDateFormatter* dateFormatter = [[NSDateFormatter alloc] init];
     [dateFormatter setDateStyle: NSDateFormatterMediumStyle];
-    [task setDue:[dateFormatter dateFromString:[due stringValue]]];
+    task.dueAt = [dateFormatter dateFromString:[due stringValue]];
     [dateFormatter release];
-    [task setList:[[lists objectAtIndex:[list indexOfSelectedItem]] dbId]];
-    [task setUpdated:[NSDate date]];
+
+    task.list = [lists objectAtIndex:[list indexOfSelectedItem]];
+    task.updatedAt = [NSDate date];
 
     [NSApp sendAction:[self saveAction] to:[self saveTarget] from:self];
     [[self window] close];
