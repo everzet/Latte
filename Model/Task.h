@@ -38,8 +38,8 @@
   NSDate*   createdAt;
   NSDate*   updatedAt;
   NSDate*   syncedAt;
-  bool      isCompleted;
-  bool      isDeleted;
+  BOOL      isCompleted;
+  BOOL      isDeleted;
 }
 
 @property (nonatomic,readwrite,retain)  NSString*   name;
@@ -50,10 +50,10 @@
 @property (nonatomic,readwrite,retain)  NSDate*     createdAt;
 @property (nonatomic,readwrite,retain)  NSDate*     updatedAt;
 @property (nonatomic,readwrite,retain)  NSDate*     syncedAt;
-@property (nonatomic,readwrite)         bool        isCompleted;
-@property (nonatomic,readwrite)         bool        isDeleted;
+@property (nonatomic,readwrite)         BOOL        isCompleted;
+@property (nonatomic,readwrite)         BOOL        isDeleted;
 
-+ (NSArray*)allCompleted:(bool)isCompleted inList:(TaskList*)aList;
++ (NSArray*)allCompleted:(BOOL)isCompleted inList:(TaskList*)aList;
 + (NSArray*)allInList:(TaskList*)aList;
 - (NSString*)displayableDue;
 

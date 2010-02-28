@@ -30,17 +30,19 @@
 
 
 @interface TaskTableCell : NSTextFieldCell {
-  SEL checkboxClickedAction;
-  BOOL checkboxMouseIsDown;
+  SEL   checkboxClickedAction;
+  BOOL  checkboxMouseIsDown;
 }
 
 @property SEL checkboxClickedAction;
 
+// Checkbox drawer
 - (NSRect)checkboxRectForFrame:(NSRect)cellFrame;
 - (NSRect)checkboxRectForFrame:(NSRect)cellFrame withBorder:(NSInteger)aBorder;
-- (NSShadow*)textShadow;
-
 - (void)drawCheckboxWithFrame:(NSRect)cellFrame isChecked:(BOOL)isChecked;
+
+// Text transformers & drawers
+- (NSShadow*)textShadow;
 - (NSString*)rightAlignedString:(NSString*)aString ofSize:(NSInteger)aSize;
 
 @end

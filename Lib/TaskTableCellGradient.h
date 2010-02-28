@@ -31,18 +31,21 @@
 
 }
 
+// General gradient values
 + (id)taskGradientIsHighlighted:(BOOL)isHighlighted isChecked:(BOOL)isChecked;
 + (id)taskGradient;
 + (id)selectedTaskGradient;
 + (id)checkedTaskGradient;
 
+// Priority gradients
 + (id)priorityGradient:(NSInteger)priority;
 + (id)noPriorityGradient;
 + (id)lowPriorityGradient;
 + (id)normalPriorityGradient;
 + (id)highPriorityGradient;
 
+// Checkbox gradients
 + (id)checkboxGradient;
-+ (id)checkboxCheckedGradient;
++ (id)checkedCheckboxGradient;
 
 @end

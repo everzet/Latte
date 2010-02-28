@@ -43,7 +43,7 @@
   [super dealloc];
 }
 
-+ (NSArray*)allCompleted:(bool)isCompleted inList:(TaskList*)aList
++ (NSArray*)allCompleted:(BOOL)isCompleted inList:(TaskList*)aList
 {
   NSString* criteria = [NSString stringWithFormat:@"WHERE list = '%@-%d' AND is_completed = %d",
                         [aList class], aList.pk, isCompleted];

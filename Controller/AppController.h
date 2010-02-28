@@ -80,12 +80,15 @@
 - (IBAction)taskEntryEdit:(id)sender;
 - (void)taskEntryEditTask:(Task*)aTask;
 
+// Interface actions
 - (IBAction)selectList:(id)sender;
 - (void)selectFilter:(id)sender;
 
+// Current task editing
 - (void)changeTaskCompletionStatus:(id)sender;
 - (void)saveTaskFromEntry:(id)sender;
 
+// RTM sync
 - (void)runSyncLoop:(id)sender;
 - (void)syncWillStart:(id)sender;
 - (void)syncDidFinish:(id)sender;

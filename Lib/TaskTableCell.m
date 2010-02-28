@@ -75,7 +75,7 @@
 
   if (isChecked)
   {
-    [[TaskTableCellGradient checkboxCheckedGradient] fillRect:checkboxRect angle:90];
+    [[TaskTableCellGradient checkedCheckboxGradient] fillRect:checkboxRect angle:90];
 
     path = [[NSBezierPath alloc] init];
     [path moveToPoint: NSMakePoint(cellFrame.origin.x + 11, cellFrame.origin.y + 11)];

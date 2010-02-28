@@ -34,7 +34,7 @@
   NSDate*   createdAt;
   NSDate*   updatedAt;
   NSDate*   syncedAt;
-  bool      isDeleted;
+  BOOL      isDeleted;
 }
 
 @property (nonatomic,readwrite,retain)  NSString*  name;
@@ -42,6 +42,6 @@
 @property (nonatomic,readwrite,retain)  NSDate*    createdAt;
 @property (nonatomic,readwrite,retain)  NSDate*    updatedAt;
 @property (nonatomic,readwrite,retain)  NSDate*    syncedAt;
-@property (nonatomic,readwrite)         bool       isDeleted;
+@property (nonatomic,readwrite)         BOOL       isDeleted;
 
 @end

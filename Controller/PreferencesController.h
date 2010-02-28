@@ -52,10 +52,12 @@
 
 - (id)initWithPreferences:(AppPreferences*)aPref andRtmConnector:(EZMilk*)anRtmApi;
 
+// Preferences blocks
 - (IBAction)generalShow:(id)sender;
 - (IBAction)notificationsShow:(id)sender;
 - (IBAction)rtmShow:(id)sender;
 
+// RTM connector
 - (IBAction)connectToRtmStepOne:(id)sender;
 - (IBAction)connectToRtmStepTwo:(id)sender;
 - (IBAction)resetRtmAuth:(id)sender;

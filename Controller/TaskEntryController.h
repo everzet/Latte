@@ -59,11 +59,14 @@
 
 - (id)initWithTask:(Task*)aTask;
 
+// Select TaskList from list with pk=?
 - (void)selectListWithPk:(int)pk;
 
+// Datepicker
 - (IBAction)redrawWindow:(id)sender;
 - (IBAction)datePickerChoose:(id)sender;
 
+// Save & Cancel buttons
 - (IBAction)saveTask:(id)sender;
 - (IBAction)cancelEntry:(id)sender;
 

@@ -113,7 +113,7 @@
                               endingColor: [NSColor colorWithCalibratedRed:0xF7/255.0 green:0xF7/255.0 blue:0xF7/255.0 alpha:0xFF/255.0]];
 }
 
-+ (id)checkboxCheckedGradient
++ (id)checkedCheckboxGradient
 {
   return [self gradientWithBeginningColor: [NSColor colorWithCalibratedRed:0xE5/255.0 green:0xEE/255.0 blue:0xF8/255.0 alpha:0xFF/255.0]
                               endingColor: [NSColor colorWithCalibratedRed:0x97/255.0 green:0x9D/255.0 blue:0xA2/255.0 alpha:0xFF/255.0]];
