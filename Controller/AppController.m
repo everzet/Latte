@@ -168,11 +168,11 @@
       }
       else
       {
-        [self taskEntryAdd:tableView];
+        [self taskEntryAdd:self];
       }
       break;
     case 32:
-      [self changeTaskCompletionStatus:tableView];
+      [self changeTaskCompletionStatus:self];
       break;
     case 27:
       [tableView deselectAll:tableView];

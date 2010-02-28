@@ -174,6 +174,9 @@
 			63D96F52113AB2DC0007F92D /* PBXTextBookmark */ = 63D96F52113AB2DC0007F92D /* PBXTextBookmark */;
 			63D96F53113AB2DC0007F92D /* PBXTextBookmark */ = 63D96F53113AB2DC0007F92D /* PBXTextBookmark */;
 			63D96F54113AB2DC0007F92D /* PBXTextBookmark */ = 63D96F54113AB2DC0007F92D /* PBXTextBookmark */;
+			63D96F5A113AB3AD0007F92D /* PBXTextBookmark */ = 63D96F5A113AB3AD0007F92D /* PBXTextBookmark */;
+			63D96F5B113AB3AD0007F92D /* PBXTextBookmark */ = 63D96F5B113AB3AD0007F92D /* PBXTextBookmark */;
+			63D96F5C113AB3AD0007F92D /* PBXTextBookmark */ = 63D96F5C113AB3AD0007F92D /* PBXTextBookmark */;
 			63DDBD7E1139FB78002BB911 = 63DDBD7E1139FB78002BB911 /* PBXTextBookmark */;
 			63DDBDBD113A033F002BB911 = 63DDBDBD113A033F002BB911 /* PBXTextBookmark */;
 			63DDBE0D113A86FF002BB911 = 63DDBE0D113A86FF002BB911 /* PBXTextBookmark */;
@@ -402,7 +405,7 @@
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {951, 814}}";
 			sepNavSelRange = "{1925, 0}";
-			sepNavVisRange = "{535, 1757}";
+			sepNavVisRange = "{0, 1991}";
 		};
 	};
 	6396D1551139C57800255A29 /* TaskEntryController.m */ = {
@@ -671,9 +674,9 @@
 		path = /Users/everzet/Devel/desktop/mac/Latte/Controller/AppController.m;
 		sourceTree = "<absolute>";
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {951, 3223}}";
-			sepNavSelRange = "{5174, 17}";
-			sepNavVisRange = "{4373, 1317}";
+			sepNavIntBoundsRect = "{{0, 0}, {951, 3300}}";
+			sepNavSelRange = "{5337, 0}";
+			sepNavVisRange = "{4663, 1243}";
 		};
 	};
 	63B61BF4113AB06E0017D0F1 /* PBXTextBookmark */ = {
@@ -907,6 +910,36 @@
 		rType = 0;
 		vrLen = 1757;
 		vrLoc = 535;
+	};
+	63D96F5A113AB3AD0007F92D /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 6396D1541139C57800255A29 /* TaskEntryController.h */;
+		name = "TaskEntryController.h: 56";
+		rLen = 0;
+		rLoc = 1925;
+		rType = 0;
+		vrLen = 1991;
+		vrLoc = 0;
+	};
+	63D96F5B113AB3AD0007F92D /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 63B61BDC113AB02B0017D0F1 /* AppController.m */;
+		name = "AppController.m: 167";
+		rLen = 17;
+		rLoc = 5174;
+		rType = 0;
+		vrLen = 1317;
+		vrLoc = 4373;
+	};
+	63D96F5C113AB3AD0007F92D /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 63B61BDC113AB02B0017D0F1 /* AppController.m */;
+		name = "AppController.m: 175";
+		rLen = 0;
+		rLoc = 5337;
+		rType = 0;
+		vrLen = 1243;
+		vrLoc = 4663;
 	};
 	63DDBD7E1139FB78002BB911 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
