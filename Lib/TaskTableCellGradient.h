@@ -9,7 +9,7 @@
 #import <Cocoa/Cocoa.h>
 #import "CTGradient.h"
 
-@interface TaskGradient : CTGradient {
+@interface TaskTableCellGradient : CTGradient {
 
 }
 

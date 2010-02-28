@@ -6,7 +6,7 @@
 //  Copyright 2009 __MyCompanyName__. All rights reserved.
 //
 
-#import "TaskCell.h"
+#import "TaskTableCell.h"
 
 @implementation NSColor (BLColor)
 
@@ -20,7 +20,7 @@
 
 @end
 
-@implementation TaskCell
+@implementation TaskTableCell
 
 @synthesize checkboxClickedAction;
 
@@ -57,7 +57,7 @@
 
   if (isChecked)
   {
-    [[TaskGradient checkboxCheckedGradient] fillRect:checkboxRect angle:90];
+    [[TaskTableCellGradient checkboxCheckedGradient] fillRect:checkboxRect angle:90];
 
     path = [[NSBezierPath alloc] init];
     [path moveToPoint: NSMakePoint(cellFrame.origin.x + 11, cellFrame.origin.y + 11)];
@@ -70,7 +70,7 @@
   }
   else
   {
-    [[TaskGradient checkboxGradient] fillRect:checkboxRect angle:90];
+    [[TaskTableCellGradient checkboxGradient] fillRect:checkboxRect angle:90];
   }
 }
 
@@ -93,12 +93,12 @@
   Task *task = (Task*)[self objectValue];
 
   // Task background
-  [[TaskGradient taskGradientIsHighlighted:[self isHighlighted] isChecked:task.isCompleted]
+  [[TaskTableCellGradient taskGradientIsHighlighted:[self isHighlighted] isChecked:task.isCompleted]
    fillRect: NSMakeRect(cellFrame.origin.x - 1, cellFrame.origin.y - 1, cellFrame.size.width + 3, cellFrame.size.height + 2)
       angle: 90];
 
   // Task priority colored gradient
-  [[TaskGradient priorityGradient: task.priority]
+  [[TaskTableCellGradient priorityGradient: task.priority]
                       fillRect: NSMakeRect(cellFrame.origin.x, cellFrame.origin.y, 5, cellFrame.size.height)
                          angle: 90];
 

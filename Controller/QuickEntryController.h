@@ -30,9 +30,9 @@
   IBOutlet NSTextField*   due;
   IBOutlet NSPopUpButton* list;
 
-  Task* task;
-  id saveTarget;
-  SEL saveAction;
+  Task*                   task;
+  id                      saveTarget;
+  SEL                     saveAction;
 }
 
 @property (retain)Task* task;

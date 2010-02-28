@@ -22,9 +22,9 @@
 		6396D1561139C57800255A29 /* AppController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6396D1511139C57800255A29 /* AppController.m */; };
 		6396D1571139C57800255A29 /* PreferencesController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6396D1531139C57800255A29 /* PreferencesController.m */; };
 		6396D1581139C57800255A29 /* QuickEntryController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6396D1551139C57800255A29 /* QuickEntryController.m */; };
-		6396D1A21139C5C300255A29 /* TaskGradient.m in Sources */ = {isa = PBXBuildFile; fileRef = 6396D16F1139C5C300255A29 /* TaskGradient.m */; };
+		6396D1A21139C5C300255A29 /* TaskTableCellGradient.m in Sources */ = {isa = PBXBuildFile; fileRef = 6396D16F1139C5C300255A29 /* TaskTableCellGradient.m */; };
 		6396D1A31139C5C300255A29 /* Preferences.m in Sources */ = {isa = PBXBuildFile; fileRef = 6396D1711139C5C300255A29 /* Preferences.m */; };
-		6396D1A71139C5C300255A29 /* TaskCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6396D1791139C5C300255A29 /* TaskCell.m */; };
+		6396D1A71139C5C300255A29 /* TaskTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6396D1791139C5C300255A29 /* TaskTableCell.m */; };
 		6396D1A81139C5C300255A29 /* CTGradient.m in Sources */ = {isa = PBXBuildFile; fileRef = 6396D17D1139C5C300255A29 /* CTGradient.m */; };
 		6396D1A91139C5C300255A29 /* EZMilk.m in Sources */ = {isa = PBXBuildFile; fileRef = 6396D1801139C5C300255A29 /* EZMilk.m */; };
 		6396D1AB1139C5C300255A29 /* NSObject+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 6396D1871139C5C300255A29 /* NSObject+SBJSON.m */; };
@@ -107,12 +107,12 @@
 		6396D1531139C57800255A29 /* PreferencesController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PreferencesController.m; sourceTree = "<group>"; };
 		6396D1541139C57800255A29 /* QuickEntryController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuickEntryController.h; sourceTree = "<group>"; };
 		6396D1551139C57800255A29 /* QuickEntryController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuickEntryController.m; sourceTree = "<group>"; };
-		6396D16E1139C5C300255A29 /* TaskGradient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TaskGradient.h; sourceTree = "<group>"; };
-		6396D16F1139C5C300255A29 /* TaskGradient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TaskGradient.m; sourceTree = "<group>"; };
+		6396D16E1139C5C300255A29 /* TaskTableCellGradient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TaskTableCellGradient.h; sourceTree = "<group>"; };
+		6396D16F1139C5C300255A29 /* TaskTableCellGradient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TaskTableCellGradient.m; sourceTree = "<group>"; };
 		6396D1701139C5C300255A29 /* Preferences.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Preferences.h; sourceTree = "<group>"; };
 		6396D1711139C5C300255A29 /* Preferences.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Preferences.m; sourceTree = "<group>"; };
-		6396D1781139C5C300255A29 /* TaskCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TaskCell.h; sourceTree = "<group>"; };
-		6396D1791139C5C300255A29 /* TaskCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TaskCell.m; sourceTree = "<group>"; };
+		6396D1781139C5C300255A29 /* TaskTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TaskTableCell.h; sourceTree = "<group>"; };
+		6396D1791139C5C300255A29 /* TaskTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TaskTableCell.m; sourceTree = "<group>"; };
 		6396D17C1139C5C300255A29 /* CTGradient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTGradient.h; sourceTree = "<group>"; };
 		6396D17D1139C5C300255A29 /* CTGradient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTGradient.m; sourceTree = "<group>"; };
 		6396D17F1139C5C300255A29 /* EZMilk.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EZMilk.h; sourceTree = "<group>"; };
@@ -336,12 +336,12 @@
 			isa = PBXGroup;
 			children = (
 				6396D17A1139C5C300255A29 /* Vendor */,
-				6396D16E1139C5C300255A29 /* TaskGradient.h */,
-				6396D16F1139C5C300255A29 /* TaskGradient.m */,
+				6396D16E1139C5C300255A29 /* TaskTableCellGradient.h */,
+				6396D16F1139C5C300255A29 /* TaskTableCellGradient.m */,
 				6396D1701139C5C300255A29 /* Preferences.h */,
 				6396D1711139C5C300255A29 /* Preferences.m */,
-				6396D1781139C5C300255A29 /* TaskCell.h */,
-				6396D1791139C5C300255A29 /* TaskCell.m */,
+				6396D1781139C5C300255A29 /* TaskTableCell.h */,
+				6396D1791139C5C300255A29 /* TaskTableCell.m */,
 			);
 			path = Lib;
 			sourceTree = "<group>";
@@ -536,9 +536,9 @@
 				6396D1561139C57800255A29 /* AppController.m in Sources */,
 				6396D1571139C57800255A29 /* PreferencesController.m in Sources */,
 				6396D1581139C57800255A29 /* QuickEntryController.m in Sources */,
-				6396D1A21139C5C300255A29 /* TaskGradient.m in Sources */,
+				6396D1A21139C5C300255A29 /* TaskTableCellGradient.m in Sources */,
 				6396D1A31139C5C300255A29 /* Preferences.m in Sources */,
-				6396D1A71139C5C300255A29 /* TaskCell.m in Sources */,
+				6396D1A71139C5C300255A29 /* TaskTableCell.m in Sources */,
 				6396D1A81139C5C300255A29 /* CTGradient.m in Sources */,
 				6396D1A91139C5C300255A29 /* EZMilk.m in Sources */,
 				6396D1AB1139C5C300255A29 /* NSObject+SBJSON.m in Sources */,

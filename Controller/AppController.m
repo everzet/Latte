@@ -118,7 +118,7 @@
 
 - (void)tableView:(NSTableView *)aTableView willDisplayCell:(id)aCell forTableColumn:(NSTableColumn *)aTableColumn row:(NSInteger)rowIndex
 {
-  TaskCell* cell = (TaskCell*)aCell;
+  TaskTableCell* cell = (TaskTableCell*)aCell;
 
   [cell setTarget:self];
   [cell setCheckboxClickedAction:@selector(changeTaskCompletionStatus:)];

@@ -6,7 +6,7 @@
 
 // Interface libraries
 #import "LRFilterBar.h"
-#import "TaskCell.h"
+#import "TaskTableCell.h"
 
 // Controllers
 #import "PreferencesController.h"

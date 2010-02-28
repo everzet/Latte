@@ -13,12 +13,14 @@
 
 
 @interface PreferencesController : NSWindowController {
-  IBOutlet NSTabView* tabView;
-  IBOutlet NSToolbar* toolbar;
+  IBOutlet NSTabView*   tabView;
+  IBOutlet NSToolbar*   toolbar;
 
   IBOutlet NSTextField* rtmText;
-  IBOutlet NSButton* rtmButton;
-  NSString* frob;
+  IBOutlet NSButton*    rtmButton;
+
+  // RTM FROB string
+  NSString*             frob;
 }
 
 @property (retain) NSString* frob;
