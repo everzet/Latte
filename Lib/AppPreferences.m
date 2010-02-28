@@ -12,8 +12,6 @@
 #define UD_RTM_TOKEN_KEY @"rtm.token"
 #define UD_RTM_SYNC_KEY @"rtm.sync.interval"
 
-static AppPreferences* LTPreferencesInstance;
-
 @implementation AppPreferences
 
 - (id)init
@@ -30,14 +28,7 @@ static AppPreferences* LTPreferencesInstance;
   userDefaults = [[NSUserDefaults standardUserDefaults] retain];
   [userDefaults registerDefaults:defaultValues];
 
-  LTPreferencesInstance = self;
-
   return self;
-}
-
-+ (AppPreferences*)instance
-{
-  return LTPreferencesInstance;
 }
 
 - (NSString*)rtmToken

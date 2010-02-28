@@ -7,6 +7,8 @@
 //
 
 #import <Cocoa/Cocoa.h>
+
+// Preferences library
 #import "AppPreferences.h"
 
 // RTM library
@@ -20,11 +22,17 @@
   IBOutlet NSTextField* rtmText;
   IBOutlet NSButton*    rtmButton;
 
+  // AppPreferences & EZMilk libs
+  AppPreferences*       preferences;
+  EZMilk*               rtmApi;
+
   // RTM FROB string
   NSString*             frob;
 }
 
 @property (retain) NSString* frob;
+
+- (id)initWithPreferences:(AppPreferences*)aPref andRtmConnector:(EZMilk*)anRtmApi;
 
 - (IBAction)generalShow:(id)sender;
 - (IBAction)notificationsShow:(id)sender;

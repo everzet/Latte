@@ -8,12 +8,10 @@
   [self initFilter];
   [self initTable];
 
-  // Preferences controller
-  preferences = [[AppPreferences alloc] init];
-
-  // Setup RTM connector
+  // Setup EZMilk & AppPreferences lib
   rtmApi = [[EZMilk alloc] initWithApiKey:[RTMKeys apiKey]
                              andApiSecret:[RTMKeys apiSecret]];
+  preferences = [[AppPreferences alloc] init];
 
   // Setup DB & retrieve data
   [self initDatabase];
@@ -175,7 +173,8 @@
   {
     [preferencesController release];
   }
-  preferencesController = [[PreferencesController alloc] init];
+  preferencesController = [[PreferencesController alloc] initWithPreferences: preferences
+                                                             andRtmConnector: rtmApi];
   [preferencesController showWindow:self];
 }
 

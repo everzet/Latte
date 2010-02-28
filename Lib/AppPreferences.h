@@ -13,8 +13,6 @@
   NSUserDefaults* userDefaults;
 }
 
-+ (AppPreferences*)instance;
-
 - (NSString*)rtmToken;
 - (void)setRtmToken:(NSString*)aToken;
 - (NSInteger)rtmSyncInterval;
