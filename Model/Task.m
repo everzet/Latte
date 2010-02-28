@@ -45,7 +45,7 @@
 
 + (NSArray*)allCompleted:(BOOL)isCompleted inList:(TaskList*)aList
 {
-  NSString* criteria = [NSString stringWithFormat:@"WHERE list = '%@-%d' AND is_completed = %d",
+  NSString* criteria = [NSString stringWithFormat:@"WHERE list = '%@-%d' AND is_completed = %d ORDER BY priority, due_at",
                         [aList class], aList.pk, isCompleted];
 
   return [Task findByCriteria:criteria];
@@ -53,7 +53,7 @@
 
 + (NSArray*)allInList:(TaskList*)aList
 {
-  NSString* criteria = [NSString stringWithFormat:@"WHERE list = '%@-%d'",
+  NSString* criteria = [NSString stringWithFormat:@"WHERE list = '%@-%d' ORDER BY is_completed, priority, due_at",
                         [aList class], aList.pk];
 
   return [Task findByCriteria:criteria];

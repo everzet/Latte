@@ -49,7 +49,7 @@
 
 - (NSRect)checkboxRectForFrame:(NSRect)cellFrame withBorder:(NSInteger)aBorder
 {
-  return NSMakeRect(cellFrame.origin.x + 10 - aBorder, cellFrame.origin.y + 7 - aBorder, 10 + (aBorder * 2), 10 + (aBorder * 2));
+  return NSMakeRect(cellFrame.origin.x + 10 - aBorder, cellFrame.origin.y + 5 - aBorder, 10 + (aBorder * 2), 10 + (aBorder * 2));
 }
 
 - (NSShadow*)textShadow
@@ -78,9 +78,9 @@
     [[TaskTableCellGradient checkedCheckboxGradient] fillRect:checkboxRect angle:90];
 
     path = [[NSBezierPath alloc] init];
-    [path moveToPoint: NSMakePoint(cellFrame.origin.x + 11, cellFrame.origin.y + 11)];
-    [path lineToPoint: NSMakePoint(cellFrame.origin.x + 14, cellFrame.origin.y + 14)];
-    [path lineToPoint: NSMakePoint(cellFrame.origin.x + 19, cellFrame.origin.y + 8)];
+    [path moveToPoint: NSMakePoint(cellFrame.origin.x + 11, cellFrame.origin.y + 9.5)];
+    [path lineToPoint: NSMakePoint(cellFrame.origin.x + 14, cellFrame.origin.y + 12.5)];
+    [path lineToPoint: NSMakePoint(cellFrame.origin.x + 19, cellFrame.origin.y + 6.5)];
     [[NSColor whiteColor] set];
     [path setLineWidth: 2];
     [path stroke];
@@ -131,13 +131,13 @@
 
   // Task title
   [task.name drawInRect: NSMakeRect(cellFrame.origin.x + 26,
-                                      cellFrame.origin.y + 3,
+                                      cellFrame.origin.y + 2.9,
                                       cellFrame.size.width - 26,
                                       cellFrame.size.height - 18) 
            withAttributes: [NSDictionary dictionaryWithObjectsAndKeys:
                             [NSColor darkGrayColor], NSForegroundColorAttributeName,
                             textShadow, NSShadowAttributeName,
-                            [NSFont systemFontOfSize:12], NSFontAttributeName, nil]];
+                            [NSFont systemFontOfSize:11], NSFontAttributeName, nil]];
 
   // Task due date
   [[self rightAlignedString:[task displayableDue] ofSize:11]
