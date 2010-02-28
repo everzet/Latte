@@ -208,8 +208,6 @@
 		<dict>
 			<key>ChosenToolbarItems</key>
 			<array>
-				<string>XCToolbarPerspectiveControl</string>
-				<string>NSToolbarSeparatorItem</string>
 				<string>active-combo-popup</string>
 				<string>action</string>
 				<string>debugger-enable-breakpoints</string>
@@ -274,14 +272,15 @@
 								<string>6396D0E61139C4B100255A29</string>
 								<string>6396D14F1139C57800255A29</string>
 								<string>6396D16D1139C5C300255A29</string>
+								<string>6396D17A1139C5C300255A29</string>
 								<string>63DDBF9A113AA1B8002BB911</string>
 								<string>1C37FABC05509CD000000102</string>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>6</integer>
-									<integer>2</integer>
+									<integer>13</integer>
+									<integer>11</integer>
 									<integer>1</integer>
 									<integer>0</integer>
 								</array>
@@ -414,7 +413,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>Task.m</string>
+								<string>AppController.m</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -422,11 +421,11 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>Task.m</string>
+										<string>AppController.m</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>63D96FB6113B06E30007F92D</string>
+										<string>63D970A8113B22DD0007F92D</string>
 										<key>history</key>
 										<array>
 											<string>639ECAFD101CDA4900CD9EC7</string>
@@ -446,23 +445,29 @@
 											<string>63DDBFC5113AA38C002BB911</string>
 											<string>63DDBFC6113AA38C002BB911</string>
 											<string>63B61BA5113AAE7A0017D0F1</string>
-											<string>63B61BAD113AAE7A0017D0F1</string>
 											<string>63B61BAF113AAE7A0017D0F1</string>
 											<string>63B61BB1113AAE7A0017D0F1</string>
 											<string>63B61BC1113AAEDD0017D0F1</string>
 											<string>63D96F4A113AB2DC0007F92D</string>
 											<string>63D96F4B113AB2DC0007F92D</string>
 											<string>63D96F4D113AB2DC0007F92D</string>
-											<string>63D96F4E113AB2DC0007F92D</string>
 											<string>63D96F4F113AB2DC0007F92D</string>
 											<string>63D96F50113AB2DC0007F92D</string>
 											<string>63D96F51113AB2DC0007F92D</string>
 											<string>63D96F52113AB2DC0007F92D</string>
 											<string>63D96F5A113AB3AD0007F92D</string>
-											<string>63D96F75113B02B50007F92D</string>
 											<string>63D96F9D113B04F00007F92D</string>
 											<string>63D96FB0113B066C0007F92D</string>
-											<string>63D96FB1113B066C0007F92D</string>
+											<string>63D96FFD113B19F40007F92D</string>
+											<string>63D96FFE113B19F40007F92D</string>
+											<string>63D97000113B19F40007F92D</string>
+											<string>63D97002113B19F40007F92D</string>
+											<string>63D97004113B19F40007F92D</string>
+											<string>63D97006113B19F40007F92D</string>
+											<string>63D97079113B21400007F92D</string>
+											<string>63D9707A113B21400007F92D</string>
+											<string>63D970A0113B22A10007F92D</string>
+											<string>63D970A1113B22A10007F92D</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -682,13 +687,13 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
-		<string>63D96FB7113B06E30007F92D</string>
+		<string>63D970A9113B22DE0007F92D</string>
 		<string>6370F6A6101F311E000BD869</string>
 		<string>63D96F32113AB1270007F92D</string>
 		<string>63D96F33113AB1270007F92D</string>
-		<string>1C78EAAD065D492600B07095</string>
 		<string>1CD10A99069EF8BA00B06720</string>
 		<string>632D9674101BB4BA0055F5C2</string>
+		<string>1C78EAAD065D492600B07095</string>
 		<string>/Users/everzet/Devel/desktop/mac/Latte/Latte.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
@@ -713,7 +718,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CD0528F0623707200166675</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>SQLiteInstanceManager.m</string>
+								<string>AppController.m</string>
 								<key>StatusBarVisibility</key>
 								<true/>
 							</dict>
@@ -1016,6 +1021,8 @@
 					<key>Dock</key>
 					<array>
 						<dict>
+							<key>BecomeActive</key>
+							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
@@ -1028,7 +1035,7 @@
 								<key>Frame</key>
 								<string>{{0, 0}, {667, 347}}</string>
 								<key>RubberWindowFrame</key>
-								<string>605 382 667 388 0 0 1280 778 </string>
+								<string>596 243 667 388 0 0 1280 778 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXDebugCLIModule</string>
@@ -1057,11 +1064,11 @@
 			<key>ToolbarConfiguration</key>
 			<string>xcode.toolbar.config.consoleV3</string>
 			<key>WindowString</key>
-			<string>605 382 667 388 0 0 1280 778 </string>
+			<string>596 243 667 388 0 0 1280 778 </string>
 			<key>WindowToolGUID</key>
 			<string>1C78EAAD065D492600B07095</string>
 			<key>WindowToolIsVisible</key>
-			<false/>
+			<true/>
 		</dict>
 		<dict>
 			<key>Identifier</key>

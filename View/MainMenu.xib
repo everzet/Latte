@@ -12,6 +12,7 @@
 		</object>
 		<object class="NSMutableArray" key="IBDocument.EditedObjectIDs">
 			<bool key="EncodedWithXMLCoder">YES</bool>
+			<integer value="372"/>
 		</object>
 		<object class="NSArray" key="IBDocument.PluginDependencies">
 			<bool key="EncodedWithXMLCoder">YES</bool>
@@ -1282,7 +1283,7 @@
 				<string key="NSWindowContentMaxSize">{900, 3000}</string>
 				<string key="NSWindowContentMinSize">{246, 127}</string>
 				<object class="NSView" key="NSWindowView" id="439893737">
-					<nil key="NSNextResponder"/>
+					<reference key="NSNextResponder"/>
 					<int key="NSvFlags">256</int>
 					<object class="NSMutableArray" key="NSSubviews">
 						<bool key="EncodedWithXMLCoder">YES</bool>
@@ -1394,7 +1395,7 @@
 							<int key="NSvFlags">266</int>
 							<string key="NSFrame">{{0, 293}, {247, 24}}</string>
 							<reference key="NSSuperview" ref="439893737"/>
-							<string key="NSClassName">LRFilterBar</string>
+							<string key="NSClassName">MGScopeBar</string>
 						</object>
 						<object class="NSScrollView" id="171712048">
 							<reference key="NSNextResponder" ref="439893737"/>
@@ -1525,6 +1526,7 @@
 						</object>
 					</object>
 					<string key="NSFrameSize">{246, 317}</string>
+					<reference key="NSSuperview"/>
 				</object>
 				<string key="NSScreenRect">{{0, 0}, {1280, 778}}</string>
 				<string key="NSMinSize">{246, 181}</string>
@@ -2300,14 +2302,6 @@
 					<int key="connectionID">658</int>
 				</object>
 				<object class="IBConnectionRecord">
-					<object class="IBOutletConnection" key="connection">
-						<string key="label">filter</string>
-						<reference key="source" ref="433981082"/>
-						<reference key="destination" ref="482455934"/>
-					</object>
-					<int key="connectionID">864</int>
-				</object>
-				<object class="IBConnectionRecord">
 					<object class="IBActionConnection" key="connection">
 						<string key="label">selectList:</string>
 						<reference key="source" ref="433981082"/>
@@ -2410,6 +2404,22 @@
 						<reference key="destination" ref="923294507"/>
 					</object>
 					<int key="connectionID">920</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBOutletConnection" key="connection">
+						<string key="label">scopeBar</string>
+						<reference key="source" ref="433981082"/>
+						<reference key="destination" ref="482455934"/>
+					</object>
+					<int key="connectionID">921</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBOutletConnection" key="connection">
+						<string key="label">delegate</string>
+						<reference key="source" ref="482455934"/>
+						<reference key="destination" ref="433981082"/>
+					</object>
+					<int key="connectionID">922</int>
 				</object>
 			</object>
 			<object class="IBMutableOrderedSet" key="objectRecords">
@@ -4215,7 +4225,7 @@
 				</object>
 			</object>
 			<nil key="sourceID"/>
-			<int key="maxID">920</int>
+			<int key="maxID">922</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<object class="NSMutableArray" key="referencedPartialClassDescriptions">
@@ -4259,53 +4269,97 @@
 						<object class="NSArray" key="dict.sortedKeys">
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<string>aboutWindow</string>
-							<string>filter</string>
 							<string>listView</string>
 							<string>lists</string>
 							<string>progress</string>
+							<string>scopeBar</string>
 							<string>tableView</string>
 							<string>tasks</string>
 						</object>
 						<object class="NSMutableArray" key="dict.values">
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<string>NSWindow</string>
-							<string>LRFilterBar</string>
 							<string>NSPopUpButton</string>
 							<string>NSMutableArray</string>
 							<string>NSProgressIndicator</string>
+							<string>MGScopeBar</string>
 							<string>NSTableView</string>
 							<string>NSMutableArray</string>
 						</object>
 					</object>
+					<object class="IBClassDescriptionSource" key="sourceIdentifier">
+						<string key="majorKey">IBProjectSource</string>
+						<string key="minorKey">Controller/AppController.h</string>
+					</object>
+				</object>
+				<object class="IBPartialClassDescription">
+					<string key="className">AppController</string>
+					<string key="superclassName">NSWindowController</string>
 					<object class="IBClassDescriptionSource" key="sourceIdentifier">
 						<string key="majorKey">IBUserSource</string>
 						<string key="minorKey"/>
 					</object>
 				</object>
 				<object class="IBPartialClassDescription">
-					<string key="className">LRFilterBar</string>
+					<string key="className">MGScopeBar</string>
 					<string key="superclassName">NSView</string>
 					<object class="NSMutableDictionary" key="outlets">
-						<string key="NS.key.0">originalSender</string>
+						<string key="NS.key.0">delegate</string>
 						<string key="NS.object.0">id</string>
 					</object>
 					<object class="IBClassDescriptionSource" key="sourceIdentifier">
 						<string key="majorKey">IBProjectSource</string>
-						<string key="minorKey">LRFilterBar.h</string>
+						<string key="minorKey">Lib/Vendor/MGScopeBar/MGScopeBar.h</string>
+					</object>
+				</object>
+				<object class="IBPartialClassDescription">
+					<string key="className">NSMutableArray</string>
+					<object class="IBClassDescriptionSource" key="sourceIdentifier">
+						<string key="majorKey">IBProjectSource</string>
+						<string key="minorKey">Lib/Vendor/SQLitePersistentObjects/src/NSMutableArray-MultipleSort.h</string>
 					</object>
 				</object>
 				<object class="IBPartialClassDescription">
 					<string key="className">NSObject</string>
 					<object class="IBClassDescriptionSource" key="sourceIdentifier">
 						<string key="majorKey">IBProjectSource</string>
-						<string key="minorKey">JSON/NSObject+SBJSON.h</string>
+						<string key="minorKey">Lib/Vendor/JSON/NSObject+SBJSON.h</string>
 					</object>
 				</object>
 				<object class="IBPartialClassDescription">
 					<string key="className">NSObject</string>
 					<object class="IBClassDescriptionSource" key="sourceIdentifier">
 						<string key="majorKey">IBProjectSource</string>
-						<string key="minorKey">JSON/SBJsonWriter.h</string>
+						<string key="minorKey">Lib/Vendor/JSON/SBJsonWriter.h</string>
+					</object>
+				</object>
+				<object class="IBPartialClassDescription">
+					<string key="className">NSObject</string>
+					<object class="IBClassDescriptionSource" key="sourceIdentifier">
+						<string key="majorKey">IBProjectSource</string>
+						<string key="minorKey">Lib/Vendor/SQLitePersistentObjects/src/NSObject-ClassName.h</string>
+					</object>
+				</object>
+				<object class="IBPartialClassDescription">
+					<string key="className">NSObject</string>
+					<object class="IBClassDescriptionSource" key="sourceIdentifier">
+						<string key="majorKey">IBProjectSource</string>
+						<string key="minorKey">Lib/Vendor/SQLitePersistentObjects/src/NSObject-MissingKV.h</string>
+					</object>
+				</object>
+				<object class="IBPartialClassDescription">
+					<string key="className">NSObject</string>
+					<object class="IBClassDescriptionSource" key="sourceIdentifier">
+						<string key="majorKey">IBProjectSource</string>
+						<string key="minorKey">Lib/Vendor/SQLitePersistentObjects/src/NSObject-SQLitePersistence.h</string>
+					</object>
+				</object>
+				<object class="IBPartialClassDescription">
+					<string key="className">TaskTableCell</string>
+					<string key="superclassName">NSTextFieldCell</string>
+					<object class="IBClassDescriptionSource" key="sourceIdentifier">
+						<string key="majorKey">IBProjectSource</string>
+						<string key="minorKey">Lib/TaskTableCell.h</string>
 					</object>
 				</object>
 				<object class="IBPartialClassDescription">

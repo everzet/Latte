@@ -32,15 +32,11 @@
 		6396D1AE1139C5C300255A29 /* SBJsonBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 6396D18D1139C5C300255A29 /* SBJsonBase.m */; };
 		6396D1AF1139C5C300255A29 /* SBJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 6396D18F1139C5C300255A29 /* SBJsonParser.m */; };
 		6396D1B01139C5C300255A29 /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 6396D1911139C5C300255A29 /* SBJsonWriter.m */; };
-		6396D1B11139C5C300255A29 /* LRFilterBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 6396D1941139C5C300255A29 /* LRFilterBar.m */; };
-		6396D1B21139C5C300255A29 /* LRFilterButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 6396D1961139C5C300255A29 /* LRFilterButton.m */; };
-		6396D1B31139C5C300255A29 /* LRFilterButtonCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6396D1981139C5C300255A29 /* LRFilterButtonCell.m */; };
-		6396D1B41139C5C300255A29 /* LRFilterButtonPreTigerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6396D19A1139C5C300255A29 /* LRFilterButtonPreTigerCell.m */; };
-		6396D1B51139C5C300255A29 /* LRFilterButtonTigerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6396D19C1139C5C300255A29 /* LRFilterButtonTigerCell.m */; };
-		6396D1B61139C5C300255A29 /* LROverflowButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 6396D19E1139C5C300255A29 /* LROverflowButton.m */; };
 		6396D1B71139C5C300255A29 /* MAAttachedWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 6396D1A11139C5C300255A29 /* MAAttachedWindow.m */; };
 		63CD529A104AA881005BE106 /* entry-quick.png in Resources */ = {isa = PBXBuildFile; fileRef = 63CD5298104AA880005BE106 /* entry-quick.png */; };
 		63CD529B104AA881005BE106 /* entry-full.png in Resources */ = {isa = PBXBuildFile; fileRef = 63CD5299104AA881005BE106 /* entry-full.png */; };
+		63D96FFA113B197B0007F92D /* MGRecessedPopUpButtonCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 63D96FF5113B197B0007F92D /* MGRecessedPopUpButtonCell.m */; };
+		63D96FFB113B197B0007F92D /* MGScopeBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 63D96FF7113B197B0007F92D /* MGScopeBar.m */; };
 		63DDBC7F1139E16F002BB911 /* BGHUDAppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63DDBC7E1139E16F002BB911 /* BGHUDAppKit.framework */; };
 		63DDBCCB1139E303002BB911 /* BGHUDAppKit.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 63DDBC7E1139E16F002BB911 /* BGHUDAppKit.framework */; };
 		63DDBDAD113A032D002BB911 /* NSData-SQLitePersistence.m in Sources */ = {isa = PBXBuildFile; fileRef = 63DDBD8E113A032D002BB911 /* NSData-SQLitePersistence.m */; };
@@ -128,22 +124,16 @@
 		6396D18F1139C5C300255A29 /* SBJsonParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonParser.m; sourceTree = "<group>"; };
 		6396D1901139C5C300255A29 /* SBJsonWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonWriter.h; sourceTree = "<group>"; };
 		6396D1911139C5C300255A29 /* SBJsonWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonWriter.m; sourceTree = "<group>"; };
-		6396D1931139C5C300255A29 /* LRFilterBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LRFilterBar.h; sourceTree = "<group>"; };
-		6396D1941139C5C300255A29 /* LRFilterBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LRFilterBar.m; sourceTree = "<group>"; };
-		6396D1951139C5C300255A29 /* LRFilterButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LRFilterButton.h; sourceTree = "<group>"; };
-		6396D1961139C5C300255A29 /* LRFilterButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LRFilterButton.m; sourceTree = "<group>"; };
-		6396D1971139C5C300255A29 /* LRFilterButtonCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LRFilterButtonCell.h; sourceTree = "<group>"; };
-		6396D1981139C5C300255A29 /* LRFilterButtonCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LRFilterButtonCell.m; sourceTree = "<group>"; };
-		6396D1991139C5C300255A29 /* LRFilterButtonPreTigerCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LRFilterButtonPreTigerCell.h; sourceTree = "<group>"; };
-		6396D19A1139C5C300255A29 /* LRFilterButtonPreTigerCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LRFilterButtonPreTigerCell.m; sourceTree = "<group>"; };
-		6396D19B1139C5C300255A29 /* LRFilterButtonTigerCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LRFilterButtonTigerCell.h; sourceTree = "<group>"; };
-		6396D19C1139C5C300255A29 /* LRFilterButtonTigerCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LRFilterButtonTigerCell.m; sourceTree = "<group>"; };
-		6396D19D1139C5C300255A29 /* LROverflowButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LROverflowButton.h; sourceTree = "<group>"; };
-		6396D19E1139C5C300255A29 /* LROverflowButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LROverflowButton.m; sourceTree = "<group>"; };
 		6396D1A01139C5C300255A29 /* MAAttachedWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MAAttachedWindow.h; sourceTree = "<group>"; };
 		6396D1A11139C5C300255A29 /* MAAttachedWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MAAttachedWindow.m; sourceTree = "<group>"; };
 		63CD5298104AA880005BE106 /* entry-quick.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "entry-quick.png"; sourceTree = "<group>"; };
 		63CD5299104AA881005BE106 /* entry-full.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "entry-full.png"; sourceTree = "<group>"; };
+		63D96FF4113B197B0007F92D /* MGRecessedPopUpButtonCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGRecessedPopUpButtonCell.h; sourceTree = "<group>"; };
+		63D96FF5113B197B0007F92D /* MGRecessedPopUpButtonCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGRecessedPopUpButtonCell.m; sourceTree = "<group>"; };
+		63D96FF6113B197B0007F92D /* MGScopeBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGScopeBar.h; sourceTree = "<group>"; };
+		63D96FF7113B197B0007F92D /* MGScopeBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGScopeBar.m; sourceTree = "<group>"; };
+		63D96FF8113B197B0007F92D /* MGScopeBar_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGScopeBar_Prefix.pch; sourceTree = "<group>"; };
+		63D96FF9113B197B0007F92D /* MGScopeBarDelegateProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGScopeBarDelegateProtocol.h; sourceTree = "<group>"; };
 		63DDBC7E1139E16F002BB911 /* BGHUDAppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BGHUDAppKit.framework; path = Lib/Vendor/BGHUDAppKit.framework; sourceTree = "<group>"; };
 		63DDBD8D113A032D002BB911 /* NSData-SQLitePersistence.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData-SQLitePersistence.h"; sourceTree = "<group>"; };
 		63DDBD8E113A032D002BB911 /* NSData-SQLitePersistence.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData-SQLitePersistence.m"; sourceTree = "<group>"; };
@@ -352,8 +342,8 @@
 				6396D17E1139C5C300255A29 /* EZMilk */,
 				63DDBD8C113A032D002BB911 /* SQLitePersistentObjects */,
 				6396D1841139C5C300255A29 /* JSON */,
-				6396D1921139C5C300255A29 /* LRFilterBar */,
 				6396D19F1139C5C300255A29 /* MAAttachedWindow */,
+				63D96FF3113B197B0007F92D /* MGScopeBar */,
 			);
 			path = Vendor;
 			sourceTree = "<group>";
@@ -396,25 +386,6 @@
 			path = JSON;
 			sourceTree = "<group>";
 		};
-		6396D1921139C5C300255A29 /* LRFilterBar */ = {
-			isa = PBXGroup;
-			children = (
-				6396D1931139C5C300255A29 /* LRFilterBar.h */,
-				6396D1941139C5C300255A29 /* LRFilterBar.m */,
-				6396D1951139C5C300255A29 /* LRFilterButton.h */,
-				6396D1961139C5C300255A29 /* LRFilterButton.m */,
-				6396D1971139C5C300255A29 /* LRFilterButtonCell.h */,
-				6396D1981139C5C300255A29 /* LRFilterButtonCell.m */,
-				6396D1991139C5C300255A29 /* LRFilterButtonPreTigerCell.h */,
-				6396D19A1139C5C300255A29 /* LRFilterButtonPreTigerCell.m */,
-				6396D19B1139C5C300255A29 /* LRFilterButtonTigerCell.h */,
-				6396D19C1139C5C300255A29 /* LRFilterButtonTigerCell.m */,
-				6396D19D1139C5C300255A29 /* LROverflowButton.h */,
-				6396D19E1139C5C300255A29 /* LROverflowButton.m */,
-			);
-			path = LRFilterBar;
-			sourceTree = "<group>";
-		};
 		6396D19F1139C5C300255A29 /* MAAttachedWindow */ = {
 			isa = PBXGroup;
 			children = (
@@ -422,6 +393,19 @@
 				6396D1A11139C5C300255A29 /* MAAttachedWindow.m */,
 			);
 			path = MAAttachedWindow;
+			sourceTree = "<group>";
+		};
+		63D96FF3113B197B0007F92D /* MGScopeBar */ = {
+			isa = PBXGroup;
+			children = (
+				63D96FF4113B197B0007F92D /* MGRecessedPopUpButtonCell.h */,
+				63D96FF5113B197B0007F92D /* MGRecessedPopUpButtonCell.m */,
+				63D96FF6113B197B0007F92D /* MGScopeBar.h */,
+				63D96FF7113B197B0007F92D /* MGScopeBar.m */,
+				63D96FF8113B197B0007F92D /* MGScopeBar_Prefix.pch */,
+				63D96FF9113B197B0007F92D /* MGScopeBarDelegateProtocol.h */,
+			);
+			path = MGScopeBar;
 			sourceTree = "<group>";
 		};
 		63DDBD8C113A032D002BB911 /* SQLitePersistentObjects */ = {
@@ -555,12 +539,6 @@
 				6396D1AE1139C5C300255A29 /* SBJsonBase.m in Sources */,
 				6396D1AF1139C5C300255A29 /* SBJsonParser.m in Sources */,
 				6396D1B01139C5C300255A29 /* SBJsonWriter.m in Sources */,
-				6396D1B11139C5C300255A29 /* LRFilterBar.m in Sources */,
-				6396D1B21139C5C300255A29 /* LRFilterButton.m in Sources */,
-				6396D1B31139C5C300255A29 /* LRFilterButtonCell.m in Sources */,
-				6396D1B41139C5C300255A29 /* LRFilterButtonPreTigerCell.m in Sources */,
-				6396D1B51139C5C300255A29 /* LRFilterButtonTigerCell.m in Sources */,
-				6396D1B61139C5C300255A29 /* LROverflowButton.m in Sources */,
 				6396D1B71139C5C300255A29 /* MAAttachedWindow.m in Sources */,
 				63DDBDAD113A032D002BB911 /* NSData-SQLitePersistence.m in Sources */,
 				63DDBDAE113A032D002BB911 /* NSDate-SQLitePersistence.m in Sources */,
@@ -581,6 +559,8 @@
 				63DDBDCD113A7CAE002BB911 /* TaskList.m in Sources */,
 				63DDBDF7113A8436002BB911 /* Task.m in Sources */,
 				63DDBF9D113AA1B8002BB911 /* RTMKeys.m in Sources */,
+				63D96FFA113B197B0007F92D /* MGRecessedPopUpButtonCell.m in Sources */,
+				63D96FFB113B197B0007F92D /* MGScopeBar.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

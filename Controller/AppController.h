@@ -35,15 +35,16 @@
 #import "Task.h"
 
 // Interface libraries
-#import "LRFilterBar.h"
+#import "MGScopeBar.h"
+#import "MGScopeBarDelegateProtocol.h"
 #import "TaskTableCell.h"
 
 // RTM library
 #import "RTMKeys.h"
 #import "EZMilk.h"
 
-@interface AppController : NSWindowController {
-  IBOutlet LRFilterBar*         filter;
+@interface AppController : NSWindowController <MGScopeBarDelegate> {
+  IBOutlet MGScopeBar*          scopeBar;
   IBOutlet NSTableView*         tableView;
   IBOutlet NSPopUpButton*       listView;
   IBOutlet NSProgressIndicator* progress;
@@ -53,6 +54,9 @@
   IBOutlet NSMutableArray*      lists;
   IBOutlet NSMutableArray*      tasks;
 
+  // Scope bar
+  NSMutableArray*               groups;
+
   // Controllers
   TaskEntryController*          taskEntryController;
   PreferencesController*        preferencesController;
@@ -61,6 +65,8 @@
   EZMilk*                       rtmService;
   AppPreferences*               prefHolder;
 }
+
+@property(retain)NSMutableArray* groups;
 
 // Interface & Data init
 - (void)initFilter;

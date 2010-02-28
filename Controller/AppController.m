@@ -28,6 +28,8 @@
 
 @implementation AppController
 
+@synthesize groups;
+
 - (void)awakeFromNib
 {
   // Interface setup
@@ -49,12 +51,32 @@
 
 - (void)initFilter
 {
-  NSArray *filterButtons = [[NSArray alloc] initWithObjects: @"All", @"Pending", @"Complete", nil];
-  [filter setGrayBackground];
-  [filter setRegularFontWeight];
-  [filter addItemsWithTitles:filterButtons withSelector:@selector(selectFilter:) withTarget:self];
-  [filter selectIndex:0 inSegment:0];
-  [filterButtons release];
+  self.groups = [NSMutableArray arrayWithCapacity:0];
+	scopeBar.delegate = self;
+
+	NSArray *items = [NSArray arrayWithObjects:
+                    [NSDictionary dictionaryWithObjectsAndKeys:
+                     @"AllItem", @"Identifier", 
+                     @"All", @"Name", 
+                     nil], 
+                    [NSDictionary dictionaryWithObjectsAndKeys:
+                     @"PendingItem", @"Identifier", 
+                     @"Pending", @"Name", 
+                     nil],
+                    [NSDictionary dictionaryWithObjectsAndKeys:
+                     @"CompleteItem", @"Identifier", 
+                     @"Complete", @"Name", 
+                     nil],
+                    nil];
+	
+	[self.groups addObject:[NSDictionary dictionaryWithObjectsAndKeys:
+                          @"show:", @"Label", 
+                          [NSNumber numberWithBool:NO], @"HasSeparator", 
+                          [NSNumber numberWithInt:MGRadioSelectionMode], @"SelectionMode",
+                          items, @"Items", 
+                          nil]];
+
+  [scopeBar reloadData];
 }
 
 - (void)initTable
@@ -88,6 +110,7 @@
 
   [prefHolder release];
   [rtmService release];
+  [groups release];
 
   [super dealloc];
 }
@@ -115,17 +138,19 @@
 
   list = [lists objectAtIndex:[listView indexOfSelectedItem]];
   [[self mutableArrayValueForKey:@"tasks"] removeAllObjects];
-  if (1 == [filter getSelectedIndexInSegment:0])
+  NSString* identifier = [[[scopeBar selectedItems] objectAtIndex:0] objectAtIndex:0];
+
+if (NSOrderedSame == [identifier compare:@"AllItem"])
+  {
+    [[self mutableArrayValueForKey:@"tasks"] addObjectsFromArray:[Task allInList:list]];
+  }
+  else if (NSOrderedSame == [identifier compare:@"PendingItem"])
   {
     [[self mutableArrayValueForKey:@"tasks"] addObjectsFromArray:[Task allCompleted:false inList:list]];
   }
-  else if (2 == [filter getSelectedIndexInSegment:0])
+  else if (NSOrderedSame == [identifier compare:@"CompleteItem"])
   {
     [[self mutableArrayValueForKey:@"tasks"] addObjectsFromArray:[Task allCompleted:true inList:list]];
-  }
-  else
-  {
-    [[self mutableArrayValueForKey:@"tasks"] addObjectsFromArray:[Task allInList:list]];
   }
 
   if (withSelection)
@@ -289,6 +314,68 @@
   //NSString* timeline = [anRtm timeline];
   //[LTRtmListSync syncWithRtm:anRtm usingTimeline:timeline];
   //[LTRtmTaskSync syncWithRtm:rtm usingTimeline:timeline];
+}
+
+#pragma mark MGScopeBarDelegate methods
+
+- (void)scopeBar:(MGScopeBar *)theScopeBar selectedStateChanged:(BOOL)selected 
+         forItem:(NSString *)identifier inGroup:(int)groupNumber
+{
+  [self reloadTasksWithSelection:NO];
+}
+
+- (int)numberOfGroupsInScopeBar:(MGScopeBar *)theScopeBar
+{
+	return [self.groups count];
+}
+
+
+- (NSArray *)scopeBar:(MGScopeBar *)theScopeBar itemIdentifiersForGroup:(int)groupNumber
+{
+	return [[self.groups objectAtIndex:groupNumber] valueForKeyPath:[NSString stringWithFormat:@"%@.%@", @"Items", @"Identifier"]];
+}
+
+
+- (NSString *)scopeBar:(MGScopeBar *)theScopeBar labelForGroup:(int)groupNumber
+{
+	return [[self.groups objectAtIndex:groupNumber] objectForKey:@"Label"]; // might be nil, which is fine (nil means no label).
+}
+
+
+- (NSString *)scopeBar:(MGScopeBar *)theScopeBar titleOfItem:(NSString *)identifier inGroup:(int)groupNumber
+{
+	NSArray *items = [[self.groups objectAtIndex:groupNumber] objectForKey:@"Items"];
+	if (items) {
+		// We'll iterate here, since this is just a demo. This avoids having to keep an NSDictionary of identifiers 
+		// for each group as well as an array for ordering. In a more realistic scenario, you'd probably want to be 
+		// able to look-up an item by its identifier in constant time.
+		for (NSDictionary *item in items) {
+			if ([[item objectForKey:@"Identifier"] isEqualToString:identifier]) {
+				return [item objectForKey:@"Name"];
+				break;
+			}
+		}
+	}
+	return nil;
+}
+
+
+- (MGScopeBarGroupSelectionMode)scopeBar:(MGScopeBar *)theScopeBar selectionModeForGroup:(int)groupNumber
+{
+	return [[[self.groups objectAtIndex:groupNumber] objectForKey:@"SelectionMode"] intValue];
+}
+
+
+- (BOOL)scopeBar:(MGScopeBar *)theScopeBar showSeparatorBeforeGroup:(int)groupNumber
+{
+	// Optional method. If not implemented, all groups except the first will have a separator before them.
+	return [[[self.groups objectAtIndex:groupNumber] objectForKey:@"HasSeparator"] boolValue];
+}
+
+
+- (NSImage *)scopeBar:(MGScopeBar *)scopeBar imageForItem:(NSString *)identifier inGroup:(int)groupNumber
+{
+	return nil;
 }
 
 @end
