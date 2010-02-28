@@ -23,14 +23,14 @@
 		6396D0F11139C4B100255A29 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6396D0EC1139C4B100255A29 /* MainMenu.xib */; };
 		6396D0F21139C4B100255A29 /* Preferences.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6396D0ED1139C4B100255A29 /* Preferences.xib */; };
 		6396D0F31139C4B100255A29 /* QuickEntry.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6396D0EE1139C4B100255A29 /* QuickEntry.xib */; };
-		6396D1561139C57800255A29 /* LTAppController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6396D1511139C57800255A29 /* LTAppController.m */; };
-		6396D1571139C57800255A29 /* LTPreferencesController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6396D1531139C57800255A29 /* LTPreferencesController.m */; };
-		6396D1581139C57800255A29 /* LTQuickEntryController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6396D1551139C57800255A29 /* LTQuickEntryController.m */; };
-		6396D1A21139C5C300255A29 /* LTGradient.m in Sources */ = {isa = PBXBuildFile; fileRef = 6396D16F1139C5C300255A29 /* LTGradient.m */; };
-		6396D1A31139C5C300255A29 /* LTPreferences.m in Sources */ = {isa = PBXBuildFile; fileRef = 6396D1711139C5C300255A29 /* LTPreferences.m */; };
+		6396D1561139C57800255A29 /* AppController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6396D1511139C57800255A29 /* AppController.m */; };
+		6396D1571139C57800255A29 /* PreferencesController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6396D1531139C57800255A29 /* PreferencesController.m */; };
+		6396D1581139C57800255A29 /* QuickEntryController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6396D1551139C57800255A29 /* QuickEntryController.m */; };
+		6396D1A21139C5C300255A29 /* TaskGradient.m in Sources */ = {isa = PBXBuildFile; fileRef = 6396D16F1139C5C300255A29 /* TaskGradient.m */; };
+		6396D1A31139C5C300255A29 /* Preferences.m in Sources */ = {isa = PBXBuildFile; fileRef = 6396D1711139C5C300255A29 /* Preferences.m */; };
 		6396D1A51139C5C300255A29 /* LTRtmListSync.m in Sources */ = {isa = PBXBuildFile; fileRef = 6396D1751139C5C300255A29 /* LTRtmListSync.m */; };
 		6396D1A61139C5C300255A29 /* LTRtmTaskSync.m in Sources */ = {isa = PBXBuildFile; fileRef = 6396D1771139C5C300255A29 /* LTRtmTaskSync.m */; };
-		6396D1A71139C5C300255A29 /* LTTaskCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6396D1791139C5C300255A29 /* LTTaskCell.m */; };
+		6396D1A71139C5C300255A29 /* TaskCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6396D1791139C5C300255A29 /* TaskCell.m */; };
 		6396D1A81139C5C300255A29 /* CTGradient.m in Sources */ = {isa = PBXBuildFile; fileRef = 6396D17D1139C5C300255A29 /* CTGradient.m */; };
 		6396D1A91139C5C300255A29 /* EZMilk.m in Sources */ = {isa = PBXBuildFile; fileRef = 6396D1801139C5C300255A29 /* EZMilk.m */; };
 		6396D1AA1139C5C300255A29 /* EZSQLite.m in Sources */ = {isa = PBXBuildFile; fileRef = 6396D1831139C5C300255A29 /* EZSQLite.m */; };
@@ -69,6 +69,8 @@
 		63DDBDBA113A032D002BB911 /* SQLitePersistentObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 63DDBDA8113A032D002BB911 /* SQLitePersistentObject.m */; };
 		63DDBDBB113A032D002BB911 /* UIColor-SQLitePersistentObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 63DDBDAA113A032D002BB911 /* UIColor-SQLitePersistentObject.m */; };
 		63DDBDBC113A032D002BB911 /* UIImage-SQLitePersistence.m in Sources */ = {isa = PBXBuildFile; fileRef = 63DDBDAC113A032D002BB911 /* UIImage-SQLitePersistence.m */; };
+		63DDBDCD113A7CAE002BB911 /* TaskList.m in Sources */ = {isa = PBXBuildFile; fileRef = 63DDBDCC113A7CAE002BB911 /* TaskList.m */; };
+		63DDBDF7113A8436002BB911 /* Task.m in Sources */ = {isa = PBXBuildFile; fileRef = 63DDBDF6113A8436002BB911 /* Task.m */; };
 		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
 		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
@@ -116,22 +118,22 @@
 		6396D0EC1139C4B100255A29 /* MainMenu.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainMenu.xib; sourceTree = "<group>"; };
 		6396D0ED1139C4B100255A29 /* Preferences.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Preferences.xib; sourceTree = "<group>"; };
 		6396D0EE1139C4B100255A29 /* QuickEntry.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QuickEntry.xib; sourceTree = "<group>"; };
-		6396D1501139C57800255A29 /* LTAppController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTAppController.h; sourceTree = "<group>"; };
-		6396D1511139C57800255A29 /* LTAppController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LTAppController.m; sourceTree = "<group>"; };
-		6396D1521139C57800255A29 /* LTPreferencesController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTPreferencesController.h; sourceTree = "<group>"; };
-		6396D1531139C57800255A29 /* LTPreferencesController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LTPreferencesController.m; sourceTree = "<group>"; };
-		6396D1541139C57800255A29 /* LTQuickEntryController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTQuickEntryController.h; sourceTree = "<group>"; };
-		6396D1551139C57800255A29 /* LTQuickEntryController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LTQuickEntryController.m; sourceTree = "<group>"; };
-		6396D16E1139C5C300255A29 /* LTGradient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTGradient.h; sourceTree = "<group>"; };
-		6396D16F1139C5C300255A29 /* LTGradient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LTGradient.m; sourceTree = "<group>"; };
-		6396D1701139C5C300255A29 /* LTPreferences.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTPreferences.h; sourceTree = "<group>"; };
-		6396D1711139C5C300255A29 /* LTPreferences.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LTPreferences.m; sourceTree = "<group>"; };
+		6396D1501139C57800255A29 /* AppController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppController.h; sourceTree = "<group>"; };
+		6396D1511139C57800255A29 /* AppController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppController.m; sourceTree = "<group>"; };
+		6396D1521139C57800255A29 /* PreferencesController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PreferencesController.h; sourceTree = "<group>"; };
+		6396D1531139C57800255A29 /* PreferencesController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PreferencesController.m; sourceTree = "<group>"; };
+		6396D1541139C57800255A29 /* QuickEntryController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuickEntryController.h; sourceTree = "<group>"; };
+		6396D1551139C57800255A29 /* QuickEntryController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuickEntryController.m; sourceTree = "<group>"; };
+		6396D16E1139C5C300255A29 /* TaskGradient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TaskGradient.h; sourceTree = "<group>"; };
+		6396D16F1139C5C300255A29 /* TaskGradient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TaskGradient.m; sourceTree = "<group>"; };
+		6396D1701139C5C300255A29 /* Preferences.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Preferences.h; sourceTree = "<group>"; };
+		6396D1711139C5C300255A29 /* Preferences.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Preferences.m; sourceTree = "<group>"; };
 		6396D1741139C5C300255A29 /* LTRtmListSync.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTRtmListSync.h; sourceTree = "<group>"; };
 		6396D1751139C5C300255A29 /* LTRtmListSync.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LTRtmListSync.m; sourceTree = "<group>"; };
 		6396D1761139C5C300255A29 /* LTRtmTaskSync.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTRtmTaskSync.h; sourceTree = "<group>"; };
 		6396D1771139C5C300255A29 /* LTRtmTaskSync.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LTRtmTaskSync.m; sourceTree = "<group>"; };
-		6396D1781139C5C300255A29 /* LTTaskCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTTaskCell.h; sourceTree = "<group>"; };
-		6396D1791139C5C300255A29 /* LTTaskCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LTTaskCell.m; sourceTree = "<group>"; };
+		6396D1781139C5C300255A29 /* TaskCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TaskCell.h; sourceTree = "<group>"; };
+		6396D1791139C5C300255A29 /* TaskCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TaskCell.m; sourceTree = "<group>"; };
 		6396D17C1139C5C300255A29 /* CTGradient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTGradient.h; sourceTree = "<group>"; };
 		6396D17D1139C5C300255A29 /* CTGradient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTGradient.m; sourceTree = "<group>"; };
 		6396D17F1139C5C300255A29 /* EZMilk.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EZMilk.h; sourceTree = "<group>"; };
@@ -202,6 +204,10 @@
 		63DDBDAA113A032D002BB911 /* UIColor-SQLitePersistentObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor-SQLitePersistentObject.m"; sourceTree = "<group>"; };
 		63DDBDAB113A032D002BB911 /* UIImage-SQLitePersistence.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage-SQLitePersistence.h"; sourceTree = "<group>"; };
 		63DDBDAC113A032D002BB911 /* UIImage-SQLitePersistence.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage-SQLitePersistence.m"; sourceTree = "<group>"; };
+		63DDBDCB113A7CAE002BB911 /* TaskList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TaskList.h; sourceTree = "<group>"; };
+		63DDBDCC113A7CAE002BB911 /* TaskList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TaskList.m; sourceTree = "<group>"; };
+		63DDBDF5113A8436002BB911 /* Task.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Task.h; sourceTree = "<group>"; };
+		63DDBDF6113A8436002BB911 /* Task.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Task.m; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8D1107320486CEB800E47090 /* Latte.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Latte.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -330,6 +336,10 @@
 				6396D0CA1139C3E500255A29 /* ltTaskItem.m */,
 				6396D0CB1139C3E500255A29 /* ltTaskProxy.h */,
 				6396D0CC1139C3E500255A29 /* ltTaskProxy.m */,
+				63DDBDCB113A7CAE002BB911 /* TaskList.h */,
+				63DDBDCC113A7CAE002BB911 /* TaskList.m */,
+				63DDBDF5113A8436002BB911 /* Task.h */,
+				63DDBDF6113A8436002BB911 /* Task.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -347,12 +357,12 @@
 		6396D14F1139C57800255A29 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				6396D1501139C57800255A29 /* LTAppController.h */,
-				6396D1511139C57800255A29 /* LTAppController.m */,
-				6396D1521139C57800255A29 /* LTPreferencesController.h */,
-				6396D1531139C57800255A29 /* LTPreferencesController.m */,
-				6396D1541139C57800255A29 /* LTQuickEntryController.h */,
-				6396D1551139C57800255A29 /* LTQuickEntryController.m */,
+				6396D1501139C57800255A29 /* AppController.h */,
+				6396D1511139C57800255A29 /* AppController.m */,
+				6396D1521139C57800255A29 /* PreferencesController.h */,
+				6396D1531139C57800255A29 /* PreferencesController.m */,
+				6396D1541139C57800255A29 /* QuickEntryController.h */,
+				6396D1551139C57800255A29 /* QuickEntryController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -361,16 +371,16 @@
 			isa = PBXGroup;
 			children = (
 				6396D17A1139C5C300255A29 /* Vendor */,
-				6396D16E1139C5C300255A29 /* LTGradient.h */,
-				6396D16F1139C5C300255A29 /* LTGradient.m */,
-				6396D1701139C5C300255A29 /* LTPreferences.h */,
-				6396D1711139C5C300255A29 /* LTPreferences.m */,
+				6396D16E1139C5C300255A29 /* TaskGradient.h */,
+				6396D16F1139C5C300255A29 /* TaskGradient.m */,
+				6396D1701139C5C300255A29 /* Preferences.h */,
+				6396D1711139C5C300255A29 /* Preferences.m */,
 				6396D1741139C5C300255A29 /* LTRtmListSync.h */,
 				6396D1751139C5C300255A29 /* LTRtmListSync.m */,
 				6396D1761139C5C300255A29 /* LTRtmTaskSync.h */,
 				6396D1771139C5C300255A29 /* LTRtmTaskSync.m */,
-				6396D1781139C5C300255A29 /* LTTaskCell.h */,
-				6396D1791139C5C300255A29 /* LTTaskCell.m */,
+				6396D1781139C5C300255A29 /* TaskCell.h */,
+				6396D1791139C5C300255A29 /* TaskCell.m */,
 			);
 			path = Lib;
 			sourceTree = "<group>";
@@ -578,14 +588,14 @@
 				6396D0CE1139C3E500255A29 /* ltListProxy.m in Sources */,
 				6396D0CF1139C3E500255A29 /* ltTaskItem.m in Sources */,
 				6396D0D01139C3E500255A29 /* ltTaskProxy.m in Sources */,
-				6396D1561139C57800255A29 /* LTAppController.m in Sources */,
-				6396D1571139C57800255A29 /* LTPreferencesController.m in Sources */,
-				6396D1581139C57800255A29 /* LTQuickEntryController.m in Sources */,
-				6396D1A21139C5C300255A29 /* LTGradient.m in Sources */,
-				6396D1A31139C5C300255A29 /* LTPreferences.m in Sources */,
+				6396D1561139C57800255A29 /* AppController.m in Sources */,
+				6396D1571139C57800255A29 /* PreferencesController.m in Sources */,
+				6396D1581139C57800255A29 /* QuickEntryController.m in Sources */,
+				6396D1A21139C5C300255A29 /* TaskGradient.m in Sources */,
+				6396D1A31139C5C300255A29 /* Preferences.m in Sources */,
 				6396D1A51139C5C300255A29 /* LTRtmListSync.m in Sources */,
 				6396D1A61139C5C300255A29 /* LTRtmTaskSync.m in Sources */,
-				6396D1A71139C5C300255A29 /* LTTaskCell.m in Sources */,
+				6396D1A71139C5C300255A29 /* TaskCell.m in Sources */,
 				6396D1A81139C5C300255A29 /* CTGradient.m in Sources */,
 				6396D1A91139C5C300255A29 /* EZMilk.m in Sources */,
 				6396D1AA1139C5C300255A29 /* EZSQLite.m in Sources */,
@@ -619,6 +629,8 @@
 				63DDBDBA113A032D002BB911 /* SQLitePersistentObject.m in Sources */,
 				63DDBDBB113A032D002BB911 /* UIColor-SQLitePersistentObject.m in Sources */,
 				63DDBDBC113A032D002BB911 /* UIImage-SQLitePersistence.m in Sources */,
+				63DDBDCD113A7CAE002BB911 /* TaskList.m in Sources */,
+				63DDBDF7113A8436002BB911 /* Task.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

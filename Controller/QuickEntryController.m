@@ -6,10 +6,10 @@
 //  Copyright 2009 __MyCompanyName__. All rights reserved.
 //
 
-#import "LTQuickEntryController.h"
+#import "QuickEntryController.h"
 
 
-@implementation LTQuickEntryController
+@implementation QuickEntryController
 
 @synthesize task;
 @synthesize saveTarget;

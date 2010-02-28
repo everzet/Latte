@@ -6,10 +6,10 @@
 //  Copyright 2009 __MyCompanyName__. All rights reserved.
 //
 
-#import "LTPreferencesController.h"
+#import "PreferencesController.h"
 
 
-@implementation LTPreferencesController
+@implementation PreferencesController
 
 @synthesize frob;
 
@@ -63,7 +63,7 @@
 
 - (IBAction)rtmShow:(id)sender
 {
-  if ([[LTPreferences instance] rtmToken])
+  if ([[Preferences instance] rtmToken])
   {
     [tabView selectTabViewItemWithIdentifier:@"rtm"];
   }
@@ -100,7 +100,7 @@
     NSString* token = [rtm tokenWithFrob:frob];
     if (token)
     {
-      [[LTPreferences instance] setRtmToken:token];
+      [[Preferences instance] setRtmToken:token];
     }
     [self setFrob:nil];
   }
@@ -110,7 +110,7 @@
 
 - (IBAction)resetRtmAuth:(id)sender
 {
-  [[LTPreferences instance] setRtmToken:nil];
+  [[Preferences instance] setRtmToken:nil];
   [self rtmShow:self];
 }
 

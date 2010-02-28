@@ -6,24 +6,24 @@
 //  Copyright 2009 __MyCompanyName__. All rights reserved.
 //
 
-#import "LTGradient.h"
+#import "TaskGradient.h"
 
 
-@implementation LTGradient
+@implementation TaskGradient
 
 + (id)taskGradientIsHighlighted:(BOOL)isHighlighted isChecked:(BOOL)isChecked
 {
   if (isHighlighted)
   {
-    return [LTGradient selectedTaskGradient];
+    return [TaskGradient selectedTaskGradient];
   }
   else if (isChecked)
   {
-    return [LTGradient checkedTaskGradient];
+    return [TaskGradient checkedTaskGradient];
   }
   else
   {
-    return [LTGradient taskGradient];
+    return [TaskGradient taskGradient];
   }
 }
 
@@ -47,19 +47,19 @@
 
 + (id)priorityGradient:(NSInteger)priority
 {
-  LTGradient* priorityRect;
+  TaskGradient* priorityRect;
   switch (priority) {
     case 3:
-      priorityRect = [LTGradient lowPriorityGradient];
+      priorityRect = [TaskGradient lowPriorityGradient];
       break;
     case 2:
-      priorityRect = [LTGradient normalPriorityGradient];
+      priorityRect = [TaskGradient normalPriorityGradient];
       break;
     case 1:
-      priorityRect = [LTGradient highPriorityGradient];
+      priorityRect = [TaskGradient highPriorityGradient];
       break;
     default:
-      priorityRect = [LTGradient noPriorityGradient];
+      priorityRect = [TaskGradient noPriorityGradient];
       break;
   }
   return [[priorityRect autorelease] retain];

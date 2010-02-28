@@ -7,11 +7,11 @@
 //
 
 #import <Cocoa/Cocoa.h>
-#import "LTGradient.h"
+#import "TaskGradient.h"
 #import "ltTaskItem.h"
 
 
-@interface LTTaskCell : NSTextFieldCell {
+@interface TaskCell : NSTextFieldCell {
   SEL checkboxClickedAction;
   BOOL checkboxMouseIsDown;
 }

@@ -9,11 +9,11 @@
 #import <Cocoa/Cocoa.h>
 
 
-@interface LTPreferences : NSObject {
+@interface Preferences : NSObject {
   NSUserDefaults* userDefaults;
 }
 
-+ (LTPreferences*)instance;
++ (Preferences*)instance;
 
 - (NSString*)rtmToken;
 - (void)setRtmToken:(NSString*)aToken;

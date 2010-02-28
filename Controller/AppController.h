@@ -9,13 +9,17 @@
 #import "LTRtmTaskSync.h"
 
 #import "LRFilterBar.h"
-#import "ltTaskCell.h"
+#import "TaskCell.h"
 
-#import "LTPreferencesController.h"
-#import "LTQuickEntryController.h"
+#import "PreferencesController.h"
+#import "QuickEntryController.h"
+
+// SQLite objects
+#import "SQLiteInstanceManager.h"
+#import "Task.h"
 
 
-@interface LTAppController : NSWindowController {
+@interface AppController : NSWindowController {
   IBOutlet LRFilterBar* filter;
   IBOutlet NSTableView* tableView;
   IBOutlet NSPopUpButton* listView;
@@ -25,12 +29,12 @@
   IBOutlet NSMutableArray* lists;
   IBOutlet NSMutableArray* tasks;
 
-  LTQuickEntryController* quickEntryController;
-  LTPreferencesController* preferencesController;
+  QuickEntryController* quickEntryController;
+  PreferencesController* preferencesController;
 
   EZSQLite* sqlite;
   EZMilk* rtm;
-  LTPreferences* preferences;
+  Preferences* preferences;
 }
 
 - (void)reloadTasks;

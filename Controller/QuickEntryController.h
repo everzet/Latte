@@ -11,7 +11,7 @@
 #import "ltTaskItem.h"
 #import "MAAttachedWindow.h"
 
-@interface LTQuickEntryController : NSWindowController {
+@interface QuickEntryController : NSWindowController {
   IBOutlet NSArray* lists;
 
   IBOutlet NSImageView* background;

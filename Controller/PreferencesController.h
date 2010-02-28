@@ -7,12 +7,12 @@
 //
 
 #import <Cocoa/Cocoa.h>
-#import "LTPreferences.h"
+#import "Preferences.h"
 #import "LTRtmApiKeys.h"
 #import "EZMilk.h"
 
 
-@interface LTPreferencesController : NSWindowController {
+@interface PreferencesController : NSWindowController {
   IBOutlet NSTabView* tabView;
   IBOutlet NSToolbar* toolbar;
 

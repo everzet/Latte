@@ -1,6 +1,6 @@
-#import "LTAppController.h"
+#import "AppController.h"
 
-@implementation LTAppController
+@implementation AppController
 
 - (void)awakeFromNib
 {
@@ -21,10 +21,18 @@
   [tableView setNextResponder:self];
 
   // Preferences controller
-  preferences = [[LTPreferences alloc] init];
+  preferences = [[Preferences alloc] init];
 
   // Registering/creating database file
   NSArray   *appSupportPath       = NSSearchPathForDirectoriesInDomains(NSApplicationSupportDirectory, NSUserDomainMask, YES);
+  
+  
+  // DATABASE
+  [[SQLiteInstanceManager sharedManager] setDatabaseFilepath:[[[appSupportPath objectAtIndex: 0] 
+                                                               stringByAppendingPathComponent: @"Latte"]
+                                                              stringByAppendingPathComponent: @"latte.sqlite"]];
+
+  
   NSString  *databasePath         = [[[appSupportPath objectAtIndex: 0] 
                                      stringByAppendingPathComponent: @"Latte"]
                                      stringByAppendingPathComponent: @"lattedb.sqlite"];
@@ -108,7 +116,7 @@
 
 - (void)tableView:(NSTableView *)aTableView willDisplayCell:(id)aCell forTableColumn:(NSTableColumn *)aTableColumn row:(NSInteger)rowIndex
 {
-  LTTaskCell* cell = (LTTaskCell*)aCell;
+  TaskCell* cell = (TaskCell*)aCell;
 
   [cell setTarget:self];
   [cell setCheckboxClickedAction:@selector(changeTaskCompletionStatus:)];
@@ -165,7 +173,7 @@
   {
     [preferencesController release];
   }
-  preferencesController = [[LTPreferencesController alloc] init];
+  preferencesController = [[PreferencesController alloc] init];
   [preferencesController showWindow:self];
 }
 
@@ -191,7 +199,7 @@
   {
     [quickEntryController release];
   }
-  quickEntryController = [[LTQuickEntryController alloc] initWithTask:aTask];
+  quickEntryController = [[QuickEntryController alloc] initWithTask:aTask];
   [quickEntryController setSaveTarget:self];
   [quickEntryController setSaveAction:@selector(saveTaskFromEntry:)];
   [quickEntryController showWindow: self];

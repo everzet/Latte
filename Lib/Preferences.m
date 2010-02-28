@@ -6,15 +6,15 @@
 //  Copyright 2009 __MyCompanyName__. All rights reserved.
 //
 
-#import "LTPreferences.h"
+#import "Preferences.h"
 
 
 #define UD_RTM_TOKEN_KEY @"rtm.token"
 #define UD_RTM_SYNC_KEY @"rtm.sync.interval"
 
-static LTPreferences* LTPreferencesInstance;
+static Preferences* LTPreferencesInstance;
 
-@implementation LTPreferences
+@implementation Preferences
 
 - (id)init
 {
@@ -35,7 +35,7 @@ static LTPreferences* LTPreferencesInstance;
   return self;
 }
 
-+ (LTPreferences*)instance
++ (Preferences*)instance
 {
   return LTPreferencesInstance;
 }
