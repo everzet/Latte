@@ -254,7 +254,7 @@
 - (void)changeTaskCompletionStatus:(id)sender
 {
   Task* task = [tasks objectAtIndex:[[tableView selectedRowIndexes] firstIndex]];
-  task.isCompleted = task.isCompleted ? false : true;
+  task.isCompleted = task.isCompleted ? NO : YES;
   [task save];
   [self reloadTasksWithSelection:YES];
 }
@@ -269,7 +269,7 @@
 
 - (void)runSyncLoop:(id)sender
 {
-  while (false)
+  while (NO)
   {
     NSAutoreleasePool* pool = [[NSAutoreleasePool alloc] init];
     [rtmService setToken:[prefHolder rtmToken]];

@@ -278,14 +278,14 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>3</integer>
-									<integer>2</integer>
+									<integer>17</integer>
+									<integer>15</integer>
 									<integer>1</integer>
 									<integer>0</integer>
 								</array>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateVisibleRectKey</key>
-							<string>{{0, 3}, {246, 676}}</string>
+							<string>{{0, 0}, {246, 676}}</string>
 						</dict>
 						<key>PBXTopSmartGroupGIDs</key>
 						<array/>
@@ -407,7 +407,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>SQLitePersistentObject.m</string>
+								<string>AppController.m</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -415,11 +415,11 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>SQLitePersistentObject.m</string>
+										<string>AppController.m</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>6398B83D113C86A50089AECF</string>
+										<string>6398B869113C8C2A0089AECF</string>
 										<key>history</key>
 										<array>
 											<string>639ECAFD101CDA4900CD9EC7</string>
@@ -437,7 +437,6 @@
 											<string>63BEC6991049F86E007103A0</string>
 											<string>63DDBFC5113AA38C002BB911</string>
 											<string>63DDBFC6113AA38C002BB911</string>
-											<string>63B61BA5113AAE7A0017D0F1</string>
 											<string>63B61BB1113AAE7A0017D0F1</string>
 											<string>63B61BC1113AAEDD0017D0F1</string>
 											<string>63D96F4F113AB2DC0007F92D</string>
@@ -463,13 +462,15 @@
 											<string>6398B7DD113C81D40089AECF</string>
 											<string>6398B7DE113C81D40089AECF</string>
 											<string>6398B802113C84820089AECF</string>
-											<string>6398B803113C84820089AECF</string>
-											<string>6398B80E113C850D0089AECF</string>
 											<string>6398B80F113C850D0089AECF</string>
 											<string>6398B835113C868F0089AECF</string>
-											<string>6398B836113C868F0089AECF</string>
 											<string>6398B837113C868F0089AECF</string>
-											<string>6398B838113C868F0089AECF</string>
+											<string>6398B847113C885D0089AECF</string>
+											<string>6398B85E113C8BA80089AECF</string>
+											<string>6398B85F113C8BA80089AECF</string>
+											<string>6398B860113C8BA80089AECF</string>
+											<string>6398B861113C8BA80089AECF</string>
+											<string>6398B862113C8BA80089AECF</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -689,6 +690,7 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
+		<string>6398B86A113C8C2A0089AECF</string>
 		<string>6370F6A6101F311E000BD869</string>
 		<string>1C530D57069F1CE1000CFCEE</string>
 		<string>6398B7BA113C7F910089AECF</string>
@@ -720,7 +722,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CD0528F0623707200166675</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>SQLitePersistentObject.m</string>
+								<string>SQLiteInstanceManager.m</string>
 								<key>StatusBarVisibility</key>
 								<true/>
 							</dict>
@@ -936,7 +938,7 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CDD528C0622207200134675</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>TaskList.m</string>
+										<string>AppController.m</string>
 										<key>StatusBarVisibility</key>
 										<true/>
 									</dict>
