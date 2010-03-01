@@ -14,6 +14,7 @@
 		63303C2C101F4E7E00B516AB /* latte.icns in Resources */ = {isa = PBXBuildFile; fileRef = 63303C2B101F4E7E00B516AB /* latte.icns */; };
 		633A7E9510267AFD0017C70D /* RTM.png in Resources */ = {isa = PBXBuildFile; fileRef = 633A7E9410267AFD0017C70D /* RTM.png */; };
 		6348C4731026F9CF0060EAA3 /* notification.png in Resources */ = {isa = PBXBuildFile; fileRef = 6348C4721026F9CF0060EAA3 /* notification.png */; };
+		63783EBC113BD0C2007498F8 /* TaskTag.m in Sources */ = {isa = PBXBuildFile; fileRef = 63783EBB113BD0C2007498F8 /* TaskTag.m */; };
 		6395B003102260A900F1E641 /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 6395B002102260A900F1E641 /* libsqlite3.0.dylib */; };
 		6396D0F11139C4B100255A29 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6396D0EC1139C4B100255A29 /* MainMenu.xib */; };
 		6396D0F21139C4B100255A29 /* Preferences.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6396D0ED1139C4B100255A29 /* Preferences.xib */; };
@@ -33,7 +34,7 @@
 		6396D1AF1139C5C300255A29 /* SBJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 6396D18F1139C5C300255A29 /* SBJsonParser.m */; };
 		6396D1B01139C5C300255A29 /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 6396D1911139C5C300255A29 /* SBJsonWriter.m */; };
 		6396D1B71139C5C300255A29 /* MAAttachedWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 6396D1A11139C5C300255A29 /* MAAttachedWindow.m */; };
-		63A4E83B113B98E0007EC323 /* RTMModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 63A4E83A113B98E0007EC323 /* RTMModel.m */; };
+		63A4E83B113B98E0007EC323 /* BaseMilkModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 63A4E83A113B98E0007EC323 /* BaseMilkModel.m */; };
 		63CD529A104AA881005BE106 /* entry-quick.png in Resources */ = {isa = PBXBuildFile; fileRef = 63CD5298104AA880005BE106 /* entry-quick.png */; };
 		63CD529B104AA881005BE106 /* entry-full.png in Resources */ = {isa = PBXBuildFile; fileRef = 63CD5299104AA881005BE106 /* entry-full.png */; };
 		63D96FFA113B197B0007F92D /* MGRecessedPopUpButtonCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 63D96FF5113B197B0007F92D /* MGRecessedPopUpButtonCell.m */; };
@@ -92,6 +93,8 @@
 		63303C2B101F4E7E00B516AB /* latte.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; name = latte.icns; path = ../latte.icns; sourceTree = "<group>"; };
 		633A7E9410267AFD0017C70D /* RTM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = RTM.png; sourceTree = "<group>"; };
 		6348C4721026F9CF0060EAA3 /* notification.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = notification.png; sourceTree = "<group>"; };
+		63783EBA113BD0C2007498F8 /* TaskTag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TaskTag.h; sourceTree = "<group>"; };
+		63783EBB113BD0C2007498F8 /* TaskTag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TaskTag.m; sourceTree = "<group>"; };
 		6395B002102260A900F1E641 /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
 		6396D0EC1139C4B100255A29 /* MainMenu.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainMenu.xib; sourceTree = "<group>"; };
 		6396D0ED1139C4B100255A29 /* Preferences.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Preferences.xib; sourceTree = "<group>"; };
@@ -127,8 +130,8 @@
 		6396D1911139C5C300255A29 /* SBJsonWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonWriter.m; sourceTree = "<group>"; };
 		6396D1A01139C5C300255A29 /* MAAttachedWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MAAttachedWindow.h; sourceTree = "<group>"; };
 		6396D1A11139C5C300255A29 /* MAAttachedWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MAAttachedWindow.m; sourceTree = "<group>"; };
-		63A4E839113B98E0007EC323 /* RTMModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RTMModel.h; sourceTree = "<group>"; };
-		63A4E83A113B98E0007EC323 /* RTMModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RTMModel.m; sourceTree = "<group>"; };
+		63A4E839113B98E0007EC323 /* BaseMilkModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseMilkModel.h; sourceTree = "<group>"; };
+		63A4E83A113B98E0007EC323 /* BaseMilkModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseMilkModel.m; sourceTree = "<group>"; };
 		63CD5298104AA880005BE106 /* entry-quick.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "entry-quick.png"; sourceTree = "<group>"; };
 		63CD5299104AA881005BE106 /* entry-full.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "entry-full.png"; sourceTree = "<group>"; };
 		63D96FF4113B197B0007F92D /* MGRecessedPopUpButtonCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGRecessedPopUpButtonCell.h; sourceTree = "<group>"; };
@@ -297,8 +300,10 @@
 				63DDBDCC113A7CAE002BB911 /* TaskList.m */,
 				63DDBDF5113A8436002BB911 /* Task.h */,
 				63DDBDF6113A8436002BB911 /* Task.m */,
-				63A4E839113B98E0007EC323 /* RTMModel.h */,
-				63A4E83A113B98E0007EC323 /* RTMModel.m */,
+				63A4E839113B98E0007EC323 /* BaseMilkModel.h */,
+				63A4E83A113B98E0007EC323 /* BaseMilkModel.m */,
+				63783EBA113BD0C2007498F8 /* TaskTag.h */,
+				63783EBB113BD0C2007498F8 /* TaskTag.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -566,7 +571,8 @@
 				63DDBF9D113AA1B8002BB911 /* RTMKeys.m in Sources */,
 				63D96FFA113B197B0007F92D /* MGRecessedPopUpButtonCell.m in Sources */,
 				63D96FFB113B197B0007F92D /* MGScopeBar.m in Sources */,
-				63A4E83B113B98E0007EC323 /* RTMModel.m in Sources */,
+				63A4E83B113B98E0007EC323 /* BaseMilkModel.m in Sources */,
+				63783EBC113BD0C2007498F8 /* TaskTag.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -641,7 +647,7 @@
 		C01FCF4F08A954540054247B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				BUILD_STYLE = Debug;
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -649,7 +655,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				PREBINDING = NO;
-				SDKROOT = macosx10.5;
+				SDKROOT = macosx10.6;
 			};
 			name = Debug;
 		};

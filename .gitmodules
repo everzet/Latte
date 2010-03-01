@@ -3,4 +3,4 @@
 	url = git://github.com/everzet/EZMilk.git
 [submodule "Lib/Vendor/SQLitePersistentObjects"]
 	path = Lib/Vendor/SQLitePersistentObjects
-	url = git://github.com/siannopollo/sqlitepersistentobjects.git
+	url = git://github.com/everzet/sqlitepersistentobjects.git

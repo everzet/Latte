@@ -98,8 +98,8 @@
 - (void)reloadLists
 {
   int selectedList = [listView indexOfSelectedItem];
-  NSMutableArray* listArray = [self mutableArrayValueForKey:@"lists"];
 
+  NSMutableArray* listArray = [self mutableArrayValueForKey:@"lists"];
   [listArray removeAllObjects];
   [listArray addObjectsFromArray:[TaskList allObjects]];
 
@@ -113,6 +113,7 @@
     TaskList* list = [[TaskList alloc] init];
     list.name = @"Inbox";
     [list save];
+    [list release];
     [self reloadLists];
   }
 }
@@ -268,7 +269,7 @@ if (NSOrderedSame == [identifier compare:@"AllItem"])
 
 - (void)runSyncLoop:(id)sender
 {
-  while (true)
+  while (false)
   {
     NSAutoreleasePool* pool = [[NSAutoreleasePool alloc] init];
     [rtmService setToken:[prefHolder rtmToken]];
