@@ -25,11 +25,11 @@
  */
 
 #import <Cocoa/Cocoa.h>
-#import "RTMModel.h"
+#import "BaseMilkModel.h"
 #import "TaskList.h"
 
 
-@interface Task : RTMModel {
+@interface Task : BaseMilkModel {
   NSString* name;
   int       priority;
   TaskList* list;
@@ -45,6 +45,7 @@
 
 + (NSArray*)allCompleted:(BOOL)isCompleted inList:(TaskList*)aList;
 + (NSArray*)allInList:(TaskList*)aList;
+
 - (NSString*)displayableDue;
 
 @end

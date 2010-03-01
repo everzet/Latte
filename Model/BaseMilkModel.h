@@ -28,7 +28,7 @@
 #import "SQLitePersistentObject.h"
 
 
-@interface RTMModel : SQLitePersistentObject {
+@interface BaseMilkModel : SQLitePersistentObject {
   int       rtmId;
   NSDate*   createdAt;
   NSDate*   updatedAt;

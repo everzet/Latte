@@ -24,10 +24,10 @@
  
  */
 
-#import "RTMModel.h"
+#import "BaseMilkModel.h"
 
 
-@implementation RTMModel
+@implementation BaseMilkModel
 
 @synthesize rtmId, createdAt, updatedAt, syncedAt, isDeleted;
 
@@ -36,7 +36,7 @@
   [createdAt release];
   [updatedAt release];
   [syncedAt release];
-  
+
   [super dealloc];
 }
 
