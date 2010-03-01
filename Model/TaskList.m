@@ -29,14 +29,11 @@
 
 @implementation TaskList
 
-@synthesize name, rtmId, createdAt, updatedAt, syncedAt, isDeleted;
+@synthesize name;
 
 - (void)dealloc
 {
   [name release];
-  [createdAt release];
-  [updatedAt release];
-  [syncedAt release];
 
   [super dealloc];
 }

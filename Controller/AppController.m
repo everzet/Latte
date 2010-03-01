@@ -41,8 +41,7 @@
                              andApiSecret:[RTMKeys apiSecret]];
   prefHolder = [[AppPreferences alloc] init];
 
-  // Setup DB & retrieve data
-  [self initDatabase];
+  // Retrieve DB data
   [self reloadLists];
   [self reloadTasksWithSelection:NO];
 
@@ -84,19 +83,6 @@
   [tableView setNextResponder:self];
 }
 
-- (void)initDatabase
-{
-  NSArray   *appSupportPath = NSSearchPathForDirectoriesInDomains(NSApplicationSupportDirectory, NSUserDomainMask, YES);
-  NSString  *databasePath = [[[appSupportPath objectAtIndex: 0] 
-                              stringByAppendingPathComponent: @"Latte"]
-                             stringByAppendingPathComponent: @"tasks.db"];
-  [[SQLiteInstanceManager sharedManager] setDatabaseFilepath:databasePath];
-
-  //TaskList* list = [[TaskList alloc] init];
-  //list.name = @"Inbox";
-  //[list save];
-}
-
 - (void)dealloc
 {
   [taskEntryController release];
@@ -120,6 +106,14 @@
   if (selectedList >= 0)
   {
     [listView selectItemAtIndex:selectedList];
+  }
+
+  if (1 > [listArray count])
+  {
+    TaskList* list = [[TaskList alloc] init];
+    list.name = @"Inbox";
+    [list save];
+    [self reloadLists];
   }
 }
 

@@ -29,16 +29,13 @@
 
 @implementation Task
 
-@synthesize name, rtmId, priority, list, dueAt, createdAt, updatedAt, syncedAt, isCompleted, isDeleted;
+@synthesize name, priority, list, dueAt, isCompleted;
 
 - (void)dealloc
 {
   [name release];
   [list release];
   [dueAt release];
-  [createdAt release];
-  [updatedAt release];
-  [syncedAt release];
 
   [super dealloc];
 }

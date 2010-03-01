@@ -71,7 +71,6 @@
 // Interface & Data init
 - (void)initMGScope;
 - (void)initTable;
-- (void)initDatabase;
 
 // Data reloaders
 - (void)reloadTasksWithSelection:(BOOL)withSelection;

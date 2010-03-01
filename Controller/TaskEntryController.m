@@ -36,7 +36,6 @@
 - (id)init
 {
   Task* newTask = [[Task alloc] init];
-  newTask.createdAt = [NSDate date];
   return [self initWithTask:newTask];
   [newTask release];
 }

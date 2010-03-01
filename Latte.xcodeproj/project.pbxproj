@@ -33,6 +33,7 @@
 		6396D1AF1139C5C300255A29 /* SBJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 6396D18F1139C5C300255A29 /* SBJsonParser.m */; };
 		6396D1B01139C5C300255A29 /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 6396D1911139C5C300255A29 /* SBJsonWriter.m */; };
 		6396D1B71139C5C300255A29 /* MAAttachedWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 6396D1A11139C5C300255A29 /* MAAttachedWindow.m */; };
+		63A4E83B113B98E0007EC323 /* RTMModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 63A4E83A113B98E0007EC323 /* RTMModel.m */; };
 		63CD529A104AA881005BE106 /* entry-quick.png in Resources */ = {isa = PBXBuildFile; fileRef = 63CD5298104AA880005BE106 /* entry-quick.png */; };
 		63CD529B104AA881005BE106 /* entry-full.png in Resources */ = {isa = PBXBuildFile; fileRef = 63CD5299104AA881005BE106 /* entry-full.png */; };
 		63D96FFA113B197B0007F92D /* MGRecessedPopUpButtonCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 63D96FF5113B197B0007F92D /* MGRecessedPopUpButtonCell.m */; };
@@ -126,6 +127,8 @@
 		6396D1911139C5C300255A29 /* SBJsonWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonWriter.m; sourceTree = "<group>"; };
 		6396D1A01139C5C300255A29 /* MAAttachedWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MAAttachedWindow.h; sourceTree = "<group>"; };
 		6396D1A11139C5C300255A29 /* MAAttachedWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MAAttachedWindow.m; sourceTree = "<group>"; };
+		63A4E839113B98E0007EC323 /* RTMModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RTMModel.h; sourceTree = "<group>"; };
+		63A4E83A113B98E0007EC323 /* RTMModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RTMModel.m; sourceTree = "<group>"; };
 		63CD5298104AA880005BE106 /* entry-quick.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "entry-quick.png"; sourceTree = "<group>"; };
 		63CD5299104AA881005BE106 /* entry-full.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "entry-full.png"; sourceTree = "<group>"; };
 		63D96FF4113B197B0007F92D /* MGRecessedPopUpButtonCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGRecessedPopUpButtonCell.h; sourceTree = "<group>"; };
@@ -294,6 +297,8 @@
 				63DDBDCC113A7CAE002BB911 /* TaskList.m */,
 				63DDBDF5113A8436002BB911 /* Task.h */,
 				63DDBDF6113A8436002BB911 /* Task.m */,
+				63A4E839113B98E0007EC323 /* RTMModel.h */,
+				63A4E83A113B98E0007EC323 /* RTMModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -561,6 +566,7 @@
 				63DDBF9D113AA1B8002BB911 /* RTMKeys.m in Sources */,
 				63D96FFA113B197B0007F92D /* MGRecessedPopUpButtonCell.m in Sources */,
 				63D96FFB113B197B0007F92D /* MGScopeBar.m in Sources */,
+				63A4E83B113B98E0007EC323 /* RTMModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

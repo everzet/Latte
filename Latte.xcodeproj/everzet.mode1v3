@@ -275,20 +275,20 @@
 								<string>6396D14F1139C57800255A29</string>
 								<string>6396D16D1139C5C300255A29</string>
 								<string>6396D17A1139C5C300255A29</string>
-								<string>63DDBF9A113AA1B8002BB911</string>
+								<string>63DDBD8C113A032D002BB911</string>
 								<string>1C37FABC05509CD000000102</string>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
+									<integer>15</integer>
 									<integer>13</integer>
-									<integer>11</integer>
 									<integer>1</integer>
 									<integer>0</integer>
 								</array>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateVisibleRectKey</key>
-							<string>{{0, 15}, {246, 676}}</string>
+							<string>{{0, 12}, {246, 676}}</string>
 						</dict>
 						<key>PBXTopSmartGroupGIDs</key>
 						<array/>
@@ -427,7 +427,7 @@
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>63A4E821113B24A0007EC323</string>
+										<string>63A4E869113B9C77007EC323</string>
 										<key>history</key>
 										<array>
 											<string>639ECAFD101CDA4900CD9EC7</string>
@@ -447,29 +447,32 @@
 											<string>63DDBFC5113AA38C002BB911</string>
 											<string>63DDBFC6113AA38C002BB911</string>
 											<string>63B61BA5113AAE7A0017D0F1</string>
-											<string>63B61BAF113AAE7A0017D0F1</string>
 											<string>63B61BB1113AAE7A0017D0F1</string>
 											<string>63B61BC1113AAEDD0017D0F1</string>
-											<string>63D96F4A113AB2DC0007F92D</string>
-											<string>63D96F4B113AB2DC0007F92D</string>
-											<string>63D96F4D113AB2DC0007F92D</string>
 											<string>63D96F4F113AB2DC0007F92D</string>
 											<string>63D96F50113AB2DC0007F92D</string>
 											<string>63D96F51113AB2DC0007F92D</string>
 											<string>63D96F52113AB2DC0007F92D</string>
-											<string>63D96F5A113AB3AD0007F92D</string>
-											<string>63D96F9D113B04F00007F92D</string>
 											<string>63D96FB0113B066C0007F92D</string>
-											<string>63D96FFD113B19F40007F92D</string>
 											<string>63D96FFE113B19F40007F92D</string>
 											<string>63D97000113B19F40007F92D</string>
 											<string>63D97002113B19F40007F92D</string>
 											<string>63D97004113B19F40007F92D</string>
-											<string>63D97006113B19F40007F92D</string>
 											<string>63D97079113B21400007F92D</string>
 											<string>63D9707A113B21400007F92D</string>
-											<string>63A4E81B113B2467007EC323</string>
-											<string>63A4E81C113B2467007EC323</string>
+											<string>63A4E82B113B9812007EC323</string>
+											<string>63A4E82C113B9812007EC323</string>
+											<string>63A4E82D113B9812007EC323</string>
+											<string>63A4E841113B9A39007EC323</string>
+											<string>63A4E842113B9A39007EC323</string>
+											<string>63A4E843113B9A39007EC323</string>
+											<string>63A4E844113B9A39007EC323</string>
+											<string>63A4E845113B9A39007EC323</string>
+											<string>63A4E84B113B9AC5007EC323</string>
+											<string>63A4E85B113B9C2C007EC323</string>
+											<string>63A4E85C113B9C2C007EC323</string>
+											<string>63A4E864113B9C6B007EC323</string>
+											<string>63A4E865113B9C6B007EC323</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -689,7 +692,7 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
-		<string>63A4E822113B24A0007EC323</string>
+		<string>1C530D57069F1CE1000CFCEE</string>
 		<string>63A4E815113B2433007EC323</string>
 		<string>63A4E816113B2433007EC323</string>
 		<string>1C78EAAD065D492600B07095</string>
@@ -933,7 +936,7 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CDD528C0622207200134675</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>AppController.m</string>
+										<string></string>
 										<key>StatusBarVisibility</key>
 										<true/>
 									</dict>
@@ -991,8 +994,8 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>1C530D57069F1CE1000CFCEE</string>
-				<string>63B61BE1113AB0370017D0F1</string>
-				<string>63B61BE2113AB0370017D0F1</string>
+				<string>63A4E836113B9863007EC323</string>
+				<string>63A4E837113B9863007EC323</string>
 				<string>1CDD528C0622207200134675</string>
 				<string>1CD0528E0623707200166675</string>
 			</array>
@@ -1020,6 +1023,8 @@
 					<key>Dock</key>
 					<array>
 						<dict>
+							<key>BecomeActive</key>
+							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>

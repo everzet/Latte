@@ -25,23 +25,13 @@
  */
 
 #import <Cocoa/Cocoa.h>
-#import "SQLitePersistentObject.h"
+#import "RTMModel.h"
 
 
-@interface TaskList : SQLitePersistentObject {
+@interface TaskList : RTMModel {
   NSString* name;
-  int       rtmId;
-  NSDate*   createdAt;
-  NSDate*   updatedAt;
-  NSDate*   syncedAt;
-  BOOL      isDeleted;
 }
 
 @property (nonatomic,readwrite,retain)  NSString*  name;
-@property (nonatomic,readwrite)         int        rtmId;
-@property (nonatomic,readwrite,retain)  NSDate*    createdAt;
-@property (nonatomic,readwrite,retain)  NSDate*    updatedAt;
-@property (nonatomic,readwrite,retain)  NSDate*    syncedAt;
-@property (nonatomic,readwrite)         BOOL       isDeleted;
 
 @end
