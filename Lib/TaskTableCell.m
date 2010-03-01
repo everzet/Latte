@@ -151,7 +151,7 @@
                     [NSFont systemFontOfSize:9], NSFontAttributeName, nil]];
 
   // Task list title
-  [task.list.name drawInRect: NSMakeRect(cellFrame.origin.x + 26,
+  [task.taskList.name drawInRect: NSMakeRect(cellFrame.origin.x + 26,
                                           cellFrame.origin.y + 45,
                                           cellFrame.size.width - 26,
                                           15) 
