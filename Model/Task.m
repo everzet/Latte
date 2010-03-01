@@ -29,7 +29,7 @@
 
 @implementation Task
 
-@synthesize name, priority, list, dueAt, isCompleted;
+@synthesize name, priority, taskList, dueAt, isCompleted;
 
 - (void)dealloc
 {
@@ -37,22 +37,6 @@
   [dueAt release];
 
   [super dealloc];
-}
-
-+ (NSArray*)allCompleted:(BOOL)isCompleted inList:(TaskList*)aList
-{
-  NSString* criteria = [NSString stringWithFormat:@"WHERE list = '%@' AND is_completed = %d ORDER BY priority, due_at",
-                        [aList memoryMapKey], isCompleted];
-
-  return [Task findByCriteria:criteria];
-}
-
-+ (NSArray*)allInList:(TaskList*)aList
-{
-  NSString* criteria = [NSString stringWithFormat:@"WHERE list = '%@' ORDER BY is_completed, priority, due_at",
-                        [aList memoryMapKey], aList.pk];
-
-  return [Task findByCriteria:criteria];
 }
 
 - (NSString*)displayableDue

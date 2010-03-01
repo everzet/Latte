@@ -25,6 +25,7 @@
  */
 
 #import "TaskList.h"
+#import "Task.h"
 
 
 @implementation TaskList
@@ -36,6 +37,16 @@
   [name release];
 
   [super dealloc];
+}
+
+- (NSArray*)allTasks
+{
+  return [self findRelated:[Task class] filter:@"1 ORDER BY is_completed, priority"];
+}
+
+- (NSArray*)allTasksThatComplete:(BOOL)isComplete
+{
+  return [self findRelated:[Task class] filter:@"is_completed = %d ORDER BY priority", isComplete];
 }
 
 @end

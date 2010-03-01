@@ -34,4 +34,7 @@
 
 @property (nonatomic,readwrite,retain)  NSString*  name;
 
+- (NSArray*)allTasks;
+- (NSArray*)allTasksThatComplete:(BOOL)isComplete;
+
 @end

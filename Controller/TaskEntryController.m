@@ -90,9 +90,9 @@
       [due setStringValue:[dateFormatter stringFromDate:task.dueAt]];
       [dateFormatter release];
     }
-    if (task.list.pk)
+    if (task.taskList.pk)
     {
-      [self selectListWithPk:task.list.pk];
+      [self selectListWithPk:task.taskList.pk];
     }
   }
 
@@ -182,7 +182,7 @@
     task.dueAt = [dateFormatter dateFromString:[due stringValue]];
     [dateFormatter release];
 
-    task.list = [lists objectAtIndex:[list indexOfSelectedItem]];
+    task.taskList = [lists objectAtIndex:[list indexOfSelectedItem]];
     task.updatedAt = [NSDate date];
 
     [NSApp sendAction:[self saveAction] to:[self saveTarget] from:self];

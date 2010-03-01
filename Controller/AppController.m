@@ -129,17 +129,17 @@
   [[self mutableArrayValueForKey:@"tasks"] removeAllObjects];
   NSString* identifier = [[[scopeBar selectedItems] objectAtIndex:0] objectAtIndex:0];
 
-if (NSOrderedSame == [identifier compare:@"AllItem"])
+  if (NSOrderedSame == [identifier compare:@"AllItem"])
   {
-    [[self mutableArrayValueForKey:@"tasks"] addObjectsFromArray:[Task allInList:list]];
+    [[self mutableArrayValueForKey:@"tasks"] addObjectsFromArray:[list allTasks]];
   }
   else if (NSOrderedSame == [identifier compare:@"PendingItem"])
   {
-    [[self mutableArrayValueForKey:@"tasks"] addObjectsFromArray:[Task allCompleted:false inList:list]];
+    [[self mutableArrayValueForKey:@"tasks"] addObjectsFromArray:[list allTasksThatComplete:NO]];
   }
   else if (NSOrderedSame == [identifier compare:@"CompleteItem"])
   {
-    [[self mutableArrayValueForKey:@"tasks"] addObjectsFromArray:[Task allCompleted:true inList:list]];
+    [[self mutableArrayValueForKey:@"tasks"] addObjectsFromArray:[list allTasksThatComplete:YES]];
   }
 
   if (withSelection)
@@ -216,7 +216,7 @@ if (NSOrderedSame == [identifier compare:@"AllItem"])
 - (IBAction)taskEntryAdd:(id)sender
 {
   Task* task = [[Task alloc] init];
-  task.list = [lists objectAtIndex:[listView indexOfSelectedItem]];
+  task.taskList = [lists objectAtIndex:[listView indexOfSelectedItem]];
   [self taskEntryEditTask:task];
   [task release];
 }

@@ -32,19 +32,16 @@
 @interface Task : BaseMilkModel {
   NSString* name;
   int       priority;
-  TaskList* list;
+  TaskList* taskList;
   NSDate*   dueAt;
   BOOL      isCompleted;
 }
 
 @property (nonatomic,readwrite,retain)  NSString*   name;
 @property (nonatomic,readwrite)         int         priority;
-@property (nonatomic,readwrite,retain)  TaskList*   list;
+@property (nonatomic,readwrite,retain)  TaskList*   taskList;
 @property (nonatomic,readwrite,retain)  NSDate*     dueAt;
 @property (nonatomic,readwrite)         BOOL        isCompleted;
-
-+ (NSArray*)allCompleted:(BOOL)isCompleted inList:(TaskList*)aList;
-+ (NSArray*)allInList:(TaskList*)aList;
 
 - (NSString*)displayableDue;
 
