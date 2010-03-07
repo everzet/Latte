@@ -170,7 +170,7 @@
                                              cellFrame.size.width - 70,
                                              15) 
                   withAttributes: [NSDictionary dictionaryWithObjectsAndKeys:
-                                   [NSColor colorWithCalibratedRed:0.446 green:0.631 blue:0.827 alpha:1.000],
+                                   [NSColor lightGrayColor],
                                    NSForegroundColorAttributeName,
                                    textShadow, NSShadowAttributeName,
                                    [NSFont systemFontOfSize:9], NSFontAttributeName, nil]];
