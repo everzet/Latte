@@ -31,4 +31,12 @@
 
 @synthesize name, task;
 
+- (void)dealloc
+{
+  [name release];
+  [task release];
+
+  [super dealloc];
+}
+
 @end

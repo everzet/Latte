@@ -46,6 +46,7 @@
   IBOutlet NSPopUpButton* priority;
   IBOutlet NSTextField*   due;
   IBOutlet NSPopUpButton* list;
+  IBOutlet NSTokenField*  tags;
   MAAttachedWindow*       datePickerWindow;
 
   Task*                   task;
@@ -59,6 +60,10 @@
 
 - (id)initWithTask:(Task*)aTask;
 
+// Populate & Dump data
+- (void)populateFromTask;
+- (void)dumpToTask;
+
 // Select TaskList from list with pk=?
 - (void)selectListWithPk:(int)pk;
 
@@ -69,5 +74,8 @@
 // Save & Cancel buttons
 - (IBAction)saveTask:(id)sender;
 - (IBAction)cancelEntry:(id)sender;
+
+// Window controlls
+- (void)windowClose;
 
 @end

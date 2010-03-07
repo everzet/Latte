@@ -31,7 +31,7 @@
 
 @synthesize frob;
 
-- (id)initWithPreferences:(AppPreferences*)aPref andRtmConnector:(EZMilk*)anRtmApi
+- (id)initWithPreferences:(AppPreferences*)aPref andRtmConnector:(EZMilkService*)anRtmApi
 {
   prefHolder = aPref;
   rtmService = anRtmApi;

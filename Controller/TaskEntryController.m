@@ -37,7 +37,6 @@
 {
   Task* newTask = [[Task alloc] init];
   return [self initWithTask:newTask];
-  [newTask release];
 }
 
 - (id)initWithTask:(Task*)aTask
@@ -47,11 +46,62 @@
     return nil;
   }
 
-  [self setTask:aTask];
+  [self setTask:[aTask retain]];
 
   [[self mutableArrayValueForKey:@"lists"] addObjectsFromArray:[TaskList allObjects]];
 
   return self;
+}
+
+- (void)populateFromTask
+{
+  if (task)
+  {
+    [name setStringValue:task.name ? task.name : @""];
+    [priority selectItemAtIndex:task.priority ? 4 - task.priority : 0];
+    [completed setState:task.isCompleted ? 1 : 0];
+    if (task.dueAt)
+    {
+      NSDateFormatter* dateFormatter = [[NSDateFormatter alloc] init];
+      [dateFormatter setDateStyle: NSDateFormatterMediumStyle];
+      [due setStringValue:[dateFormatter stringFromDate:task.dueAt]];
+      [dateFormatter release];
+    }
+    else
+    {
+      [due setStringValue:@""];
+    }
+
+    if ([task tags] && [[task tags] count] > 0)
+    {
+      [tags setObjectValue:[task tags]];
+    }
+    else
+    {
+      [tags setObjectValue:[NSArray array]];
+    }
+
+    if (task.taskList)
+    {
+      [self selectListWithPk:task.taskList.pk];
+    }
+  }
+}
+
+- (void)dumpToTask
+{
+  task.name = [name stringValue];
+  task.priority = 4 - [priority indexOfSelectedItem];
+  task.isCompleted = [completed integerValue];
+
+  NSDateFormatter* dateFormatter = [[NSDateFormatter alloc] init];
+  [dateFormatter setDateStyle: NSDateFormatterMediumStyle];
+  task.dueAt = [dateFormatter dateFromString:[due stringValue]];
+  [dateFormatter release];
+
+  [task setTags:[tags objectValue]];
+  task.taskList = [lists objectAtIndex:[list indexOfSelectedItem]];
+  task.updatedAt = [NSDate date];
 }
 
 - (void)selectListWithPk:(int)pk
@@ -68,33 +118,7 @@
 
 - (void)awakeFromNib
 {
-  if (task)
-  {
-    if ([task name])
-    {
-      [name setStringValue:[task name]];
-    }
-    [priority selectItemAtIndex:(task.priority ? 4 - [task priority] : 0)];
-    if (task.isCompleted)
-    {
-      [completed setState:1];
-    }
-    else
-    {
-      [completed setState:0];
-    }
-    if (task.dueAt)
-    {
-      NSDateFormatter* dateFormatter = [[NSDateFormatter alloc] init];
-      [dateFormatter setDateStyle: NSDateFormatterMediumStyle];
-      [due setStringValue:[dateFormatter stringFromDate:task.dueAt]];
-      [dateFormatter release];
-    }
-    if (task.taskList.pk)
-    {
-      [self selectListWithPk:task.taskList.pk];
-    }
-  }
+  [self populateFromTask];
 
   [[self window] orderFront:self];
 }
@@ -110,21 +134,21 @@
 
 - (void)controlTextDidBeginEditing:(NSNotification *)aNotification
 {
-  NSPoint buttonPoint = NSMakePoint(60, NSMidY([due frame]));
+  NSPoint buttonPoint = NSMakePoint(30, NSMidY([due frame]) + 32);
   datePickerWindow = [[MAAttachedWindow alloc] initWithView: datePickerView
                                             attachedToPoint: buttonPoint
                                                    inWindow: [due window]
-                                                     onSide: 1
+                                                     onSide: 0
                                                  atDistance: 8];
-  [datePickerWindow setBorderColor:[NSColor whiteColor]];
-  [datePickerWindow setBackgroundColor:[NSColor colorWithCalibratedWhite:0.101 alpha:0.750]];
+  [datePickerWindow setBorderColor:[NSColor colorWithCalibratedWhite:0.101 alpha:0.750]];
+  [datePickerWindow setBackgroundColor:[NSColor whiteColor]];
   [datePickerWindow setViewMargin:10];
-  [datePickerWindow setBorderWidth:2];
+  [datePickerWindow setBorderWidth:3];
   [datePickerWindow setCornerRadius:8];
   [datePickerWindow setHasArrow:YES];
   [datePickerWindow setDrawsRoundCornerBesideArrow:YES];
-  [datePickerWindow setArrowBaseWidth:50];
-  [datePickerWindow setArrowHeight:10];
+  [datePickerWindow setArrowBaseWidth:30];
+  [datePickerWindow setArrowHeight:15];
 
   NSDateFormatter* dateFormatter = [[NSDateFormatter alloc] init];
   [dateFormatter setDateStyle: NSDateFormatterMediumStyle];
@@ -152,12 +176,12 @@
     NSRect fullBoxRect = [fullBox frame];
 
     [fullBox setHidden:NO];
-    [[self window] setFrame:NSMakeRect(windowRect.origin.x, windowRect.origin.y, 386, 103 + (fullBoxRect.size.height - 6)) display:YES];
+    [[self window] setFrame:NSMakeRect(windowRect.origin.x, windowRect.origin.y, 385, 103 + (fullBoxRect.size.height - 6)) display:YES];
   }
   else
   {
     [fullBox setHidden:YES];
-    [[self window] setFrame:NSMakeRect(windowRect.origin.x, windowRect.origin.y, 386, 103) display:YES];
+    [[self window] setFrame:NSMakeRect(windowRect.origin.x, windowRect.origin.y, 385, 103) display:YES];
   }
 }
 
@@ -167,26 +191,17 @@
   [dateFormatter setDateStyle: NSDateFormatterMediumStyle];
   [due setStringValue:[dateFormatter stringFromDate:[datePicker dateValue]]];
   [dateFormatter release];
+  [[self window] makeKeyWindow];
 }
 
 - (IBAction)saveTask:(id)sender
 {
   if ([[name stringValue] compare:@""] != NSOrderedSame)
   {
-    task.name = [name stringValue];
-    task.priority = 4 - [priority indexOfSelectedItem];
-    task.isCompleted = [completed integerValue];
-
-    NSDateFormatter* dateFormatter = [[NSDateFormatter alloc] init];
-    [dateFormatter setDateStyle: NSDateFormatterMediumStyle];
-    task.dueAt = [dateFormatter dateFromString:[due stringValue]];
-    [dateFormatter release];
-
-    task.taskList = [lists objectAtIndex:[list indexOfSelectedItem]];
-    task.updatedAt = [NSDate date];
+    [self dumpToTask];
 
     [NSApp sendAction:[self saveAction] to:[self saveTarget] from:self];
-    [[self window] close];
+    [self windowClose];
   }
   else
   {
@@ -196,6 +211,11 @@
 }
 
 - (IBAction)cancelEntry:(id)sender
+{
+  [self windowClose];
+}
+
+- (void)windowClose
 {
   [[self window] close];
 }

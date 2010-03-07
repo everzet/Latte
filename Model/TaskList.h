@@ -25,10 +25,10 @@
  */
 
 #import <Cocoa/Cocoa.h>
-#import "BaseMilkModel.h"
+#import "BaseModel.h"
 
 
-@interface TaskList : BaseMilkModel {
+@interface TaskList : BaseModel {
   NSString* name;
 }
 

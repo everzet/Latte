@@ -8,11 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		632937661020995500C92BF4 /* FilterBarBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = 632937621020995500C92BF4 /* FilterBarBackground.png */; };
-		632937671020995500C92BF4 /* OverflowButton.tif in Resources */ = {isa = PBXBuildFile; fileRef = 632937631020995500C92BF4 /* OverflowButton.tif */; };
-		632937681020995500C92BF4 /* OverflowButtonPressed.tif in Resources */ = {isa = PBXBuildFile; fileRef = 632937641020995500C92BF4 /* OverflowButtonPressed.tif */; };
-		632937691020995500C92BF4 /* OverflowDivider.png in Resources */ = {isa = PBXBuildFile; fileRef = 632937651020995500C92BF4 /* OverflowDivider.png */; };
 		63303C2C101F4E7E00B516AB /* latte.icns in Resources */ = {isa = PBXBuildFile; fileRef = 63303C2B101F4E7E00B516AB /* latte.icns */; };
 		633A7E9510267AFD0017C70D /* RTM.png in Resources */ = {isa = PBXBuildFile; fileRef = 633A7E9410267AFD0017C70D /* RTM.png */; };
+		63474379113D0BD200CA3579 /* EZMilkBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 6347434B113D0BD200CA3579 /* EZMilkBase.m */; };
+		6347437A113D0BD200CA3579 /* EZMilkService.m in Sources */ = {isa = PBXBuildFile; fileRef = 6347434D113D0BD200CA3579 /* EZMilkService.m */; };
 		6348C4731026F9CF0060EAA3 /* notification.png in Resources */ = {isa = PBXBuildFile; fileRef = 6348C4721026F9CF0060EAA3 /* notification.png */; };
 		63783EBC113BD0C2007498F8 /* TaskTag.m in Sources */ = {isa = PBXBuildFile; fileRef = 63783EBB113BD0C2007498F8 /* TaskTag.m */; };
 		6395B003102260A900F1E641 /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 6395B002102260A900F1E641 /* libsqlite3.0.dylib */; };
@@ -26,7 +25,6 @@
 		6396D1A31139C5C300255A29 /* AppPreferences.m in Sources */ = {isa = PBXBuildFile; fileRef = 6396D1711139C5C300255A29 /* AppPreferences.m */; };
 		6396D1A71139C5C300255A29 /* TaskTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6396D1791139C5C300255A29 /* TaskTableCell.m */; };
 		6396D1A81139C5C300255A29 /* CTGradient.m in Sources */ = {isa = PBXBuildFile; fileRef = 6396D17D1139C5C300255A29 /* CTGradient.m */; };
-		6396D1A91139C5C300255A29 /* EZMilk.m in Sources */ = {isa = PBXBuildFile; fileRef = 6396D1801139C5C300255A29 /* EZMilk.m */; };
 		6396D1AB1139C5C300255A29 /* NSObject+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 6396D1871139C5C300255A29 /* NSObject+SBJSON.m */; };
 		6396D1AC1139C5C300255A29 /* NSString+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 6396D1891139C5C300255A29 /* NSString+SBJSON.m */; };
 		6396D1AD1139C5C300255A29 /* SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 6396D18B1139C5C300255A29 /* SBJSON.m */; };
@@ -34,9 +32,16 @@
 		6396D1AF1139C5C300255A29 /* SBJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 6396D18F1139C5C300255A29 /* SBJsonParser.m */; };
 		6396D1B01139C5C300255A29 /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 6396D1911139C5C300255A29 /* SBJsonWriter.m */; };
 		6396D1B71139C5C300255A29 /* MAAttachedWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 6396D1A11139C5C300255A29 /* MAAttachedWindow.m */; };
-		63A4E83B113B98E0007EC323 /* BaseMilkModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 63A4E83A113B98E0007EC323 /* BaseMilkModel.m */; };
-		63CD529A104AA881005BE106 /* entry-quick.png in Resources */ = {isa = PBXBuildFile; fileRef = 63CD5298104AA880005BE106 /* entry-quick.png */; };
-		63CD529B104AA881005BE106 /* entry-full.png in Resources */ = {isa = PBXBuildFile; fileRef = 63CD5299104AA881005BE106 /* entry-full.png */; };
+		63A4E83B113B98E0007EC323 /* BaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 63A4E83A113B98E0007EC323 /* BaseModel.m */; };
+		63C950121143CB6D005E9393 /* EZMilkBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 63C950011143CB6D005E9393 /* EZMilkBaseModel.m */; };
+		63C950131143CB6D005E9393 /* EZMilkBaseNamedModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 63C950031143CB6D005E9393 /* EZMilkBaseNamedModel.m */; };
+		63C950141143CB6D005E9393 /* EZMilkBaseTimedModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 63C950051143CB6D005E9393 /* EZMilkBaseTimedModel.m */; };
+		63C950151143CB6D005E9393 /* EZMilkContact.m in Sources */ = {isa = PBXBuildFile; fileRef = 63C950071143CB6D005E9393 /* EZMilkContact.m */; };
+		63C950161143CB6D005E9393 /* EZMilkGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 63C950091143CB6D005E9393 /* EZMilkGroup.m */; };
+		63C950171143CB6D005E9393 /* EZMilkLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = 63C9500B1143CB6D005E9393 /* EZMilkLocation.m */; };
+		63C950181143CB6D005E9393 /* EZMilkTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 63C9500D1143CB6D005E9393 /* EZMilkTask.m */; };
+		63C950191143CB6D005E9393 /* EZMilkTaskList.m in Sources */ = {isa = PBXBuildFile; fileRef = 63C9500F1143CB6D005E9393 /* EZMilkTaskList.m */; };
+		63C9501A1143CB6D005E9393 /* EZMilkTaskSeries.m in Sources */ = {isa = PBXBuildFile; fileRef = 63C950111143CB6D005E9393 /* EZMilkTaskSeries.m */; };
 		63D96FFA113B197B0007F92D /* MGRecessedPopUpButtonCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 63D96FF5113B197B0007F92D /* MGRecessedPopUpButtonCell.m */; };
 		63D96FFB113B197B0007F92D /* MGScopeBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 63D96FF7113B197B0007F92D /* MGScopeBar.m */; };
 		63DDBC7F1139E16F002BB911 /* BGHUDAppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63DDBC7E1139E16F002BB911 /* BGHUDAppKit.framework */; };
@@ -60,6 +65,7 @@
 		63DDBDCD113A7CAE002BB911 /* TaskList.m in Sources */ = {isa = PBXBuildFile; fileRef = 63DDBDCC113A7CAE002BB911 /* TaskList.m */; };
 		63DDBDF7113A8436002BB911 /* Task.m in Sources */ = {isa = PBXBuildFile; fileRef = 63DDBDF6113A8436002BB911 /* Task.m */; };
 		63DDBF9D113AA1B8002BB911 /* RTMKeys.m in Sources */ = {isa = PBXBuildFile; fileRef = 63DDBF9C113AA1B8002BB911 /* RTMKeys.m */; };
+		63F9B3E411440D1700519F48 /* entry.png in Resources */ = {isa = PBXBuildFile; fileRef = 63F9B3E311440D1700519F48 /* entry.png */; };
 		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
 		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
@@ -87,11 +93,12 @@
 		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
 		32CA4F630368D1EE00C91783 /* Latte_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Latte_Prefix.pch; sourceTree = "<group>"; };
 		632937621020995500C92BF4 /* FilterBarBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FilterBarBackground.png; sourceTree = "<group>"; };
-		632937631020995500C92BF4 /* OverflowButton.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = OverflowButton.tif; sourceTree = "<group>"; };
-		632937641020995500C92BF4 /* OverflowButtonPressed.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = OverflowButtonPressed.tif; sourceTree = "<group>"; };
-		632937651020995500C92BF4 /* OverflowDivider.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = OverflowDivider.png; sourceTree = "<group>"; };
 		63303C2B101F4E7E00B516AB /* latte.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; name = latte.icns; path = ../latte.icns; sourceTree = "<group>"; };
 		633A7E9410267AFD0017C70D /* RTM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = RTM.png; sourceTree = "<group>"; };
+		6347434A113D0BD200CA3579 /* EZMilkBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EZMilkBase.h; sourceTree = "<group>"; };
+		6347434B113D0BD200CA3579 /* EZMilkBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EZMilkBase.m; sourceTree = "<group>"; };
+		6347434C113D0BD200CA3579 /* EZMilkService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EZMilkService.h; sourceTree = "<group>"; };
+		6347434D113D0BD200CA3579 /* EZMilkService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EZMilkService.m; sourceTree = "<group>"; };
 		6348C4721026F9CF0060EAA3 /* notification.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = notification.png; sourceTree = "<group>"; };
 		63783EBA113BD0C2007498F8 /* TaskTag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TaskTag.h; sourceTree = "<group>"; };
 		63783EBB113BD0C2007498F8 /* TaskTag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TaskTag.m; sourceTree = "<group>"; };
@@ -113,8 +120,6 @@
 		6396D1791139C5C300255A29 /* TaskTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TaskTableCell.m; sourceTree = "<group>"; };
 		6396D17C1139C5C300255A29 /* CTGradient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTGradient.h; sourceTree = "<group>"; };
 		6396D17D1139C5C300255A29 /* CTGradient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTGradient.m; sourceTree = "<group>"; };
-		6396D17F1139C5C300255A29 /* EZMilk.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EZMilk.h; sourceTree = "<group>"; };
-		6396D1801139C5C300255A29 /* EZMilk.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EZMilk.m; sourceTree = "<group>"; };
 		6396D1851139C5C300255A29 /* JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSON.h; sourceTree = "<group>"; };
 		6396D1861139C5C300255A29 /* NSObject+SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+SBJSON.h"; sourceTree = "<group>"; };
 		6396D1871139C5C300255A29 /* NSObject+SBJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+SBJSON.m"; sourceTree = "<group>"; };
@@ -130,10 +135,26 @@
 		6396D1911139C5C300255A29 /* SBJsonWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonWriter.m; sourceTree = "<group>"; };
 		6396D1A01139C5C300255A29 /* MAAttachedWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MAAttachedWindow.h; sourceTree = "<group>"; };
 		6396D1A11139C5C300255A29 /* MAAttachedWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MAAttachedWindow.m; sourceTree = "<group>"; };
-		63A4E839113B98E0007EC323 /* BaseMilkModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseMilkModel.h; sourceTree = "<group>"; };
-		63A4E83A113B98E0007EC323 /* BaseMilkModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseMilkModel.m; sourceTree = "<group>"; };
-		63CD5298104AA880005BE106 /* entry-quick.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "entry-quick.png"; sourceTree = "<group>"; };
-		63CD5299104AA881005BE106 /* entry-full.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "entry-full.png"; sourceTree = "<group>"; };
+		63A4E839113B98E0007EC323 /* BaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseModel.h; sourceTree = "<group>"; };
+		63A4E83A113B98E0007EC323 /* BaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseModel.m; sourceTree = "<group>"; };
+		63C950001143CB6D005E9393 /* EZMilkBaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EZMilkBaseModel.h; sourceTree = "<group>"; };
+		63C950011143CB6D005E9393 /* EZMilkBaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EZMilkBaseModel.m; sourceTree = "<group>"; };
+		63C950021143CB6D005E9393 /* EZMilkBaseNamedModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EZMilkBaseNamedModel.h; sourceTree = "<group>"; };
+		63C950031143CB6D005E9393 /* EZMilkBaseNamedModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EZMilkBaseNamedModel.m; sourceTree = "<group>"; };
+		63C950041143CB6D005E9393 /* EZMilkBaseTimedModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EZMilkBaseTimedModel.h; sourceTree = "<group>"; };
+		63C950051143CB6D005E9393 /* EZMilkBaseTimedModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EZMilkBaseTimedModel.m; sourceTree = "<group>"; };
+		63C950061143CB6D005E9393 /* EZMilkContact.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EZMilkContact.h; sourceTree = "<group>"; };
+		63C950071143CB6D005E9393 /* EZMilkContact.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EZMilkContact.m; sourceTree = "<group>"; };
+		63C950081143CB6D005E9393 /* EZMilkGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EZMilkGroup.h; sourceTree = "<group>"; };
+		63C950091143CB6D005E9393 /* EZMilkGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EZMilkGroup.m; sourceTree = "<group>"; };
+		63C9500A1143CB6D005E9393 /* EZMilkLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EZMilkLocation.h; sourceTree = "<group>"; };
+		63C9500B1143CB6D005E9393 /* EZMilkLocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EZMilkLocation.m; sourceTree = "<group>"; };
+		63C9500C1143CB6D005E9393 /* EZMilkTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EZMilkTask.h; sourceTree = "<group>"; };
+		63C9500D1143CB6D005E9393 /* EZMilkTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EZMilkTask.m; sourceTree = "<group>"; };
+		63C9500E1143CB6D005E9393 /* EZMilkTaskList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EZMilkTaskList.h; sourceTree = "<group>"; };
+		63C9500F1143CB6D005E9393 /* EZMilkTaskList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EZMilkTaskList.m; sourceTree = "<group>"; };
+		63C950101143CB6D005E9393 /* EZMilkTaskSeries.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EZMilkTaskSeries.h; sourceTree = "<group>"; };
+		63C950111143CB6D005E9393 /* EZMilkTaskSeries.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EZMilkTaskSeries.m; sourceTree = "<group>"; };
 		63D96FF4113B197B0007F92D /* MGRecessedPopUpButtonCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGRecessedPopUpButtonCell.h; sourceTree = "<group>"; };
 		63D96FF5113B197B0007F92D /* MGRecessedPopUpButtonCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGRecessedPopUpButtonCell.m; sourceTree = "<group>"; };
 		63D96FF6113B197B0007F92D /* MGScopeBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGScopeBar.h; sourceTree = "<group>"; };
@@ -179,6 +200,7 @@
 		63DDBDF6113A8436002BB911 /* Task.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Task.m; sourceTree = "<group>"; };
 		63DDBF9B113AA1B8002BB911 /* RTMKeys.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RTMKeys.h; sourceTree = "<group>"; };
 		63DDBF9C113AA1B8002BB911 /* RTMKeys.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RTMKeys.m; sourceTree = "<group>"; };
+		63F9B3E311440D1700519F48 /* entry.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = entry.png; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8D1107320486CEB800E47090 /* Latte.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Latte.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -280,17 +302,25 @@
 		632937611020995500C92BF4 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				63F9B3E311440D1700519F48 /* entry.png */,
 				63303C2B101F4E7E00B516AB /* latte.icns */,
 				633A7E9410267AFD0017C70D /* RTM.png */,
 				6348C4721026F9CF0060EAA3 /* notification.png */,
 				632937621020995500C92BF4 /* FilterBarBackground.png */,
-				632937631020995500C92BF4 /* OverflowButton.tif */,
-				632937641020995500C92BF4 /* OverflowButtonPressed.tif */,
-				63CD5298104AA880005BE106 /* entry-quick.png */,
-				63CD5299104AA881005BE106 /* entry-full.png */,
-				632937651020995500C92BF4 /* OverflowDivider.png */,
 			);
 			path = images;
+			sourceTree = "<group>";
+		};
+		63474305113D0BD200CA3579 /* EZMilk */ = {
+			isa = PBXGroup;
+			children = (
+				63C94FFE1143CB6D005E9393 /* Model */,
+				6347434A113D0BD200CA3579 /* EZMilkBase.h */,
+				6347434B113D0BD200CA3579 /* EZMilkBase.m */,
+				6347434C113D0BD200CA3579 /* EZMilkService.h */,
+				6347434D113D0BD200CA3579 /* EZMilkService.m */,
+			);
+			path = EZMilk;
 			sourceTree = "<group>";
 		};
 		6396D0C41139C3E500255A29 /* Model */ = {
@@ -300,8 +330,8 @@
 				63DDBDCC113A7CAE002BB911 /* TaskList.m */,
 				63DDBDF5113A8436002BB911 /* Task.h */,
 				63DDBDF6113A8436002BB911 /* Task.m */,
-				63A4E839113B98E0007EC323 /* BaseMilkModel.h */,
-				63A4E83A113B98E0007EC323 /* BaseMilkModel.m */,
+				63A4E839113B98E0007EC323 /* BaseModel.h */,
+				63A4E83A113B98E0007EC323 /* BaseModel.m */,
 				63783EBA113BD0C2007498F8 /* TaskTag.h */,
 				63783EBB113BD0C2007498F8 /* TaskTag.m */,
 			);
@@ -349,7 +379,7 @@
 			isa = PBXGroup;
 			children = (
 				6396D17B1139C5C300255A29 /* CTGradient */,
-				6396D17E1139C5C300255A29 /* EZMilk */,
+				63474305113D0BD200CA3579 /* EZMilk */,
 				63DDBD8C113A032D002BB911 /* SQLitePersistentObjects */,
 				6396D1841139C5C300255A29 /* JSON */,
 				6396D19F1139C5C300255A29 /* MAAttachedWindow */,
@@ -365,15 +395,6 @@
 				6396D17D1139C5C300255A29 /* CTGradient.m */,
 			);
 			path = CTGradient;
-			sourceTree = "<group>";
-		};
-		6396D17E1139C5C300255A29 /* EZMilk */ = {
-			isa = PBXGroup;
-			children = (
-				6396D17F1139C5C300255A29 /* EZMilk.h */,
-				6396D1801139C5C300255A29 /* EZMilk.m */,
-			);
-			path = EZMilk;
 			sourceTree = "<group>";
 		};
 		6396D1841139C5C300255A29 /* JSON */ = {
@@ -403,6 +424,39 @@
 				6396D1A11139C5C300255A29 /* MAAttachedWindow.m */,
 			);
 			path = MAAttachedWindow;
+			sourceTree = "<group>";
+		};
+		63C94FFE1143CB6D005E9393 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				63C94FFF1143CB6D005E9393 /* Base */,
+				63C950061143CB6D005E9393 /* EZMilkContact.h */,
+				63C950071143CB6D005E9393 /* EZMilkContact.m */,
+				63C950081143CB6D005E9393 /* EZMilkGroup.h */,
+				63C950091143CB6D005E9393 /* EZMilkGroup.m */,
+				63C9500A1143CB6D005E9393 /* EZMilkLocation.h */,
+				63C9500B1143CB6D005E9393 /* EZMilkLocation.m */,
+				63C9500C1143CB6D005E9393 /* EZMilkTask.h */,
+				63C9500D1143CB6D005E9393 /* EZMilkTask.m */,
+				63C9500E1143CB6D005E9393 /* EZMilkTaskList.h */,
+				63C9500F1143CB6D005E9393 /* EZMilkTaskList.m */,
+				63C950101143CB6D005E9393 /* EZMilkTaskSeries.h */,
+				63C950111143CB6D005E9393 /* EZMilkTaskSeries.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		63C94FFF1143CB6D005E9393 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				63C950001143CB6D005E9393 /* EZMilkBaseModel.h */,
+				63C950011143CB6D005E9393 /* EZMilkBaseModel.m */,
+				63C950021143CB6D005E9393 /* EZMilkBaseNamedModel.h */,
+				63C950031143CB6D005E9393 /* EZMilkBaseNamedModel.m */,
+				63C950041143CB6D005E9393 /* EZMilkBaseTimedModel.h */,
+				63C950051143CB6D005E9393 /* EZMilkBaseTimedModel.m */,
+			);
+			path = Base;
 			sourceTree = "<group>";
 		};
 		63D96FF3113B197B0007F92D /* MGScopeBar */ = {
@@ -514,16 +568,12 @@
 				8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */,
 				63303C2C101F4E7E00B516AB /* latte.icns in Resources */,
 				632937661020995500C92BF4 /* FilterBarBackground.png in Resources */,
-				632937671020995500C92BF4 /* OverflowButton.tif in Resources */,
-				632937681020995500C92BF4 /* OverflowButtonPressed.tif in Resources */,
-				632937691020995500C92BF4 /* OverflowDivider.png in Resources */,
 				633A7E9510267AFD0017C70D /* RTM.png in Resources */,
 				6348C4731026F9CF0060EAA3 /* notification.png in Resources */,
-				63CD529A104AA881005BE106 /* entry-quick.png in Resources */,
-				63CD529B104AA881005BE106 /* entry-full.png in Resources */,
 				6396D0F11139C4B100255A29 /* MainMenu.xib in Resources */,
 				6396D0F21139C4B100255A29 /* Preferences.xib in Resources */,
 				6396D0F31139C4B100255A29 /* TaskEntry.xib in Resources */,
+				63F9B3E411440D1700519F48 /* entry.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -542,7 +592,6 @@
 				6396D1A31139C5C300255A29 /* AppPreferences.m in Sources */,
 				6396D1A71139C5C300255A29 /* TaskTableCell.m in Sources */,
 				6396D1A81139C5C300255A29 /* CTGradient.m in Sources */,
-				6396D1A91139C5C300255A29 /* EZMilk.m in Sources */,
 				6396D1AB1139C5C300255A29 /* NSObject+SBJSON.m in Sources */,
 				6396D1AC1139C5C300255A29 /* NSString+SBJSON.m in Sources */,
 				6396D1AD1139C5C300255A29 /* SBJSON.m in Sources */,
@@ -571,8 +620,19 @@
 				63DDBF9D113AA1B8002BB911 /* RTMKeys.m in Sources */,
 				63D96FFA113B197B0007F92D /* MGRecessedPopUpButtonCell.m in Sources */,
 				63D96FFB113B197B0007F92D /* MGScopeBar.m in Sources */,
-				63A4E83B113B98E0007EC323 /* BaseMilkModel.m in Sources */,
+				63A4E83B113B98E0007EC323 /* BaseModel.m in Sources */,
 				63783EBC113BD0C2007498F8 /* TaskTag.m in Sources */,
+				63474379113D0BD200CA3579 /* EZMilkBase.m in Sources */,
+				6347437A113D0BD200CA3579 /* EZMilkService.m in Sources */,
+				63C950121143CB6D005E9393 /* EZMilkBaseModel.m in Sources */,
+				63C950131143CB6D005E9393 /* EZMilkBaseNamedModel.m in Sources */,
+				63C950141143CB6D005E9393 /* EZMilkBaseTimedModel.m in Sources */,
+				63C950151143CB6D005E9393 /* EZMilkContact.m in Sources */,
+				63C950161143CB6D005E9393 /* EZMilkGroup.m in Sources */,
+				63C950171143CB6D005E9393 /* EZMilkLocation.m in Sources */,
+				63C950181143CB6D005E9393 /* EZMilkTask.m in Sources */,
+				63C950191143CB6D005E9393 /* EZMilkTaskList.m in Sources */,
+				63C9501A1143CB6D005E9393 /* EZMilkTaskSeries.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -150,15 +150,30 @@
                     textShadow, NSShadowAttributeName,
                     [NSFont systemFontOfSize:9], NSFontAttributeName, nil]];
 
-  // Task list title
-  [task.taskList.name drawInRect: NSMakeRect(cellFrame.origin.x + 26,
-                                          cellFrame.origin.y + 45,
-                                          cellFrame.size.width - 26,
-                                          15) 
-               withAttributes: [NSDictionary dictionaryWithObjectsAndKeys:
-                                [NSColor lightGrayColor], NSForegroundColorAttributeName,
-                                textShadow, NSShadowAttributeName,
-                                [NSFont systemFontOfSize:9], NSFontAttributeName, nil]];
+  // Task tags prepare
+  NSArray* tags = [task tags];
+  NSUInteger count = [tags count];
+  NSString* tagsText = [NSString string];
+
+  if (count > 0)
+  {
+    tagsText = [tagsText stringByAppendingString:[tags objectAtIndex:0]];
+    for (NSUInteger i = 1; i < count; i++)
+    {
+      tagsText = [tagsText stringByAppendingFormat:@", %@", [tags objectAtIndex:i]];
+    }
+  }
+
+  // Task tags
+  [tagsText drawInRect: NSMakeRect(cellFrame.origin.x + 26,
+                                             cellFrame.origin.y + 45,
+                                             cellFrame.size.width - 70,
+                                             15) 
+                  withAttributes: [NSDictionary dictionaryWithObjectsAndKeys:
+                                   [NSColor colorWithCalibratedRed:0.446 green:0.631 blue:0.827 alpha:1.000],
+                                   NSForegroundColorAttributeName,
+                                   textShadow, NSShadowAttributeName,
+                                   [NSFont systemFontOfSize:9], NSFontAttributeName, nil]];
 }
 
 - (NSUInteger)hitTestForEvent:(NSEvent *)event inRect:(NSRect)cellFrame ofView:(NSView *)controlView

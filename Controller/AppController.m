@@ -37,8 +37,8 @@
   [self initTable];
 
   // Setup EZMilk & AppPreferences lib
-  rtmService = [[EZMilk alloc] initWithApiKey:[RTMKeys apiKey]
-                             andApiSecret:[RTMKeys apiSecret]];
+  rtmService = [[EZMilkService alloc] initWithApiKey:[RTMKeys apiKey]
+                                        andApiSecret:[RTMKeys apiSecret]];
   prefHolder = [[AppPreferences alloc] init];
 
   // Retrieve DB data
@@ -61,7 +61,7 @@
                     [NSDictionary dictionaryWithObjectsAndKeys:
                      @"CompleteItem", @"Identifier", @"Complete", @"Name", nil],
                     nil];
-	
+
 	[self.groups addObject:[NSDictionary dictionaryWithObjectsAndKeys:
                           @"show:", @"Label", 
                           [NSNumber numberWithBool:NO], @"HasSeparator", 
@@ -97,7 +97,7 @@
 
 - (void)reloadLists
 {
-  int selectedList = [listView indexOfSelectedItem];
+  NSInteger selectedList = [listView indexOfSelectedItem];
 
   NSMutableArray* listArray = [self mutableArrayValueForKey:@"lists"];
   [listArray removeAllObjects];
@@ -233,20 +233,17 @@
 {
   if (taskEntryController)
   {
-    [taskEntryController release];
+    [taskEntryController dealloc];
   }
+
   taskEntryController = [[TaskEntryController alloc] initWithTask:aTask];
   [taskEntryController setSaveTarget:self];
   [taskEntryController setSaveAction:@selector(saveTaskFromEntry:)];
+
   [taskEntryController showWindow: self];
 }
 
 - (IBAction)selectList:(id)sender
-{
-  [self reloadTasksWithSelection:NO];
-}
-
-- (void)selectFilter:(id)sender
 {
   [self reloadTasksWithSelection:NO];
 }
@@ -300,7 +297,7 @@
   [progress setHidden:YES];
 }
 
-- (void)syncWithRtm:(EZMilk*)anRtm
+- (void)syncWithRtm:(EZMilkService*)anRtm
 {
   //NSString* timeline = [anRtm timeline];
   //[LTRtmListSync syncWithRtm:anRtm usingTimeline:timeline];

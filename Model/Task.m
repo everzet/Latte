@@ -25,6 +25,7 @@
  */
 
 #import "Task.h"
+#import "TaskTag.h"
 
 
 @implementation Task
@@ -34,9 +35,41 @@
 - (void)dealloc
 {
   [name release];
+  [taskList release];
   [dueAt release];
 
   [super dealloc];
+}
+
+- (NSArray*)tags
+{
+  NSArray* objs = [self findRelated:[TaskTag class]];
+  NSMutableArray* tags = [NSMutableArray array];
+
+  for (NSUInteger i = 0, count = [objs count]; i < count; i++)
+  {
+    TaskTag* tag = [objs objectAtIndex:i];
+    [tags addObject:tag.name];
+  }
+
+  return [NSArray arrayWithArray:tags];
+}
+
+- (void)setTags:(NSArray*)aTags
+{
+  [self deleteForeignObjects:[TaskTag class]];
+
+  for (NSUInteger i = 0, count = [aTags count]; i < count; i++)
+  {
+    NSString* tagName = [aTags objectAtIndex:i];
+    TaskTag* tag = [[TaskTag alloc] init];
+
+    tag.name = tagName;
+    tag.task = self;
+    [tag save];
+
+    [tag release];
+  }
 }
 
 - (NSString*)displayableDue

@@ -24,22 +24,33 @@
  
  */
 
-#import <Cocoa/Cocoa.h>
-#import "SQLitePersistentObject.h"
+#import "BaseModel.h"
 
 
-@interface BaseMilkModel : SQLitePersistentObject {
-  int       rtmId;
-  NSDate*   createdAt;
-  NSDate*   updatedAt;
-  NSDate*   syncedAt;
-  BOOL      isDeleted;
+@implementation BaseModel
+
+@synthesize mid, createdAt, updatedAt, syncedAt, isDeleted;
+
+- (void)dealloc
+{
+  [createdAt release];
+  [updatedAt release];
+  [syncedAt release];
+
+  [super dealloc];
 }
 
-@property (nonatomic,readwrite)         int         rtmId;
-@property (nonatomic,readwrite,retain)  NSDate*     createdAt;
-@property (nonatomic,readwrite,retain)  NSDate*     updatedAt;
-@property (nonatomic,readwrite,retain)  NSDate*     syncedAt;
-@property (nonatomic,readwrite)         BOOL        isDeleted;
+- (void)save
+{
+  NSDate* actionDate = [NSDate date];
+
+  if (![self existsInDB])
+  {
+    self.createdAt = actionDate;
+  }
+  self.updatedAt = actionDate;
+
+  [super save];
+}
 
 @end

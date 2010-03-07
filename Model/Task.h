@@ -25,23 +25,26 @@
  */
 
 #import <Cocoa/Cocoa.h>
-#import "BaseMilkModel.h"
+#import "BaseModel.h"
 #import "TaskList.h"
 
 
-@interface Task : BaseMilkModel {
+@interface Task : BaseModel {
   NSString* name;
-  int       priority;
+  NSInteger priority;
   TaskList* taskList;
   NSDate*   dueAt;
   BOOL      isCompleted;
 }
 
 @property (nonatomic,readwrite,retain)  NSString*   name;
-@property (nonatomic,readwrite)         int         priority;
+@property (nonatomic,readwrite)         NSInteger   priority;
 @property (nonatomic,readwrite,retain)  TaskList*   taskList;
 @property (nonatomic,readwrite,retain)  NSDate*     dueAt;
 @property (nonatomic,readwrite)         BOOL        isCompleted;
+
+- (NSArray*)tags;
+- (void)setTags:(NSArray*)aTags;
 
 - (NSString*)displayableDue;
 

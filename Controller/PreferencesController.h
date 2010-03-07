@@ -31,7 +31,7 @@
 
 // RTM library
 #import "RTMKeys.h"
-#import "EZMilk.h"
+#import "EZMilkService.h"
 
 @interface PreferencesController : NSWindowController {
   IBOutlet NSTabView*   tabView;
@@ -42,7 +42,7 @@
 
   // AppPreferences & EZMilk libs
   AppPreferences*       prefHolder;
-  EZMilk*               rtmService;
+  EZMilkService*        rtmService;
 
   // RTM FROB string
   NSString*             frob;
@@ -50,7 +50,7 @@
 
 @property (retain) NSString* frob;
 
-- (id)initWithPreferences:(AppPreferences*)aPref andRtmConnector:(EZMilk*)anRtmApi;
+- (id)initWithPreferences:(AppPreferences*)aPref andRtmConnector:(EZMilkService*)anRtmApi;
 
 // Preferences blocks
 - (IBAction)generalShow:(id)sender;

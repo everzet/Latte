@@ -41,7 +41,7 @@
 
 // RTM library
 #import "RTMKeys.h"
-#import "EZMilk.h"
+#import "EZMilkService.h"
 
 @interface AppController : NSWindowController <MGScopeBarDelegate> {
   IBOutlet MGScopeBar*          scopeBar;
@@ -62,7 +62,7 @@
   PreferencesController*        preferencesController;
 
   // Libs
-  EZMilk*                       rtmService;
+  EZMilkService*                rtmService;
   AppPreferences*               prefHolder;
 }
 
@@ -87,7 +87,6 @@
 
 // Interface actions
 - (IBAction)selectList:(id)sender;
-- (void)selectFilter:(id)sender;
 
 // Current task editing
 - (void)changeTaskCompletionStatus:(id)sender;
@@ -97,6 +96,6 @@
 - (void)runSyncLoop:(id)sender;
 - (void)syncWillStart:(id)sender;
 - (void)syncDidFinish:(id)sender;
-- (void)syncWithRtm:(EZMilk*)anRtm;
+- (void)syncWithRtm:(EZMilkService*)anRtm;
 
 @end
