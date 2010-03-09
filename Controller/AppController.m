@@ -25,6 +25,8 @@
  */
 
 #import "AppController.h"
+#import "EZMilkContact.h"
+#import "EZMilkGroup.h"
 
 @implementation AppController
 
@@ -266,7 +268,7 @@
 
 - (void)runSyncLoop:(id)sender
 {
-  while (NO)
+  while (YES)
   {
     NSAutoreleasePool* pool = [[NSAutoreleasePool alloc] init];
     [rtmService setToken:[prefHolder rtmToken]];
@@ -278,8 +280,8 @@
       [self performSelectorOnMainThread:@selector(syncDidFinish:) withObject:self waitUntilDone:NO];
     }
 
-    [pool release];
     [NSThread sleepForTimeInterval:[prefHolder rtmSyncInterval]];
+    [pool release];
   }
 }
 
@@ -299,6 +301,21 @@
 
 - (void)syncWithRtm:(EZMilkService*)anRtm
 {
+  //  NSArray* contacts = [EZMilkContact getList];
+  //  NSLog(@"Contacts: %d - %@", [[contacts objectAtIndex:1] mid], [[contacts objectAtIndex:1] fullname]);
+  //  [[contacts objectAtIndex:1] delete];
+  //  [EZMilkContact addByContact:@"nastya1985"];
+
+  //NSArray* grps = [EZMilkGroup getList];
+  //NSLog(@"Groups: %@ - %d", [[grps objectAtIndex:1] name], [[[[grps objectAtIndex:1] contacts] objectAtIndex:0] mid]);
+  //NSLog(@"Groups: %@", [[grps objectAtIndex:2] name]);
+  //[[grps objectAtIndex:2] delete];
+
+  //EZMilkGroup* group = [EZMilkGroup add:@"Тестовая группа"];
+  //[[grps objectAtIndex:2] removeContact:[[[grps objectAtIndex:1] contacts] objectAtIndex:0]];
+
+  //NSLog(@"GROUP ID: %d", [group mid]);
+
   //NSString* timeline = [anRtm timeline];
   //[LTRtmListSync syncWithRtm:anRtm usingTimeline:timeline];
   //[LTRtmTaskSync syncWithRtm:rtm usingTimeline:timeline];
@@ -333,12 +350,12 @@
 - (NSString *)scopeBar:(MGScopeBar *)theScopeBar titleOfItem:(NSString *)identifier inGroup:(int)groupNumber
 {
 	NSArray *items = [[self.groups objectAtIndex:groupNumber] objectForKey:@"Items"];
-	if (items) {
-		// We'll iterate here, since this is just a demo. This avoids having to keep an NSDictionary of identifiers 
-		// for each group as well as an array for ordering. In a more realistic scenario, you'd probably want to be 
-		// able to look-up an item by its identifier in constant time.
-		for (NSDictionary *item in items) {
-			if ([[item objectForKey:@"Identifier"] isEqualToString:identifier]) {
+	if (items)
+  {
+		for (NSDictionary *item in items)
+    {
+			if ([[item objectForKey:@"Identifier"] isEqualToString:identifier])
+      {
 				return [item objectForKey:@"Name"];
 				break;
 			}
