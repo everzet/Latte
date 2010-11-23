@@ -25,11 +25,11 @@
  */
 
 #import <Cocoa/Cocoa.h>
-#import "BaseModel.h"
+#import "LocalObject.h"
 #import "TaskList.h"
 
 
-@interface Task : BaseModel {
+@interface Task : LocalObject {
   NSString* name;
   NSInteger priority;
   TaskList* taskList;

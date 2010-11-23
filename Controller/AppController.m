@@ -27,6 +27,7 @@
 #import "AppController.h"
 #import "EZMilkContact.h"
 #import "EZMilkGroup.h"
+#import "EZMilkLocation.h"
 
 @implementation AppController
 
@@ -310,11 +311,12 @@
   //NSLog(@"Groups: %@ - %d", [[grps objectAtIndex:1] name], [[[[grps objectAtIndex:1] contacts] objectAtIndex:0] mid]);
   //NSLog(@"Groups: %@", [[grps objectAtIndex:2] name]);
   //[[grps objectAtIndex:2] delete];
-
   //EZMilkGroup* group = [EZMilkGroup add:@"Тестовая группа"];
   //[[grps objectAtIndex:2] removeContact:[[[grps objectAtIndex:1] contacts] objectAtIndex:0]];
-
   //NSLog(@"GROUP ID: %d", [group mid]);
+
+  //NSArray* locations = [EZMilkLocation getList];
+  //NSLog(@"Location: %d", [[locations objectAtIndex:3] zoom]);
 
   //NSString* timeline = [anRtm timeline];
   //[LTRtmListSync syncWithRtm:anRtm usingTimeline:timeline];
@@ -368,13 +370,6 @@
 - (MGScopeBarGroupSelectionMode)scopeBar:(MGScopeBar *)theScopeBar selectionModeForGroup:(int)groupNumber
 {
 	return [[[self.groups objectAtIndex:groupNumber] objectForKey:@"SelectionMode"] intValue];
-}
-
-
-- (BOOL)scopeBar:(MGScopeBar *)theScopeBar showSeparatorBeforeGroup:(int)groupNumber
-{
-	// Optional method. If not implemented, all groups except the first will have a separator before them.
-	return [[[self.groups objectAtIndex:groupNumber] objectForKey:@"HasSeparator"] boolValue];
 }
 
 

@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		632937661020995500C92BF4 /* FilterBarBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = 632937621020995500C92BF4 /* FilterBarBackground.png */; };
 		63303C2C101F4E7E00B516AB /* latte.icns in Resources */ = {isa = PBXBuildFile; fileRef = 63303C2B101F4E7E00B516AB /* latte.icns */; };
+		6333570C114692CD0027BF9D /* EZMilkContact.m in Sources */ = {isa = PBXBuildFile; fileRef = 633356FD114692CD0027BF9D /* EZMilkContact.m */; };
+		6333570D114692CD0027BF9D /* EZMilkGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 633356FF114692CD0027BF9D /* EZMilkGroup.m */; };
+		6333570E114692CD0027BF9D /* EZMilkLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = 63335701114692CD0027BF9D /* EZMilkLocation.m */; };
+		6333570F114692CD0027BF9D /* EZMilkObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 63335703114692CD0027BF9D /* EZMilkObject.m */; };
 		633A7E9510267AFD0017C70D /* RTM.png in Resources */ = {isa = PBXBuildFile; fileRef = 633A7E9410267AFD0017C70D /* RTM.png */; };
 		63474379113D0BD200CA3579 /* EZMilkService.m in Sources */ = {isa = PBXBuildFile; fileRef = 6347434B113D0BD200CA3579 /* EZMilkService.m */; };
 		6348C4731026F9CF0060EAA3 /* notification.png in Resources */ = {isa = PBXBuildFile; fileRef = 6348C4721026F9CF0060EAA3 /* notification.png */; };
@@ -31,16 +35,7 @@
 		6396D1AF1139C5C300255A29 /* SBJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 6396D18F1139C5C300255A29 /* SBJsonParser.m */; };
 		6396D1B01139C5C300255A29 /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 6396D1911139C5C300255A29 /* SBJsonWriter.m */; };
 		6396D1B71139C5C300255A29 /* MAAttachedWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 6396D1A11139C5C300255A29 /* MAAttachedWindow.m */; };
-		63A4E83B113B98E0007EC323 /* BaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 63A4E83A113B98E0007EC323 /* BaseModel.m */; };
-		63C950121143CB6D005E9393 /* EZMilkBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 63C950011143CB6D005E9393 /* EZMilkBaseModel.m */; };
-		63C950131143CB6D005E9393 /* EZMilkBaseNamedModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 63C950031143CB6D005E9393 /* EZMilkBaseNamedModel.m */; };
-		63C950141143CB6D005E9393 /* EZMilkBaseTimedModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 63C950051143CB6D005E9393 /* EZMilkBaseTimedModel.m */; };
-		63C950151143CB6D005E9393 /* EZMilkContact.m in Sources */ = {isa = PBXBuildFile; fileRef = 63C950071143CB6D005E9393 /* EZMilkContact.m */; };
-		63C950161143CB6D005E9393 /* EZMilkGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 63C950091143CB6D005E9393 /* EZMilkGroup.m */; };
-		63C950171143CB6D005E9393 /* EZMilkLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = 63C9500B1143CB6D005E9393 /* EZMilkLocation.m */; };
-		63C950181143CB6D005E9393 /* EZMilkTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 63C9500D1143CB6D005E9393 /* EZMilkTask.m */; };
-		63C950191143CB6D005E9393 /* EZMilkList.m in Sources */ = {isa = PBXBuildFile; fileRef = 63C9500F1143CB6D005E9393 /* EZMilkList.m */; };
-		63C9501A1143CB6D005E9393 /* EZMilkTaskSeries.m in Sources */ = {isa = PBXBuildFile; fileRef = 63C950111143CB6D005E9393 /* EZMilkTaskSeries.m */; };
+		63A4E83B113B98E0007EC323 /* LocalObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 63A4E83A113B98E0007EC323 /* LocalObject.m */; };
 		63D96FFA113B197B0007F92D /* MGRecessedPopUpButtonCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 63D96FF5113B197B0007F92D /* MGRecessedPopUpButtonCell.m */; };
 		63D96FFB113B197B0007F92D /* MGScopeBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 63D96FF7113B197B0007F92D /* MGScopeBar.m */; };
 		63DDBC7F1139E16F002BB911 /* BGHUDAppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63DDBC7E1139E16F002BB911 /* BGHUDAppKit.framework */; };
@@ -93,6 +88,19 @@
 		32CA4F630368D1EE00C91783 /* Latte_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Latte_Prefix.pch; sourceTree = "<group>"; };
 		632937621020995500C92BF4 /* FilterBarBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FilterBarBackground.png; sourceTree = "<group>"; };
 		63303C2B101F4E7E00B516AB /* latte.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; name = latte.icns; path = ../latte.icns; sourceTree = "<group>"; };
+		633356FC114692CD0027BF9D /* EZMilkContact.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EZMilkContact.h; sourceTree = "<group>"; };
+		633356FD114692CD0027BF9D /* EZMilkContact.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EZMilkContact.m; sourceTree = "<group>"; };
+		633356FE114692CD0027BF9D /* EZMilkGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EZMilkGroup.h; sourceTree = "<group>"; };
+		633356FF114692CD0027BF9D /* EZMilkGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EZMilkGroup.m; sourceTree = "<group>"; };
+		63335700114692CD0027BF9D /* EZMilkLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EZMilkLocation.h; sourceTree = "<group>"; };
+		63335701114692CD0027BF9D /* EZMilkLocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EZMilkLocation.m; sourceTree = "<group>"; };
+		63335702114692CD0027BF9D /* EZMilkObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EZMilkObject.h; sourceTree = "<group>"; };
+		63335703114692CD0027BF9D /* EZMilkObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EZMilkObject.m; sourceTree = "<group>"; };
+		63335705114692CD0027BF9D /* EZMilkContainable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EZMilkContainable.h; sourceTree = "<group>"; };
+		63335706114692CD0027BF9D /* EZMilkDeletable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EZMilkDeletable.h; sourceTree = "<group>"; };
+		63335707114692CD0027BF9D /* EZMilkListable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EZMilkListable.h; sourceTree = "<group>"; };
+		63335708114692CD0027BF9D /* EZMilkNameable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EZMilkNameable.h; sourceTree = "<group>"; };
+		6333570B114692CD0027BF9D /* EZMilkTimestampable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EZMilkTimestampable.h; sourceTree = "<group>"; };
 		633A7E9410267AFD0017C70D /* RTM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = RTM.png; sourceTree = "<group>"; };
 		6347434A113D0BD200CA3579 /* EZMilkService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EZMilkService.h; sourceTree = "<group>"; };
 		6347434B113D0BD200CA3579 /* EZMilkService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EZMilkService.m; sourceTree = "<group>"; };
@@ -132,26 +140,8 @@
 		6396D1911139C5C300255A29 /* SBJsonWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonWriter.m; sourceTree = "<group>"; };
 		6396D1A01139C5C300255A29 /* MAAttachedWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MAAttachedWindow.h; sourceTree = "<group>"; };
 		6396D1A11139C5C300255A29 /* MAAttachedWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MAAttachedWindow.m; sourceTree = "<group>"; };
-		63A4E839113B98E0007EC323 /* BaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseModel.h; sourceTree = "<group>"; };
-		63A4E83A113B98E0007EC323 /* BaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseModel.m; sourceTree = "<group>"; };
-		63C950001143CB6D005E9393 /* EZMilkBaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EZMilkBaseModel.h; sourceTree = "<group>"; };
-		63C950011143CB6D005E9393 /* EZMilkBaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EZMilkBaseModel.m; sourceTree = "<group>"; };
-		63C950021143CB6D005E9393 /* EZMilkBaseNamedModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EZMilkBaseNamedModel.h; sourceTree = "<group>"; };
-		63C950031143CB6D005E9393 /* EZMilkBaseNamedModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EZMilkBaseNamedModel.m; sourceTree = "<group>"; };
-		63C950041143CB6D005E9393 /* EZMilkBaseTimedModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EZMilkBaseTimedModel.h; sourceTree = "<group>"; };
-		63C950051143CB6D005E9393 /* EZMilkBaseTimedModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EZMilkBaseTimedModel.m; sourceTree = "<group>"; };
-		63C950061143CB6D005E9393 /* EZMilkContact.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EZMilkContact.h; sourceTree = "<group>"; };
-		63C950071143CB6D005E9393 /* EZMilkContact.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EZMilkContact.m; sourceTree = "<group>"; };
-		63C950081143CB6D005E9393 /* EZMilkGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EZMilkGroup.h; sourceTree = "<group>"; };
-		63C950091143CB6D005E9393 /* EZMilkGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EZMilkGroup.m; sourceTree = "<group>"; };
-		63C9500A1143CB6D005E9393 /* EZMilkLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EZMilkLocation.h; sourceTree = "<group>"; };
-		63C9500B1143CB6D005E9393 /* EZMilkLocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EZMilkLocation.m; sourceTree = "<group>"; };
-		63C9500C1143CB6D005E9393 /* EZMilkTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EZMilkTask.h; sourceTree = "<group>"; };
-		63C9500D1143CB6D005E9393 /* EZMilkTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EZMilkTask.m; sourceTree = "<group>"; };
-		63C9500E1143CB6D005E9393 /* EZMilkList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EZMilkList.h; sourceTree = "<group>"; };
-		63C9500F1143CB6D005E9393 /* EZMilkList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EZMilkList.m; sourceTree = "<group>"; };
-		63C950101143CB6D005E9393 /* EZMilkTaskSeries.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EZMilkTaskSeries.h; sourceTree = "<group>"; };
-		63C950111143CB6D005E9393 /* EZMilkTaskSeries.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EZMilkTaskSeries.m; sourceTree = "<group>"; };
+		63A4E839113B98E0007EC323 /* LocalObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocalObject.h; sourceTree = "<group>"; };
+		63A4E83A113B98E0007EC323 /* LocalObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocalObject.m; sourceTree = "<group>"; };
 		63D96FF4113B197B0007F92D /* MGRecessedPopUpButtonCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGRecessedPopUpButtonCell.h; sourceTree = "<group>"; };
 		63D96FF5113B197B0007F92D /* MGRecessedPopUpButtonCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGRecessedPopUpButtonCell.m; sourceTree = "<group>"; };
 		63D96FF6113B197B0007F92D /* MGScopeBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGScopeBar.h; sourceTree = "<group>"; };
@@ -308,10 +298,38 @@
 			path = images;
 			sourceTree = "<group>";
 		};
+		633356FB114692CD0027BF9D /* Object */ = {
+			isa = PBXGroup;
+			children = (
+				63335704114692CD0027BF9D /* Protocol */,
+				63335702114692CD0027BF9D /* EZMilkObject.h */,
+				63335703114692CD0027BF9D /* EZMilkObject.m */,
+				633356FC114692CD0027BF9D /* EZMilkContact.h */,
+				633356FD114692CD0027BF9D /* EZMilkContact.m */,
+				633356FE114692CD0027BF9D /* EZMilkGroup.h */,
+				633356FF114692CD0027BF9D /* EZMilkGroup.m */,
+				63335700114692CD0027BF9D /* EZMilkLocation.h */,
+				63335701114692CD0027BF9D /* EZMilkLocation.m */,
+			);
+			path = Object;
+			sourceTree = "<group>";
+		};
+		63335704114692CD0027BF9D /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				63335705114692CD0027BF9D /* EZMilkContainable.h */,
+				63335706114692CD0027BF9D /* EZMilkDeletable.h */,
+				63335707114692CD0027BF9D /* EZMilkListable.h */,
+				63335708114692CD0027BF9D /* EZMilkNameable.h */,
+				6333570B114692CD0027BF9D /* EZMilkTimestampable.h */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
 		63474305113D0BD200CA3579 /* EZMilk */ = {
 			isa = PBXGroup;
 			children = (
-				63C94FFE1143CB6D005E9393 /* Model */,
+				633356FB114692CD0027BF9D /* Object */,
 				6347434A113D0BD200CA3579 /* EZMilkService.h */,
 				6347434B113D0BD200CA3579 /* EZMilkService.m */,
 			);
@@ -321,12 +339,12 @@
 		6396D0C41139C3E500255A29 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				63A4E839113B98E0007EC323 /* LocalObject.h */,
+				63A4E83A113B98E0007EC323 /* LocalObject.m */,
 				63DDBDCB113A7CAE002BB911 /* TaskList.h */,
 				63DDBDCC113A7CAE002BB911 /* TaskList.m */,
 				63DDBDF5113A8436002BB911 /* Task.h */,
 				63DDBDF6113A8436002BB911 /* Task.m */,
-				63A4E839113B98E0007EC323 /* BaseModel.h */,
-				63A4E83A113B98E0007EC323 /* BaseModel.m */,
 				63783EBA113BD0C2007498F8 /* TaskTag.h */,
 				63783EBB113BD0C2007498F8 /* TaskTag.m */,
 			);
@@ -421,39 +439,6 @@
 			path = MAAttachedWindow;
 			sourceTree = "<group>";
 		};
-		63C94FFE1143CB6D005E9393 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				63C94FFF1143CB6D005E9393 /* Base */,
-				63C950061143CB6D005E9393 /* EZMilkContact.h */,
-				63C950071143CB6D005E9393 /* EZMilkContact.m */,
-				63C950081143CB6D005E9393 /* EZMilkGroup.h */,
-				63C950091143CB6D005E9393 /* EZMilkGroup.m */,
-				63C9500A1143CB6D005E9393 /* EZMilkLocation.h */,
-				63C9500B1143CB6D005E9393 /* EZMilkLocation.m */,
-				63C9500C1143CB6D005E9393 /* EZMilkTask.h */,
-				63C9500D1143CB6D005E9393 /* EZMilkTask.m */,
-				63C9500E1143CB6D005E9393 /* EZMilkList.h */,
-				63C9500F1143CB6D005E9393 /* EZMilkList.m */,
-				63C950101143CB6D005E9393 /* EZMilkTaskSeries.h */,
-				63C950111143CB6D005E9393 /* EZMilkTaskSeries.m */,
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		63C94FFF1143CB6D005E9393 /* Base */ = {
-			isa = PBXGroup;
-			children = (
-				63C950001143CB6D005E9393 /* EZMilkBaseModel.h */,
-				63C950011143CB6D005E9393 /* EZMilkBaseModel.m */,
-				63C950021143CB6D005E9393 /* EZMilkBaseNamedModel.h */,
-				63C950031143CB6D005E9393 /* EZMilkBaseNamedModel.m */,
-				63C950041143CB6D005E9393 /* EZMilkBaseTimedModel.h */,
-				63C950051143CB6D005E9393 /* EZMilkBaseTimedModel.m */,
-			);
-			path = Base;
-			sourceTree = "<group>";
-		};
 		63D96FF3113B197B0007F92D /* MGScopeBar */ = {
 			isa = PBXGroup;
 			children = (
@@ -545,7 +530,14 @@
 			isa = PBXProject;
 			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "Latte" */;
 			compatibilityVersion = "Xcode 3.1";
+			developmentRegion = English;
 			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
 			mainGroup = 29B97314FDCFA39411CA2CEA /* RTTasks */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -615,18 +607,13 @@
 				63DDBF9D113AA1B8002BB911 /* RTMKeys.m in Sources */,
 				63D96FFA113B197B0007F92D /* MGRecessedPopUpButtonCell.m in Sources */,
 				63D96FFB113B197B0007F92D /* MGScopeBar.m in Sources */,
-				63A4E83B113B98E0007EC323 /* BaseModel.m in Sources */,
+				63A4E83B113B98E0007EC323 /* LocalObject.m in Sources */,
 				63783EBC113BD0C2007498F8 /* TaskTag.m in Sources */,
 				63474379113D0BD200CA3579 /* EZMilkService.m in Sources */,
-				63C950121143CB6D005E9393 /* EZMilkBaseModel.m in Sources */,
-				63C950131143CB6D005E9393 /* EZMilkBaseNamedModel.m in Sources */,
-				63C950141143CB6D005E9393 /* EZMilkBaseTimedModel.m in Sources */,
-				63C950151143CB6D005E9393 /* EZMilkContact.m in Sources */,
-				63C950161143CB6D005E9393 /* EZMilkGroup.m in Sources */,
-				63C950171143CB6D005E9393 /* EZMilkLocation.m in Sources */,
-				63C950181143CB6D005E9393 /* EZMilkTask.m in Sources */,
-				63C950191143CB6D005E9393 /* EZMilkList.m in Sources */,
-				63C9501A1143CB6D005E9393 /* EZMilkTaskSeries.m in Sources */,
+				6333570C114692CD0027BF9D /* EZMilkContact.m in Sources */,
+				6333570D114692CD0027BF9D /* EZMilkGroup.m in Sources */,
+				6333570E114692CD0027BF9D /* EZMilkLocation.m in Sources */,
+				6333570F114692CD0027BF9D /* EZMilkObject.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
